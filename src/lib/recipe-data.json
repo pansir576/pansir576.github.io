@@ -1,0 +1,4976 @@
+[
+  {
+    "id": 1,
+    "slug": "provided-1",
+    "name": "清炒土豆丝",
+    "category": "素菜",
+    "summary": "按标准步骤完成清炒土豆丝。",
+    "ingredients": [
+      {
+        "name": "土豆",
+        "role": "main",
+        "ingredientId": "potato"
+      },
+      {
+        "name": "青椒",
+        "role": "supporting",
+        "ingredientId": "green-pepper"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      },
+      {
+        "name": "白醋",
+        "role": "seasoning",
+        "seasoningId": "vinegar"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "步骤 1",
+        "description": "土豆去皮切丝，清水浸泡淘洗去淀粉；青椒切丝，蒜切片",
+        "actionLabel": "完成本步",
+        "knowledge": "土豆含有大量淀粉，暴露在空气中容易氧化发黑，泡水可以去除多余淀粉防止粘连",
+        "aiWarning": "土豆浸泡时间太短，残留淀粉多，炒出来容易发黏结块",
+        "variableGroups": []
+      },
+      {
+        "stepId": 2,
+        "title": "步骤 2",
+        "description": "热锅倒油，下入蒜片爆香",
+        "actionLabel": "完成本步",
+        "knowledge": "低温慢爆大蒜可以释放蒜香，避免直接炸糊发苦",
+        "aiWarning": "油温太高，蒜片会快速焦糊，产生苦味",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "步骤 3",
+        "description": "下入沥干的土豆丝大火快速翻炒",
+        "actionLabel": "完成本步",
+        "knowledge": "大火快炒，缩短加热时间，维持土豆丝脆感；醋酸可以保护脆度",
+        "aiWarning": "火候过小，小火慢炒土豆丝会变软，失去脆感",
+        "variableGroups": [
+          {
+            "id": "timing-3-0",
+            "label": "放醋时机",
+            "kind": "timing",
+            "defaultOptionId": "晚放醋-3-0",
+            "options": [
+              {
+                "id": "早放醋-3-0",
+                "label": "早放醋",
+                "effect": {
+                  "acid": 7,
+                  "crispness": 4,
+                  "aroma": -1
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "timing": "early"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "晚放醋-3-0",
+                "label": "晚放醋",
+                "effect": {
+                  "acid": 5,
+                  "aroma": 5
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "timing": "late"
+                },
+                "risk": "none"
+              }
+            ]
+          },
+          {
+            "id": "salt-3-1",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "盐偏少-3-1",
+            "options": [
+              {
+                "id": "盐偏少-3-1",
+                "label": "盐偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "盐适中-3-1",
+                "label": "盐适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "盐偏多-3-1",
+                "label": "盐偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "盐量偏多会压住食材本味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "步骤 4",
+        "description": "加入青椒丝翻炒至断生，出锅",
+        "actionLabel": "完成本步",
+        "knowledge": "青椒易熟，最后放入保持清爽口感",
+        "aiWarning": "青椒炒制太久发黄，风味变差",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "烹饪安全",
+        "detail": "食材应清洗干净；畜禽和水产需彻底加热，实际烹饪请结合食材厚度与当地食品安全建议。"
+      }
+    ],
+    "source": "provided"
+  },
+  {
+    "id": 2,
+    "slug": "provided-2",
+    "name": "番茄炒蛋",
+    "category": "素菜",
+    "summary": "按标准步骤完成番茄炒蛋。",
+    "ingredients": [
+      {
+        "name": "番茄",
+        "role": "main",
+        "ingredientId": "tomato"
+      },
+      {
+        "name": "鸡蛋",
+        "role": "supporting",
+        "ingredientId": "egg"
+      },
+      {
+        "name": "小葱",
+        "role": "supporting",
+        "modifierId": "scallion"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      },
+      {
+        "name": "白糖",
+        "role": "seasoning",
+        "seasoningId": "sugar"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "步骤 1",
+        "description": "番茄切块，鸡蛋打散搅匀，备好葱花",
+        "actionLabel": "完成本步",
+        "knowledge": "鸡蛋充分打散，炒出来更蓬松",
+        "aiWarning": "鸡蛋搅拌不充分，成品结块不均匀",
+        "variableGroups": []
+      },
+      {
+        "stepId": 2,
+        "title": "步骤 2",
+        "description": "热锅倒油，倒入蛋液，定型划散盛出",
+        "actionLabel": "完成本步",
+        "knowledge": "鸡蛋蛋白质受热快速凝固，加热过久会变老发柴",
+        "aiWarning": "鸡蛋炒太久，蛋白质老化，口感发柴",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "步骤 3",
+        "description": "同一口锅下入番茄，翻炒至出沙",
+        "actionLabel": "完成本步",
+        "knowledge": "番茄果胶受热破裂出沙；白糖中和有机酸，减轻酸味",
+        "aiWarning": "大火快速翻炒不容易炒出沙，番茄风味不足",
+        "variableGroups": [
+          {
+            "id": "sugar-3-0",
+            "label": "糖量",
+            "kind": "sugar",
+            "defaultOptionId": "加糖少-3-0",
+            "options": [
+              {
+                "id": "加糖多-3-0",
+                "label": "加糖多",
+                "effect": {
+                  "sugar": 12
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "lot"
+                },
+                "warning": "糖偏多会掩盖酸鲜层次。",
+                "risk": "quality"
+              },
+              {
+                "id": "加糖少-3-0",
+                "label": "加糖少",
+                "effect": {
+                  "sugar": 4
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              }
+            ]
+          },
+          {
+            "id": "heat-3-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "中火-3-1",
+            "options": [
+              {
+                "id": "大火-3-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 7,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "中火-3-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "步骤 4",
+        "description": "倒回鸡蛋，加盐混合翻炒，撒葱花出锅",
+        "actionLabel": "完成本步",
+        "knowledge": "混合翻匀即可，不需要长时间翻炒",
+        "aiWarning": "混合后持续久炒，鸡蛋吸水变软",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "烹饪安全",
+        "detail": "食材应清洗干净；畜禽和水产需彻底加热，实际烹饪请结合食材厚度与当地食品安全建议。"
+      }
+    ],
+    "source": "provided"
+  },
+  {
+    "id": 3,
+    "slug": "provided-3",
+    "name": "蒜蓉油麦菜",
+    "category": "素菜",
+    "summary": "按标准步骤完成蒜蓉油麦菜。",
+    "ingredients": [
+      {
+        "name": "油麦菜",
+        "role": "main",
+        "ingredientId": "youmaicai"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "步骤 1",
+        "description": "油麦菜清洗切段，大蒜拍碎切末",
+        "actionLabel": "完成本步",
+        "knowledge": "绿叶菜尽量减少长时间浸泡，避免营养流失",
+        "aiWarning": "长时间泡水，菜叶容易软烂",
+        "variableGroups": []
+      },
+      {
+        "stepId": 2,
+        "title": "步骤 2",
+        "description": "热锅热油，蒜末爆香",
+        "actionLabel": "完成本步",
+        "knowledge": "蒜末激发香气作为底味",
+        "aiWarning": "蒜末炸糊会带苦味",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "步骤 3",
+        "description": "下入油麦菜大火快速翻拌",
+        "actionLabel": "完成本步",
+        "knowledge": "绿叶菜含水量高，长时间加热会破坏叶绿素、流失维生素",
+        "aiWarning": "油麦菜加热过久发黄发蔫，鲜味和营养流失",
+        "variableGroups": [
+          {
+            "id": "salt-3-0",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "盐多-3-0",
+            "options": [
+              {
+                "id": "盐多-3-0",
+                "label": "盐多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "盐量偏多会压住食材本味。",
+                "risk": "none"
+              },
+              {
+                "id": "盐适中-3-0",
+                "label": "盐适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              }
+            ]
+          },
+          {
+            "id": "duration-3-1",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "炒制时间短-3-1",
+            "options": [
+              {
+                "id": "炒制时间长-3-1",
+                "label": "炒制时间长",
+                "effect": {
+                  "duration": 8,
+                  "water": -3
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热过久会让食材失水、发黄或变软。",
+                "risk": "quality"
+              },
+              {
+                "id": "炒制时间短-3-1",
+                "label": "炒制时间短",
+                "effect": {
+                  "duration": -4,
+                  "safety": -2
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "时间偏短时先确认食材已经熟透。",
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "步骤 4",
+        "description": "菜叶刚断生即可出锅",
+        "actionLabel": "完成本步",
+        "knowledge": "余温会继续焖熟菜叶",
+        "aiWarning": "等到完全变软再出锅就炒老了",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "烹饪安全",
+        "detail": "食材应清洗干净；畜禽和水产需彻底加热，实际烹饪请结合食材厚度与当地食品安全建议。"
+      }
+    ],
+    "source": "provided"
+  },
+  {
+    "id": 4,
+    "slug": "provided-4",
+    "name": "酸辣土豆丝",
+    "category": "素菜",
+    "summary": "按标准步骤完成酸辣土豆丝。",
+    "ingredients": [
+      {
+        "name": "土豆",
+        "role": "main",
+        "ingredientId": "potato"
+      },
+      {
+        "name": "干辣椒",
+        "role": "seasoning",
+        "seasoningId": "chili"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "白醋",
+        "role": "seasoning",
+        "seasoningId": "vinegar"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "步骤 1",
+        "description": "土豆切丝反复泡水去淀粉；蒜切片、干辣椒切段",
+        "actionLabel": "完成本步",
+        "knowledge": "充分洗去淀粉是脆口的关键",
+        "aiWarning": "淀粉没有洗干净，成品粘连不清爽",
+        "variableGroups": []
+      },
+      {
+        "stepId": 2,
+        "title": "步骤 2",
+        "description": "热锅倒油，下入干辣椒、蒜片爆出香味",
+        "actionLabel": "完成本步",
+        "knowledge": "辣椒低温慢慢释放香辣物质",
+        "aiWarning": "干辣椒大火直接炸黑发苦",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "步骤 3",
+        "description": "下入沥干土豆丝大火翻炒，沿锅边淋白醋",
+        "actionLabel": "完成本步",
+        "knowledge": "锅边高温激发醋香，醋酸维持脆感",
+        "aiWarning": "醋直接淋在食材上，香气挥发不足",
+        "variableGroups": [
+          {
+            "id": "acid-3-0",
+            "label": "酸味",
+            "kind": "acid",
+            "defaultOptionId": "醋多-3-0",
+            "options": [
+              {
+                "id": "醋多-3-0",
+                "label": "醋多",
+                "effect": {
+                  "acid": 14
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "lot"
+                },
+                "warning": "醋量偏多会压住鲜甜味。",
+                "risk": "none"
+              },
+              {
+                "id": "醋少-3-0",
+                "label": "醋少",
+                "effect": {
+                  "acid": 3
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              }
+            ]
+          },
+          {
+            "id": "salt-3-1",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "盐多-3-1",
+            "options": [
+              {
+                "id": "盐多-3-1",
+                "label": "盐多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "盐量偏多会压住食材本味。",
+                "risk": "none"
+              },
+              {
+                "id": "盐少-3-1",
+                "label": "盐少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "步骤 4",
+        "description": "加盐翻匀出锅",
+        "actionLabel": "完成本步",
+        "knowledge": "全程旺火短炒",
+        "aiWarning": "火力不足，土豆丝发软不脆",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "烹饪安全",
+        "detail": "食材应清洗干净；畜禽和水产需彻底加热，实际烹饪请结合食材厚度与当地食品安全建议。"
+      }
+    ],
+    "source": "provided"
+  },
+  {
+    "id": 5,
+    "slug": "provided-5",
+    "name": "红烧茄子",
+    "category": "素菜",
+    "summary": "按标准步骤完成红烧茄子。",
+    "ingredients": [
+      {
+        "name": "茄子",
+        "role": "main",
+        "ingredientId": "eggplant"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "步骤 1",
+        "description": "茄子切条，大蒜切末",
+        "actionLabel": "完成本步",
+        "knowledge": "茄子是海绵状多孔结构，极易吸附油脂",
+        "aiWarning": "切好放太久，茄子氧化发黑",
+        "variableGroups": []
+      },
+      {
+        "stepId": 2,
+        "title": "步骤 2",
+        "description": "热锅倒油，下入茄子翻炒",
+        "actionLabel": "完成本步",
+        "knowledge": "少油版本依靠焖煮软化，降低油脂摄入",
+        "aiWarning": "油太少直接干炒，茄子容易焦糊",
+        "variableGroups": [
+          {
+            "id": "method-2-0",
+            "label": "用油方式",
+            "kind": "method",
+            "defaultOptionId": "少油焖煮-2-0",
+            "options": [
+              {
+                "id": "少油焖煮-2-0",
+                "label": "少油焖煮",
+                "effect": {
+                  "water": 5,
+                  "tenderness": 5
+                },
+                "simulation": {
+                  "seasoningId": "oil",
+                  "amountLevel": "little",
+                  "heatMethod": "braise"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "多油煸炒-2-0",
+                "label": "多油煸炒",
+                "effect": {
+                  "water": -4,
+                  "aroma": 6
+                },
+                "simulation": {
+                  "seasoningId": "oil",
+                  "amountLevel": "lot",
+                  "heatMethod": "pan-fry"
+                },
+                "warning": "油脂偏多会明显增加油腻感。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "步骤 3",
+        "description": "加生抽、少量盐，小火加盖焖软",
+        "actionLabel": "完成本步",
+        "knowledge": "中小火焖煮让内部纤维软化",
+        "aiWarning": "一直大火，外表焦糊内部发硬",
+        "variableGroups": []
+      },
+      {
+        "stepId": 4,
+        "title": "步骤 4",
+        "description": "开盖大火收汁水出锅",
+        "actionLabel": "完成本步",
+        "knowledge": "收汁浓缩味道",
+        "aiWarning": "收汁过头，酱汁糊底发苦",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "烹饪安全",
+        "detail": "食材应清洗干净；畜禽和水产需彻底加热，实际烹饪请结合食材厚度与当地食品安全建议。"
+      }
+    ],
+    "source": "provided"
+  },
+  {
+    "id": 6,
+    "slug": "provided-6",
+    "name": "凉拌黄瓜",
+    "category": "素菜",
+    "summary": "按标准步骤完成凉拌黄瓜。",
+    "ingredients": [
+      {
+        "name": "黄瓜",
+        "role": "main",
+        "ingredientId": "cucumber"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "白醋",
+        "role": "seasoning",
+        "seasoningId": "vinegar"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "步骤 1",
+        "description": "黄瓜拍碎切段，大蒜捣成蒜泥",
+        "actionLabel": "完成本步",
+        "knowledge": "拍碎的黄瓜断面更多，更容易入味",
+        "aiWarning": "切得太整齐，入味慢",
+        "variableGroups": []
+      },
+      {
+        "stepId": 2,
+        "title": "步骤 2",
+        "description": "黄瓜撒盐静置杀出水分，倒掉析出的水",
+        "actionLabel": "完成本步",
+        "knowledge": "渗透原理，盐析出内部水分，口感更脆，味道更容易进去",
+        "aiWarning": "不杀水直接拌，水分稀释味道，不够入味",
+        "variableGroups": [
+          {
+            "id": "acid-2-0",
+            "label": "酸味",
+            "kind": "acid",
+            "defaultOptionId": "醋多-2-0",
+            "options": [
+              {
+                "id": "醋多-2-0",
+                "label": "醋多",
+                "effect": {
+                  "acid": 14
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "lot"
+                },
+                "warning": "醋量偏多会压住鲜甜味。",
+                "risk": "none"
+              },
+              {
+                "id": "醋少-2-0",
+                "label": "醋少",
+                "effect": {
+                  "acid": 3
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "步骤 3",
+        "description": "加入蒜泥、生抽、醋拌匀，静置入味",
+        "actionLabel": "完成本步",
+        "knowledge": "凉拌菜适合静置几分钟风味融合",
+        "aiWarning": "拌完立刻吃，味道分散",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "烹饪安全",
+        "detail": "食材应清洗干净；畜禽和水产需彻底加热，实际烹饪请结合食材厚度与当地食品安全建议。"
+      }
+    ],
+    "source": "provided"
+  },
+  {
+    "id": 7,
+    "slug": "garlic-broccoli",
+    "name": "清炒西兰花",
+    "category": "素菜",
+    "summary": "用短焯和快炒保留西兰花颜色与爽脆口感。",
+    "ingredients": [
+      {
+        "name": "西兰花",
+        "role": "main",
+        "ingredientId": "greens"
+      },
+      {
+        "name": "胡萝卜",
+        "role": "supporting",
+        "ingredientId": "carrot"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "切小朵并清洗",
+        "description": "按标准操作完成“切小朵并清洗”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "切小朵并清洗会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      },
+      {
+        "stepId": 2,
+        "title": "沸水短焯",
+        "description": "按标准操作完成“沸水短焯”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "沸水短焯会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -3
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "加热时间偏短时要确认高风险食材已经熟透。",
+                "risk": "quality"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "蒜末爆香后快炒",
+        "description": "按标准操作完成“蒜末爆香后快炒”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "蒜末爆香后快炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "heat-level-3",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          },
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "断生调味出锅",
+        "description": "按标准操作完成“断生调味出锅”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "断生调味出锅会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 8,
+    "slug": "dry-fried-green-beans",
+    "name": "干煸四季豆",
+    "category": "素菜",
+    "summary": "将四季豆煸炒至表皮起皱，加入大蒜和干辣椒炒香，最后调味并确认四季豆熟透。",
+    "ingredients": [
+      {
+        "name": "四季豆",
+        "role": "main",
+        "ingredientId": "greens"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "干辣椒",
+        "role": "seasoning",
+        "seasoningId": "chili"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "摘洗并彻底控水",
+        "description": "将四季豆摘洗干净，去除老筋和杂质，然后彻底控干水分。",
+        "actionLabel": "开始",
+        "knowledge": "确保四季豆干燥，避免在烹饪过程中粘连或变黑。",
+        "aiWarning": "四季豆表面水分未控干会造成油花飞溅，也可能影响均匀受热。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "煸至表皮起皱",
+        "description": "将四季豆放入热油中煸炒，直至表皮起皱，内部变软。",
+        "actionLabel": "继续",
+        "knowledge": "适时翻动四季豆，使其均匀受热。",
+        "aiWarning": "注意火候，避免四季豆过熟或焦糊。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "四季豆未彻底加热可能引起食物中毒，必须炒至内部熟透。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "下蒜辣炒香",
+        "description": "加入切碎的大蒜和干辣椒，快速翻炒出香味。",
+        "actionLabel": "继续",
+        "knowledge": "大蒜和干辣椒的香气能提升菜品风味。",
+        "aiWarning": "炒制时注意火力，防止大蒜和干辣椒烧焦。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "调味并确认熟透",
+        "description": "加入适量的生抽和食盐调味，确认四季豆熟透后出锅。",
+        "actionLabel": "完成本步",
+        "knowledge": "根据个人口味调整生抽和食盐的比例。",
+        "aiWarning": "食用前应确保四季豆完全熟透，避免食物中毒。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "四季豆必须熟透",
+        "detail": "四季豆未熟透可能引起中毒，应炒至颜色变深、质地变软且无生豆味。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 9,
+    "slug": "pepper-pork",
+    "name": "青椒肉丝",
+    "category": "畜肉",
+    "summary": "制作青椒肉丝",
+    "ingredients": [
+      {
+        "name": "里脊肉",
+        "role": "main",
+        "ingredientId": "pork-loin"
+      },
+      {
+        "name": "青椒",
+        "role": "main",
+        "ingredientId": "green-pepper"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "淀粉",
+        "role": "seasoning",
+        "seasoningId": "starch"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "切丝并上浆",
+        "description": "将里脊肉切成细丝，加入适量淀粉和生抽腌制。",
+        "actionLabel": "完成本步",
+        "knowledge": "腌制可以使肉质更加嫩滑。",
+        "aiWarning": "注意腌制时间不宜过长，以免肉质变老。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "滑炒肉丝",
+        "description": "将腌制好的肉丝滑炒至变色。",
+        "actionLabel": "完成本步",
+        "knowledge": "滑炒可以保持肉丝的鲜嫩口感。",
+        "aiWarning": "注意火候控制，避免肉丝外焦内生。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium",
+            "options": [
+              {
+                "id": "short",
+                "label": "偏短",
+                "risk": "safety",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "猪肉丝未充分受热存在食品安全风险，应炒至中心完全变色熟透。"
+              },
+              {
+                "id": "medium",
+                "label": "适中",
+                "risk": "none",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                }
+              },
+              {
+                "id": "long",
+                "label": "偏长",
+                "risk": "quality",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长会让食材失水、变老或失去鲜嫩口感。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "爆香蒜末与青椒",
+        "description": "锅中加油，爆香切好的大蒜末，再加入青椒翻炒。",
+        "actionLabel": "完成本步",
+        "knowledge": "蒜末和青椒的香味能提升菜品风味。",
+        "aiWarning": "注意油温不宜过高，以免蒜末焦糊。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "合炒调味出锅",
+        "description": "将炒好的肉丝和青椒合炒均匀，调入适量生抽调味后出锅。",
+        "actionLabel": "完成本步",
+        "knowledge": "生抽能提升菜品的咸味和色泽。",
+        "aiWarning": "注意调味时要适量，避免过咸。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 10,
+    "slug": "yuxiang-pork",
+    "name": "鱼香肉丝",
+    "category": "畜肉",
+    "summary": "制作鱼香肉丝",
+    "ingredients": [
+      {
+        "name": "里脊肉",
+        "role": "main",
+        "ingredientId": "pork-loin"
+      },
+      {
+        "name": "木耳",
+        "role": "supporting",
+        "ingredientId": "wood-ear"
+      },
+      {
+        "name": "竹笋",
+        "role": "supporting",
+        "ingredientId": "bamboo-shoots"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "醋",
+        "role": "seasoning",
+        "seasoningId": "vinegar"
+      },
+      {
+        "name": "糖",
+        "role": "seasoning",
+        "seasoningId": "sugar"
+      },
+      {
+        "name": "淀粉",
+        "role": "seasoning",
+        "seasoningId": "starch"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "切丝并把肉上浆",
+        "description": "将里脊肉切成细丝，加入适量淀粉和生抽腌制。",
+        "actionLabel": "完成本步",
+        "knowledge": "腌制肉丝可以使肉质更加嫩滑。",
+        "aiWarning": "注意不要过度腌制，以免肉质变硬。",
+        "variableGroups": [
+          {
+            "id": "sugar-level-1",
+            "label": "糖量",
+            "kind": "sugar",
+            "defaultOptionId": "low-1",
+            "options": [
+              {
+                "id": "none-1",
+                "label": "不加",
+                "effect": {
+                  "acid": 3
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "low-1",
+                "label": "少许",
+                "effect": {
+                  "sugar": 5,
+                  "acid": -1
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "偏多",
+                "effect": {
+                  "sugar": 13
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "lot"
+                },
+                "warning": "糖偏多会掩盖番茄或酱汁本身的酸鲜层次。",
+                "risk": "quality"
+              }
+            ]
+          },
+          {
+            "id": "acid-level-1",
+            "label": "酸味",
+            "kind": "acid",
+            "defaultOptionId": "medium-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "少",
+                "effect": {
+                  "acid": 2
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "适中",
+                "effect": {
+                  "acid": 8,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "多",
+                "effect": {
+                  "acid": 14
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "lot"
+                },
+                "warning": "醋量偏多会明显压住甜味和鲜味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "调好酸甜汁",
+        "description": "准备醋、糖、生抽、盐等调料，调成鱼香汁。",
+        "actionLabel": "完成本步",
+        "knowledge": "鱼香汁是鱼香肉丝的灵魂。",
+        "aiWarning": "注意调味品的比例，确保味道适中。",
+        "variableGroups": [
+          {
+            "id": "heat-level-2",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-2",
+            "options": [
+              {
+                "id": "low-2",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-2",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-2",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "滑炒肉丝与配料",
+        "description": "将腌制好的肉丝滑炒至变色，加入木耳、竹笋等配料翻炒均匀。",
+        "actionLabel": "完成本步",
+        "knowledge": "滑炒可以使肉丝保持鲜嫩。",
+        "aiWarning": "注意火候控制，避免肉丝过熟。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          },
+          {
+            "id": "duration-level-3",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium",
+            "options": [
+              {
+                "id": "short",
+                "label": "偏短",
+                "risk": "safety",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "猪肉丝未充分受热存在食品安全风险，应延长加热并确认熟度。"
+              },
+              {
+                "id": "medium",
+                "label": "适中",
+                "risk": "none",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                }
+              },
+              {
+                "id": "long",
+                "label": "偏长",
+                "risk": "quality",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长会让食材失水、变老或失去鲜嫩口感。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "倒入碗汁快速收浓",
+        "description": "将调好的鱼香汁倒入锅中，快速翻炒使汁液均匀包裹在肉丝上。",
+        "actionLabel": "完成本步",
+        "knowledge": "快速翻炒可以保证肉丝的口感。",
+        "aiWarning": "注意火候控制，避免糊底。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 11,
+    "slug": "potato-beef-stew",
+    "name": "土豆炖牛肉",
+    "category": "畜肉",
+    "summary": "将牛肉焯水后煸香，加入土豆和胡萝卜炖煮至牛肉软烂。",
+    "ingredients": [
+      {
+        "name": "牛腩",
+        "role": "main",
+        "ingredientId": "beef-brisket"
+      },
+      {
+        "name": "土豆",
+        "role": "supporting",
+        "ingredientId": "potato"
+      },
+      {
+        "name": "胡萝卜",
+        "role": "supporting",
+        "ingredientId": "carrot"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "老抽",
+        "role": "seasoning",
+        "seasoningId": "dark-soy"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "切块并把牛肉焯水",
+        "description": "将牛腩切成适口大小的块，用冷水下锅，加入少许料酒，大火煮沸后撇去浮沫，捞出沥干水分。",
+        "actionLabel": "完成本步",
+        "knowledge": "焯水可以去除血污和腥味，使牛肉更加鲜嫩。",
+        "aiWarning": "注意观察牛肉是否变色，避免长时间煮制导致牛肉变老。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "煸香牛肉和酱香",
+        "description": "将焯水后的牛肉放入锅中，加入适量的生抽和老抽调色，翻炒至表面均匀上色。",
+        "actionLabel": "完成本步",
+        "knowledge": "生抽和老抽调色可以使牛肉色泽红亮，增加风味。",
+        "aiWarning": "注意控制火力，避免牛肉烧焦。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "牛肉中心未充分受热存在食品安全风险，应延长加热并确认熟度。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "加水炖至牛肉变软",
+        "description": "将焯水后的牛肉放入炖锅，加入足够的水，大火烧开后转小火慢炖。",
+        "actionLabel": "完成本步",
+        "knowledge": "炖煮过程中，牛肉会逐渐变软，汤汁也会变得浓郁。",
+        "aiWarning": "炖煮时间不宜过长，以免牛肉过老。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "放土豆收汁",
+        "description": "炖至牛肉变软后，加入切好的土豆和胡萝卜，继续炖煮至土豆和胡萝卜熟透，汤汁浓稠。",
+        "actionLabel": "完成本步",
+        "knowledge": "土豆和胡萝卜的加入可以使菜肴更加丰富，同时增加口感。",
+        "aiWarning": "注意观察土豆和胡萝卜是否熟透，避免过度炖煮导致变软。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 12,
+    "slug": "tomato-beef-brisket",
+    "name": "番茄牛腩",
+    "category": "畜肉",
+    "summary": "将牛腩切块，焯水去血沫。",
+    "ingredients": [
+      {
+        "name": "牛腩",
+        "role": "main",
+        "ingredientId": "beef-brisket"
+      },
+      {
+        "name": "番茄",
+        "role": "supporting",
+        "ingredientId": "tomato"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "牛肉切块焯水",
+        "description": "将牛腩切成适口大小的块，用沸水焯水，去除血沫和杂质。",
+        "actionLabel": "完成本步",
+        "knowledge": "焯水可以去除牛腩中的血沫和杂质，使口感更加鲜美。",
+        "aiWarning": "请确保锅具干净，避免污染食物。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "炒出番茄汁",
+        "description": "将番茄切块，放入锅中炒出汁水。",
+        "actionLabel": "完成本步",
+        "knowledge": "炒出的番茄汁可以增加菜肴的风味。",
+        "aiWarning": "注意火候，防止番茄糊锅。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "牛腩未充分炖熟存在食品安全风险，应继续加热至中心熟透。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "加入牛肉炖软",
+        "description": "将焯水后的牛腩块加入炒出汁水的番茄中，炖至牛肉软烂。",
+        "actionLabel": "完成本步",
+        "knowledge": "炖煮过程中，牛肉会逐渐变软，汤汁也会变得浓郁。",
+        "aiWarning": "炖煮时需用小火慢炖，避免牛肉过熟。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "调味并收浓",
+        "description": "根据个人口味加入生抽和食盐调味，最后收浓汤汁。",
+        "actionLabel": "完成本步",
+        "knowledge": "调味可以使菜肴味道更加丰富。",
+        "aiWarning": "注意调味品的用量，避免过咸或过淡。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 13,
+    "slug": "braised-pork",
+    "name": "红烧五花肉",
+    "category": "畜肉",
+    "summary": "将五花肉切块并焯水后擦干，煸出部分油脂，炒糖色并加水焖煮至肉质酥软，大火收汁。",
+    "ingredients": [
+      {
+        "name": "五花肉",
+        "role": "main",
+        "ingredientId": "pork"
+      },
+      {
+        "name": "糖",
+        "role": "seasoning",
+        "seasoningId": "sugar"
+      },
+      {
+        "name": "老抽",
+        "role": "seasoning",
+        "seasoningId": "dark-soy"
+      },
+      {
+        "name": "料酒",
+        "role": "seasoning",
+        "seasoningId": "wine"
+      },
+      {
+        "name": "八角",
+        "role": "seasoning",
+        "seasoningId": "star-anise"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "切块并焯水",
+        "description": "将五花肉切成适口大小的块，放入沸水中焯水去除血沫和杂质，捞出沥干水分。",
+        "actionLabel": "完成本步",
+        "knowledge": "焯水可以去除五花肉的腥味和杂质，使肉质更加鲜嫩。",
+        "aiWarning": "注意焯水时火候不宜过大，以免肉块破裂。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "煸出部分油脂",
+        "description": "将焯水后的五花肉用锅中余热煸炒，煸出多余的油脂，使肉质更加紧实。",
+        "actionLabel": "完成本步",
+        "knowledge": "煸炒可以去除肉中的腥味，使肉质更加香醇。",
+        "aiWarning": "注意煸炒时火候不宜过猛，以免肉块焦糊。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "猪肉未充分受热存在食品安全风险，应确认中心熟度。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          },
+          {
+            "id": "sugar-level-2",
+            "label": "糖量",
+            "kind": "sugar",
+            "defaultOptionId": "low-2",
+            "options": [
+              {
+                "id": "none-2",
+                "label": "不加",
+                "effect": {
+                  "acid": 3
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "low-2",
+                "label": "少许",
+                "effect": {
+                  "sugar": 5,
+                  "acid": -1
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-2",
+                "label": "偏多",
+                "effect": {
+                  "sugar": 13
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "lot"
+                },
+                "warning": "糖偏多会掩盖番茄或酱汁本身的酸鲜层次。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "炒糖色并加水焖煮",
+        "description": "在锅中加入适量油，炒至糖融化成红色糖色，然后加入焯水后的五花肉翻炒均匀，再加入适量老抽调色，加水焖煮至肉质酥软。",
+        "actionLabel": "完成本步",
+        "knowledge": "炒糖色可以使五花肉色泽红亮，老抽调色可以使五花肉上色均匀。",
+        "aiWarning": "注意火候不宜过大，以免糖色烧焦。",
+        "variableGroups": [
+          {
+            "id": "duration-level-3",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "short-3",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "红烧猪肉炖煮不足存在食品安全风险，应延长加热时间。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-3",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "大火收汁",
+        "description": "大火收汁，使汤汁浓稠，五花肉表面呈现出诱人的光泽。",
+        "actionLabel": "完成本步",
+        "knowledge": "大火收汁可以使汤汁更加浓郁，使五花肉更加入味。",
+        "aiWarning": "注意收汁时火候不宜过猛，以免汤汁烧焦。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 14,
+    "slug": "twice-cooked-pork",
+    "name": "回锅肉",
+    "category": "畜肉",
+    "summary": "五花肉先煮到安全熟度，再切片回锅快速煸香。",
+    "ingredients": [
+      {
+        "name": "五花肉",
+        "role": "main",
+        "ingredientId": "pork"
+      },
+      {
+        "name": "白菜",
+        "role": "supporting",
+        "ingredientId": "napa-cabbage"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "豆瓣酱",
+        "role": "seasoning",
+        "seasoningId": "doubanjiang"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "五花肉煮至熟透后切片",
+        "description": "按标准操作完成“五花肉煮至熟透后切片”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "五花肉煮至熟透后切片会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          },
+          {
+            "id": "duration-level-1",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium",
+            "options": [
+              {
+                "id": "short",
+                "label": "偏短",
+                "risk": "safety",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "五花肉未煮至熟透再切片会产生食品安全风险，应执行标准时长。"
+              },
+              {
+                "id": "medium",
+                "label": "适中",
+                "risk": "none",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                }
+              },
+              {
+                "id": "long",
+                "label": "偏长",
+                "risk": "quality",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长会让食材失水、变老或失去鲜嫩口感。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "煸炒肉片出油",
+        "description": "按标准操作完成“煸炒肉片出油”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "煸炒肉片出油会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "下豆瓣酱炒香",
+        "description": "按标准操作完成“下豆瓣酱炒香”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "下豆瓣酱炒香会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "放白菜快速合炒",
+        "description": "按标准操作完成“放白菜快速合炒”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "放白菜快速合炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 15,
+    "slug": "kung-pao-chicken",
+    "name": "宫保鸡丁",
+    "category": "禽肉",
+    "summary": "制作宫保鸡丁的步骤",
+    "ingredients": [
+      {
+        "name": "鸡腿肉",
+        "role": "main",
+        "ingredientId": "chicken-thigh"
+      },
+      {
+        "name": "黄瓜",
+        "role": "supporting",
+        "ingredientId": "cucumber"
+      },
+      {
+        "name": "干辣椒",
+        "role": "seasoning",
+        "seasoningId": "chili"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "醋",
+        "role": "seasoning",
+        "seasoningId": "vinegar"
+      },
+      {
+        "name": "糖",
+        "role": "seasoning",
+        "seasoningId": "sugar"
+      },
+      {
+        "name": "淀粉",
+        "role": "seasoning",
+        "seasoningId": "starch"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "鸡肉切丁腌制上浆",
+        "description": "将鸡腿肉切成小丁，加入适量盐、胡椒粉、生抽和淀粉腌制30分钟。",
+        "actionLabel": "完成本步",
+        "knowledge": "腌制可以使鸡肉更加嫩滑，上浆则增加口感。",
+        "aiWarning": "腌制时避免使用过量的盐，以免影响菜肴味道。",
+        "variableGroups": [
+          {
+            "id": "sugar-level-1",
+            "label": "糖量",
+            "kind": "sugar",
+            "defaultOptionId": "low-1",
+            "options": [
+              {
+                "id": "none-1",
+                "label": "不加",
+                "effect": {
+                  "acid": 3
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "low-1",
+                "label": "少许",
+                "effect": {
+                  "sugar": 5,
+                  "acid": -1
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "偏多",
+                "effect": {
+                  "sugar": 13
+                },
+                "simulation": {
+                  "seasoningId": "sugar",
+                  "amountLevel": "lot"
+                },
+                "warning": "糖偏多会掩盖番茄或酱汁本身的酸鲜层次。",
+                "risk": "quality"
+              }
+            ]
+          },
+          {
+            "id": "acid-level-1",
+            "label": "酸味",
+            "kind": "acid",
+            "defaultOptionId": "medium-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "少",
+                "effect": {
+                  "acid": 2
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "适中",
+                "effect": {
+                  "acid": 8,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "多",
+                "effect": {
+                  "acid": 14
+                },
+                "simulation": {
+                  "seasoningId": "vinegar",
+                  "amountLevel": "lot"
+                },
+                "warning": "醋量偏多会明显压住甜味和鲜味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "调好酸甜碗汁",
+        "description": "准备生抽、醋、糖和水，按照比例调成酸甜口味。",
+        "actionLabel": "完成本步",
+        "knowledge": "酸甜口味可以根据个人喜好调整。",
+        "aiWarning": "注意控制糖的用量，以免过于甜腻。",
+        "variableGroups": [
+          {
+            "id": "heat-level-2",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-2",
+            "options": [
+              {
+                "id": "low-2",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-2",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-2",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "滑炒鸡丁并爆香辣椒",
+        "description": "热锅凉油，先滑炒鸡丁至变色，再加入干辣椒爆香。",
+        "actionLabel": "完成本步",
+        "knowledge": "炒制过程中保持火候适中，避免过度烹煮。",
+        "aiWarning": "注意观察鸡丁是否熟透，防止未熟导致口感不佳。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          },
+          {
+            "id": "duration-level-3",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium",
+            "options": [
+              {
+                "id": "short",
+                "label": "偏短",
+                "risk": "safety",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "鸡丁中心未充分受热存在食品安全风险，应炒至完全熟透。"
+              },
+              {
+                "id": "medium",
+                "label": "适中",
+                "risk": "none",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                }
+              },
+              {
+                "id": "long",
+                "label": "偏长",
+                "risk": "quality",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长会让食材失水、变老或失去鲜嫩口感。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "下黄瓜和碗汁快速翻匀",
+        "description": "将黄瓜切成条，加入调好的酸甜碗汁快速翻炒均匀。",
+        "actionLabel": "完成本步",
+        "knowledge": "快速翻炒可以保持食材的新鲜度和口感。",
+        "aiWarning": "注意观察黄瓜是否熟透，避免过熟影响口感。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 16,
+    "slug": "mushroom-chicken",
+    "name": "香菇滑鸡",
+    "category": "禽肉",
+    "summary": "鸡肉先受热至安全熟度，香菇吸收鸡肉和酱汁的鲜味。",
+    "ingredients": [
+      {
+        "name": "鸡腿肉",
+        "role": "main",
+        "ingredientId": "chicken-thigh"
+      },
+      {
+        "name": "香菇",
+        "role": "supporting",
+        "ingredientId": "shiitake"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "淀粉",
+        "role": "seasoning",
+        "seasoningId": "starch"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "鸡肉腌制上浆，香菇切片",
+        "description": "按标准操作完成“鸡肉腌制上浆，香菇切片”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "鸡肉腌制上浆，香菇切片会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "先炒鸡肉至变色",
+        "description": "按标准操作完成“先炒鸡肉至变色”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "先炒鸡肉至变色会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium",
+            "options": [
+              {
+                "id": "short",
+                "label": "偏短",
+                "risk": "safety",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "鸡肉未充分受热存在食品安全风险，应炒至中心不再带生色。"
+              },
+              {
+                "id": "medium",
+                "label": "适中",
+                "risk": "none",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                }
+              },
+              {
+                "id": "long",
+                "label": "偏长",
+                "risk": "quality",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长会让食材失水、变老或失去鲜嫩口感。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "下香菇炒出香气",
+        "description": "按标准操作完成“下香菇炒出香气”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "下香菇炒出香气会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "调味收汁",
+        "description": "按标准操作完成“调味收汁”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "调味收汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 17,
+    "slug": "steamed-sea-bass",
+    "name": "清蒸鲈鱼",
+    "category": "水产",
+    "summary": "清蒸鲈鱼的制作步骤",
+    "ingredients": [
+      {
+        "name": "鲈鱼",
+        "role": "main",
+        "ingredientId": "fish"
+      },
+      {
+        "name": "料酒",
+        "role": "seasoning",
+        "seasoningId": "wine"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "鱼身处理干净并改刀",
+        "description": "将鲈鱼清洗干净，去除内脏和鳞片，两侧切花刀。",
+        "actionLabel": "完成本步",
+        "knowledge": "确保鱼体无血污，便于入味。",
+        "aiWarning": "继续观察食材中心熟度与表面状态；高风险食材未熟透时不要出锅。",
+        "variableGroups": [
+          {
+            "id": "duration-level-1",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-1",
+            "options": [
+              {
+                "id": "short-1",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "鱼肉中心未充分受热存在食品安全风险，应蒸至中心熟透。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-1",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-1",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "短时盐酒腌制",
+        "description": "在鱼身上均匀涂抹料酒和食盐，腌制约15分钟。",
+        "actionLabel": "完成本步",
+        "knowledge": "使鱼肉更加紧实，口感更好。",
+        "aiWarning": "继续观察食材中心熟度与表面状态；高风险食材未熟透时不要出锅。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "鱼肉腌制和后续加热时间不足会影响熟度，应执行标准时长。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "水开后上锅蒸熟",
+        "description": "将腌制好的鱼放入蒸锅，大火蒸8-10分钟。",
+        "actionLabel": "完成本步",
+        "knowledge": "掌握好火候，保证鱼肉嫩滑。",
+        "aiWarning": "继续观察食材中心熟度与表面状态；高风险食材未熟透时不要出锅。",
+        "variableGroups": []
+      },
+      {
+        "stepId": 4,
+        "title": "倒掉蒸汁并补豉油",
+        "description": "将蒸出的汁液倒掉，然后淋上适量生抽调味。",
+        "actionLabel": "完成本步",
+        "knowledge": "调整口味，增添鲜味。",
+        "aiWarning": "继续观察食材中心熟度与表面状态；高风险食材未熟透时不要出锅。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 18,
+    "slug": "poached-shrimp",
+    "name": "白灼虾",
+    "category": "水产",
+    "summary": "虾肉蛋白受热很快凝固，变色卷曲后马上捞出。",
+    "ingredients": [
+      {
+        "name": "虾",
+        "role": "main",
+        "ingredientId": "shrimp"
+      },
+      {
+        "name": "料酒",
+        "role": "seasoning",
+        "seasoningId": "wine"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "虾清洗并去虾线",
+        "description": "按标准操作完成“虾清洗并去虾线”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "虾清洗并去虾线会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "duration-level-1",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-1",
+            "options": [
+              {
+                "id": "short-1",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "虾未充分加热存在食品安全风险，应煮至肉质不透明并卷曲。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-1",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-1",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "水烧开后下虾",
+        "description": "按标准操作完成“水烧开后下虾”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "水烧开后下虾会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "短时煮至变色卷曲",
+        "description": "按标准操作完成“短时煮至变色卷曲”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "短时煮至变色卷曲会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "捞出蘸汁",
+        "description": "按标准操作完成“捞出蘸汁”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "捞出蘸汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 19,
+    "slug": "garlic-vermicelli-shrimp",
+    "name": "蒜蓉粉丝虾",
+    "category": "水产",
+    "summary": "粉丝吸汁，蒜蓉一次炒香一次后放，保留香气和辛辣层次。",
+    "ingredients": [
+      {
+        "name": "虾",
+        "role": "main",
+        "ingredientId": "shrimp"
+      },
+      {
+        "name": "粉丝",
+        "role": "supporting",
+        "ingredientId": "vermicelli"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "食用油",
+        "role": "seasoning",
+        "seasoningId": "oil"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "粉丝泡软，虾开背",
+        "description": "按标准操作完成“粉丝泡软，虾开背”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "粉丝泡软，虾开背会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "炒香一半蒜末",
+        "description": "按标准操作完成“炒香一半蒜末”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "炒香一半蒜末会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "salt-level-2",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "low-2",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-2",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "调蒜蓉酱汁",
+        "description": "按标准操作完成“调蒜蓉酱汁”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "调蒜蓉酱汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "duration-level-3",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "short-3",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "虾未充分受热存在食品安全风险，应延长加热并确认熟透。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-3",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "蒸至虾熟后补葱蒜",
+        "description": "按标准操作完成“蒸至虾熟后补葱蒜”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "蒸至虾熟后补葱蒜会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 20,
+    "slug": "home-style-tofu",
+    "name": "家常豆腐",
+    "category": "豆制品",
+    "summary": "豆腐先煎定型，后期收汁让表面挂味而不易碎。",
+    "ingredients": [
+      {
+        "name": "老豆腐",
+        "role": "main",
+        "ingredientId": "firm-tofu"
+      },
+      {
+        "name": "青椒",
+        "role": "supporting",
+        "ingredientId": "green-pepper"
+      },
+      {
+        "name": "木耳",
+        "role": "supporting",
+        "ingredientId": "wood-ear"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "淀粉",
+        "role": "seasoning",
+        "seasoningId": "starch"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "豆腐切块并擦干",
+        "description": "按标准操作完成“豆腐切块并擦干”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "豆腐切块并擦干会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "煎至两面定型",
+        "description": "按标准操作完成“煎至两面定型”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "煎至两面定型会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "下配料和酱汁",
+        "description": "按标准操作完成“下配料和酱汁”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "下配料和酱汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "勾薄芡收汁",
+        "description": "按标准操作完成“勾薄芡收汁”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "勾薄芡收汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 21,
+    "slug": "mapo-tofu",
+    "name": "麻婆豆腐",
+    "category": "豆制品",
+    "summary": "制作麻婆豆腐",
+    "ingredients": [
+      {
+        "name": "豆腐",
+        "role": "main",
+        "ingredientId": "tofu"
+      },
+      {
+        "name": "牛肉末",
+        "role": "supporting",
+        "ingredientId": "beef-brisket"
+      },
+      {
+        "name": "大蒜",
+        "role": "supporting",
+        "modifierId": "garlic"
+      },
+      {
+        "name": "豆瓣酱",
+        "role": "seasoning",
+        "seasoningId": "doubanjiang"
+      },
+      {
+        "name": "花椒",
+        "role": "seasoning",
+        "seasoningId": "sichuan-pepper"
+      },
+      {
+        "name": "淀粉",
+        "role": "seasoning",
+        "seasoningId": "starch"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "准备材料",
+        "description": "将豆腐切成块，用沸水焯水去腥。",
+        "actionLabel": "开始",
+        "knowledge": "豆腐含有较多的蛋白质和脂肪，焯水可以去除部分杂质和异味。",
+        "aiWarning": "请确保在处理食材时保持手部卫生，避免交叉污染。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "炒香豆瓣酱和牛肉末",
+        "description": "热锅凉油，加入豆瓣酱和牛肉末炒至出香味。",
+        "actionLabel": "继续",
+        "knowledge": "豆瓣酱和牛肉末是麻婆豆腐的灵魂，它们需要在高温下快速翻炒。",
+        "aiWarning": "注意火候控制，避免糊底。",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "加水放豆腐轻推",
+        "description": "倒入适量清水，轻轻推匀，使豆腐均匀受热。",
+        "actionLabel": "完成本步",
+        "knowledge": "水的量要适中，过多或过少都会影响豆腐的口感。",
+        "aiWarning": "豆腐易碎，推锅时不要大力翻动；花椒最后补香，避免高温久炒发苦。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "分次勾芡并补花椒香",
+        "description": "根据需要调整汤汁浓稠度，最后撒上花椒粉增加香气。",
+        "actionLabel": "完成本步",
+        "knowledge": "勾芡可以使汤汁更加顺滑，花椒粉能提升麻味。",
+        "aiWarning": "豆腐易碎，推锅时不要大力翻动；花椒最后补香，避免高温久炒发苦。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 22,
+    "slug": "chive-egg",
+    "name": "韭菜炒鸡蛋",
+    "category": "禽肉",
+    "summary": "鸡蛋刚凝固就盛出，韭菜最后快炒以保持香气和脆嫩。",
+    "ingredients": [
+      {
+        "name": "韭菜",
+        "role": "main",
+        "ingredientId": "chives"
+      },
+      {
+        "name": "鸡蛋",
+        "role": "main",
+        "ingredientId": "egg"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      },
+      {
+        "name": "食用油",
+        "role": "seasoning",
+        "seasoningId": "oil"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "韭菜切段，鸡蛋打散",
+        "description": "按标准操作完成“韭菜切段，鸡蛋打散”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "韭菜切段，鸡蛋打散会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "先炒蛋至刚凝固",
+        "description": "按标准操作完成“先炒蛋至刚凝固”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "先炒蛋至刚凝固会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "鸡蛋未充分凝固时会保留生蛋风险，应加热至蛋液完全凝固。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "下韭菜大火快炒",
+        "description": "按标准操作完成“下韭菜大火快炒”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "下韭菜大火快炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "合炒调味立即出锅",
+        "description": "按标准操作完成“合炒调味立即出锅”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "合炒调味立即出锅会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 23,
+    "slug": "spinach-tofu-soup",
+    "name": "菠菜豆腐汤",
+    "category": "汤羹",
+    "summary": "叶菜最后放，短时加热即可，避免汤色发暗和菜叶软烂。",
+    "ingredients": [
+      {
+        "name": "菠菜",
+        "role": "main",
+        "ingredientId": "spinach"
+      },
+      {
+        "name": "豆腐",
+        "role": "supporting",
+        "ingredientId": "tofu"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "菠菜洗净，豆腐切块",
+        "description": "按标准操作完成“菠菜洗净，豆腐切块”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "菠菜洗净，豆腐切块会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      },
+      {
+        "stepId": 2,
+        "title": "水开下豆腐煮热",
+        "description": "按标准操作完成“水开下豆腐煮热”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "水开下豆腐煮热会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-2",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -3
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "加热时间偏短时要确认高风险食材已经熟透。",
+                "risk": "quality"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "放菠菜短时煮熟",
+        "description": "按标准操作完成“放菠菜短时煮熟”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "放菠菜短时煮熟会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "少量盐调味",
+        "description": "按标准操作完成“少量盐调味”，观察颜色、气味和质地变化后再进入下一步。",
+        "actionLabel": "完成本步",
+        "knowledge": "少量盐调味会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+        "aiWarning": "不要跳过本步直接进入下一阶段；如果颜色、气味或熟度异常，应先调整火候。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 24,
+    "slug": "winter-melon-rib-soup",
+    "name": "冬瓜排骨汤",
+    "category": "汤羹",
+    "summary": "制作冬瓜排骨汤",
+    "ingredients": [
+      {
+        "name": "冬瓜",
+        "role": "main",
+        "ingredientId": "winter-melon"
+      },
+      {
+        "name": "排骨",
+        "role": "main",
+        "ingredientId": "pork-ribs"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      },
+      {
+        "name": "料酒",
+        "role": "seasoning",
+        "seasoningId": "wine"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "准备材料",
+        "description": "将排骨洗净并用冷水焯水去血沫，冬瓜去皮切块。",
+        "actionLabel": "开始",
+        "knowledge": "焯水可以去除排骨表面的血沫和杂质。",
+        "aiWarning": "注意避免烫伤，使用热水时戴手套。",
+        "variableGroups": [
+          {
+            "id": "duration-level-1",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium-1",
+            "options": [
+              {
+                "id": "short-1",
+                "label": "偏短",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "排骨未充分加热至熟透存在食品安全风险，应执行标准炖煮时长。",
+                "risk": "safety"
+              },
+              {
+                "id": "medium-1",
+                "label": "适中",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                },
+                "risk": "none"
+              },
+              {
+                "id": "long-1",
+                "label": "偏长",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长，食材可能失水、变软或失去鲜绿色。",
+                "risk": "quality"
+              }
+            ]
+          },
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "炖煮排骨",
+        "description": "将焯好的排骨加入适量的水，大火烧开后转小火慢炖至排骨熟软。",
+        "actionLabel": "进行",
+        "knowledge": "炖煮过程中加入适量的水，保持汤汁的浓度。",
+        "aiWarning": "注意观察汤色，避免汤汁过于浓稠。",
+        "variableGroups": []
+      },
+      {
+        "stepId": 3,
+        "title": "加入冬瓜",
+        "description": "将冬瓜块加入锅中，继续炖煮至冬瓜透明。",
+        "actionLabel": "进行",
+        "knowledge": "冬瓜在汤中煮至透明，口感更佳。",
+        "aiWarning": "注意观察汤色，避免冬瓜过早变软。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "调味",
+        "description": "根据个人口味，少量加入食盐调味。",
+        "actionLabel": "完成本步",
+        "knowledge": "食盐可以提鲜，增加汤的风味。",
+        "aiWarning": "注意不要过多添加，以免影响汤的口感。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  },
+  {
+    "id": 25,
+    "slug": "egg-fried-rice",
+    "name": "蛋炒饭",
+    "category": "主食",
+    "summary": "制作蛋炒饭",
+    "ingredients": [
+      {
+        "name": "米饭",
+        "role": "main",
+        "ingredientId": "glass-noodles"
+      },
+      {
+        "name": "鸡蛋",
+        "role": "main",
+        "ingredientId": "egg"
+      },
+      {
+        "name": "生抽",
+        "role": "seasoning",
+        "seasoningId": "light-soy"
+      },
+      {
+        "name": "食盐",
+        "role": "seasoning",
+        "seasoningId": "salt"
+      }
+    ],
+    "steps": [
+      {
+        "stepId": 1,
+        "title": "准备食材",
+        "description": "将米饭打散，鸡蛋搅匀。",
+        "actionLabel": "开始",
+        "knowledge": "确保所有食材新鲜，避免因食材变质影响口感。",
+        "aiWarning": "注意火候控制，避免糊锅。",
+        "variableGroups": [
+          {
+            "id": "heat-level-1",
+            "label": "火力",
+            "kind": "heat",
+            "defaultOptionId": "high-1",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火",
+                "effect": {
+                  "temperature": -8,
+                  "duration": 4
+                },
+                "simulation": {
+                  "heatLevel": "low"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火",
+                "effect": {
+                  "temperature": 0
+                },
+                "simulation": {
+                  "heatLevel": "medium"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-1",
+                "label": "大火",
+                "effect": {
+                  "temperature": 8,
+                  "aroma": 4
+                },
+                "simulation": {
+                  "heatLevel": "high"
+                },
+                "risk": "none"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 2,
+        "title": "炒蛋",
+        "description": "热锅炒蛋并划散。",
+        "actionLabel": "继续",
+        "knowledge": "鸡蛋炒至金黄，保持蛋白嫩滑。",
+        "aiWarning": "避免过度炒制，以免鸡蛋干硬。",
+        "variableGroups": [
+          {
+            "id": "duration-level-2",
+            "label": "加热时长",
+            "kind": "duration",
+            "defaultOptionId": "medium",
+            "options": [
+              {
+                "id": "short",
+                "label": "偏短",
+                "risk": "safety",
+                "effect": {
+                  "duration": -5,
+                  "safety": -8
+                },
+                "simulation": {
+                  "durationMin": 2
+                },
+                "warning": "蛋液未充分凝固存在生蛋风险，应炒至蛋液完全凝固。"
+              },
+              {
+                "id": "medium",
+                "label": "适中",
+                "risk": "none",
+                "effect": {
+                  "duration": 3,
+                  "aroma": 3
+                },
+                "simulation": {
+                  "durationMin": 4
+                }
+              },
+              {
+                "id": "long",
+                "label": "偏长",
+                "risk": "quality",
+                "effect": {
+                  "duration": 9,
+                  "water": -4
+                },
+                "simulation": {
+                  "durationMin": 7
+                },
+                "warning": "加热时间偏长会让食材失水、变老或失去鲜嫩口感。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 3,
+        "title": "炒饭",
+        "description": "下米饭大火翻炒。",
+        "actionLabel": "继续",
+        "knowledge": "米饭与鸡蛋充分混合，增加口感。",
+        "aiWarning": "注意火候，避免米饭粘锅。",
+        "variableGroups": [
+          {
+            "id": "salt-level-3",
+            "label": "盐量",
+            "kind": "salt",
+            "defaultOptionId": "medium-3",
+            "options": [
+              {
+                "id": "low-3",
+                "label": "偏少",
+                "effect": {
+                  "salt": -5
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "little"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "medium-3",
+                "label": "适中",
+                "effect": {
+                  "salt": 5,
+                  "umami": 2
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "moderate"
+                },
+                "risk": "none"
+              },
+              {
+                "id": "high-3",
+                "label": "偏多",
+                "effect": {
+                  "salt": 15
+                },
+                "simulation": {
+                  "seasoningId": "salt",
+                  "amountLevel": "lot"
+                },
+                "warning": "调味时盐量偏多，会压住食材本味并增加咸味。",
+                "risk": "quality"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepId": 4,
+        "title": "调味",
+        "description": "少量调味后出锅。",
+        "actionLabel": "完成本步",
+        "knowledge": "加入适量生抽和食盐，提升风味。",
+        "aiWarning": "调味不宜过咸，以免影响食欲。",
+        "variableGroups": []
+      }
+    ],
+    "safetyNotes": [
+      {
+        "title": "彻底加热",
+        "detail": "肉类、水产和鸡蛋应彻底加热到安全熟度，生熟器具分开。"
+      },
+      {
+        "title": "操作边界",
+        "detail": "本页用于教学模拟；实际烹饪需结合食材厚度、锅具和当地食品安全要求。"
+      }
+    ],
+    "source": "generated"
+  }
+]

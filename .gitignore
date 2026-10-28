@@ -1,0 +1,41 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# testing
+/coverage
+/test-results
+/playwright-report
+/.build-env
+/.playwright-browsers
+/artifacts
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# local
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+__pycache__/
+*.pyc
+
+# env files
+.env*
+!.env.example
+.supabase-setup.local.json
+supabase/.temp/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
