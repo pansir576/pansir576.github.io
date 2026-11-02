@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="0 0 420 320">
+  <defs>
+    <linearGradient id="ceramic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffef9"/>
+      <stop offset=".55" stop-color="#eee7d9"/>
+      <stop offset=".84" stop-color="#d9cfbd"/>
+      <stop offset="1" stop-color="#b9aa91"/>
+    </linearGradient>
+    <radialGradient id="inside" cx=".5" cy=".45" r=".7">
+      <stop offset="0" stop-color="#d7cbb7"/>
+      <stop offset=".62" stop-color="#bfb19b"/>
+      <stop offset="1" stop-color="#9f907a"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-40%" width="200%" height="220%">
+      <feGaussianBlur stdDeviation="11"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="210" cy="267" rx="160" ry="30" fill="#4a321e" opacity=".24" filter="url(#shadow)"/>
+  <path d="M48 84C51 233 113 296 210 300C307 296 369 233 372 84Z"
+        fill="url(#ceramic)" stroke="#8f7f68" stroke-width="5"/>
+  <ellipse cx="210" cy="84" rx="162" ry="66" fill="#faf6ea" stroke="#9e8d74" stroke-width="5"/>
+  <ellipse cx="210" cy="86" rx="139" ry="51" fill="url(#inside)" stroke="#81725e" stroke-width="4"/>
+  <ellipse cx="210" cy="86" rx="123" ry="41" fill="none" stroke="#f5f1e8" stroke-width="2" opacity=".5"/>
+  <path d="M78 116C99 227 139 268 210 279" fill="none" stroke="#fffdf4" stroke-width="8" opacity=".48" stroke-linecap="round"/>
+  <path d="M340 116C329 198 298 242 252 266" fill="none" stroke="#8f7c61" stroke-width="5" opacity=".15" stroke-linecap="round"/>
+  <ellipse cx="210" cy="299" rx="25" ry="7" fill="#9d8c73"/>
+</svg>

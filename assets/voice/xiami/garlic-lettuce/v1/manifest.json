@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "character": "夏弥",
+  "tone": "清亮俏皮、判断准确",
+  "basePath": "/audio/xiami/garlic-lettuce/v1/",
+  "format": {
+    "codec": "mp3",
+    "sampleRate": 44100,
+    "channels": 1,
+    "targetLufs": -16,
+    "maxTruePeakDbtp": -1.8
+  },
+  "voice": {
+    "engine": "qwen3-tts",
+    "name": "Serena",
+    "seed": 42,
+    "style": "年轻、轻盈、清亮；俏皮里带一点促狭和神秘，不刻意卖萌，重点词轻加重，句尾自然上扬，情绪起伏明显且非儿童音"
+  },
+  "lines": [
+    {
+      "id": "garlic-phase-prep",
+      "kind": "phase",
+      "text": "油麦菜别泡在水里发呆。快洗、抖干、切段；蒜拍碎再切末，大小别像两块石头。",
+      "file": "garlic-phase-prep.mp3",
+      "durationMs": 6960
+    },
+    {
+      "id": "garlic-phase-heat",
+      "kind": "phase",
+      "text": "锅和油先热起来再下蒜。蒜末一香就往前走，等它变深，你再心疼也来不及。",
+      "file": "garlic-phase-heat.mp3",
+      "durationMs": 8160
+    },
+    {
+      "id": "garlic-phase-garlic",
+      "kind": "phase",
+      "text": "蒜香刚起来的时候下菜，动作要快。别让蒜末在锅里独自想人生。",
+      "file": "garlic-phase-garlic.mp3",
+      "durationMs": 6320
+    },
+    {
+      "id": "garlic-phase-greens",
+      "kind": "phase",
+      "text": "油麦菜下锅就别磨蹭。大火、翻匀、看叶子刚塌下去——它断生就够，软塌塌不是温柔。",
+      "file": "garlic-phase-greens.mp3",
+      "durationMs": 11120
+    },
+    {
+      "id": "garlic-phase-serve",
+      "kind": "phase",
+      "text": "盐现在放，翻两下就出锅。余温还会继续做事，别把菜等成一片黄叶。",
+      "file": "garlic-phase-serve.mp3",
+      "durationMs": 7920
+    },
+    {
+      "id": "garlic-outcome-burnt-garlic",
+      "kind": "outcome",
+      "text": "停，蒜已经炸成苦味炸弹了。蒜末变深褐就是报警线，整锅重新来，别拿菜叶子给它陪葬。",
+      "file": "garlic-outcome-burnt-garlic.mp3",
+      "durationMs": 9200
+    },
+    {
+      "id": "garlic-outcome-weak-garlic",
+      "kind": "outcome",
+      "text": "菜熟了，蒜还没醒。油温不够或下锅太快，香气根本没出来；下次听到轻轻滋啦，再放菜。",
+      "file": "garlic-outcome-weak-garlic.mp3",
+      "durationMs": 8960
+    },
+    {
+      "id": "garlic-outcome-raw-greens",
+      "kind": "outcome",
+      "text": "叶子还硬着。大火快炒是让你快，不是让你逃课；叶片刚软、梗还脆，才是断生。",
+      "file": "garlic-outcome-raw-greens.mp3",
+      "durationMs": 7680
+    },
+    {
+      "id": "garlic-outcome-over-greens",
+      "kind": "outcome",
+      "text": "这盘绿得太委屈了。炒到全软才出锅，叶绿素和脆感都先走了；下次看叶子刚塌就收手。",
+      "file": "garlic-outcome-over-greens.mp3",
+      "durationMs": 10560
+    },
+    {
+      "id": "garlic-outcome-salty",
+      "kind": "outcome",
+      "text": "盐把油麦菜的清甜盖住了。绿叶菜吸盐快，先少放、尝一口，比事后加菜可靠。",
+      "file": "garlic-outcome-salty.mp3",
+      "durationMs": 8800
+    },
+    {
+      "id": "garlic-outcome-bland",
+      "kind": "outcome",
+      "text": "菜是嫩的，香气也到了，可味道没落地。盐少到托不住蒜香，这不是清爽，是寡。",
+      "file": "garlic-outcome-bland.mp3",
+      "durationMs": 10560
+    },
+    {
+      "id": "garlic-outcome-perfect",
+      "kind": "outcome",
+      "text": "这次像样。蒜香起来了，叶子刚断生，盐没多一步也没少一步。快、准，这才是叶菜该有的命。",
+      "file": "garlic-outcome-perfect.mp3",
+      "durationMs": 9680
+    }
+  ]
+}

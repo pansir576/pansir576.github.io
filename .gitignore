@@ -10,10 +10,18 @@
 /.build-env
 /.playwright-browsers
 /artifacts
+/assets/reference/icon-raw/
+/assets/reference/story-kitchen-raw/
+/assets/reference/character-raw/
+/assets/reference/food-state-raw/
+/assets/reference/bg-raw/
+/assets/reference/script-raw/
 
 # next.js
 /.next/
 /out/
+/public/2d/
+/public/audio/
 
 # production
 /build
@@ -21,6 +29,7 @@
 # local
 .DS_Store
 *.pem
+/work/
 
 # debug
 npm-debug.log*

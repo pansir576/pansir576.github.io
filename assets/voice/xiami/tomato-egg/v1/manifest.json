@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "character": "夏弥",
+  "tone": "清亮俏皮",
+  "basePath": "/audio/xiami/tomato-egg/v1/",
+  "format": {
+    "codec": "mp3",
+    "sampleRate": 44100,
+    "channels": 1,
+    "targetLufs": -16,
+    "maxTruePeakDbtp": -1.8
+  },
+  "voice": {
+    "engine": "qwen3-tts",
+    "name": "Serena",
+    "seed": 42,
+    "style": "年轻、轻盈、清亮；俏皮里带一点促狭和神秘，不刻意卖萌，重点词轻加重，句尾自然上扬，情绪起伏明显且非儿童音"
+  },
+  "lines": [
+    {
+      "id": "phase-prep",
+      "kind": "phase",
+      "text": "别急着开火。番茄先上砧板，鸡蛋进碗里——动作不用漂亮，顺序别乱。我可不替你把切坏的番茄捡回来。",
+      "file": "phase-prep.mp3",
+      "durationMs": 9840
+    },
+    {
+      "id": "phase-heat",
+      "kind": "phase",
+      "text": "锅热了再倒油。油面轻轻起纹就够了；真冒青烟，那不是气势，是锅在提醒你收手。",
+      "file": "phase-heat.mp3",
+      "durationMs": 11920
+    },
+    {
+      "id": "phase-egg",
+      "kind": "phase",
+      "text": "蛋液下去先别乱翻。边缘凝住、中心还亮时盛出来——现在贪那几秒，回头只能吃一盘老鸡蛋。",
+      "file": "phase-egg.mp3",
+      "durationMs": 8880
+    },
+    {
+      "id": "phase-tomato",
+      "kind": "phase",
+      "text": "番茄要慢慢逼出汁，糖只是把酸味收圆，不是让它变甜品。你总盯着进度条也行，可我更信锅里的声音。",
+      "file": "phase-tomato.mp3",
+      "durationMs": 14640
+    },
+    {
+      "id": "phase-finish",
+      "kind": "phase",
+      "text": "最后才撒盐和葱花。葱是收尾的一口气，不是用来盖住番茄和蛋香的遮羞布。",
+      "file": "phase-finish.mp3",
+      "durationMs": 7680
+    },
+    {
+      "id": "outcome-burnt-egg",
+      "kind": "outcome",
+      "text": "停。已经不是锅气，是鸡蛋真的焦了。颜色一深，苦味会比香味跑得更快——下次早点盛，或者把火收住。",
+      "file": "outcome-burnt-egg.mp3",
+      "durationMs": 10000
+    },
+    {
+      "id": "outcome-burnt-tomato",
+      "kind": "outcome",
+      "text": "停，番茄已经烧到发黑了。它出沙前会先出汁，汁一收干还不回锅，甜酸马上就会变成苦。",
+      "file": "outcome-burnt-tomato.mp3",
+      "durationMs": 9760
+    },
+    {
+      "id": "outcome-raw-egg",
+      "kind": "outcome",
+      "text": "蛋液还没完全定型。切配没错，可锅里这段不能靠“下一步”跳过去；火候没到的嫩，不叫嫩。",
+      "file": "outcome-raw-egg.mp3",
+      "durationMs": 10400
+    },
+    {
+      "id": "outcome-raw-tomato",
+      "kind": "outcome",
+      "text": "番茄还没真正出沙。看着软不等于果胶松开；再多给它一点时间，别把一盘生涩塞我嘴里。",
+      "file": "outcome-raw-tomato.mp3",
+      "durationMs": 8960
+    },
+    {
+      "id": "outcome-salty",
+      "kind": "outcome",
+      "text": "步骤没乱，盐却抢了戏。番茄的酸、糖的圆和鸡蛋的香都被压下去了。下次最后那一下，手别抖。",
+      "file": "outcome-salty.mp3",
+      "durationMs": 11680
+    },
+    {
+      "id": "outcome-bland",
+      "kind": "outcome",
+      "text": "番茄出沙了，蛋也嫩，可味道还站不起来。盐少到连酸甜都托不住，这不是清淡，是散。",
+      "file": "outcome-bland.mp3",
+      "durationMs": 8720
+    },
+    {
+      "id": "outcome-perfect",
+      "kind": "outcome",
+      "text": "这次可以。番茄出沙，鸡蛋还嫩，盐刚好把酸甜和蛋香扣在一起。不是运气，是你真的接住了两次火候。",
+      "file": "outcome-perfect.mp3",
+      "durationMs": 12480
+    }
+  ]
+}

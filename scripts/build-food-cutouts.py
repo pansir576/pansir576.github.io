@@ -13,7 +13,6 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 IMAGE_ROOT = ROOT / "public" / "images"
 OUTPUT_ROOT = IMAGE_ROOT / "food-cutouts"
-TEXTURE_ROOT = IMAGE_ROOT / "food-textures"
 
 FEATURED_IDS = [
     "greens",
@@ -32,13 +31,6 @@ FEATURED_IDS = [
     "taro",
     "shiitake",
 ]
-
-SWATCH_REGIONS = {
-    "potato": (0.16, 0.12, 0.58, 0.58),
-    "egg": (0.01, 0.55, 0.53, 0.4),
-    "fish": (0.2, 0.35, 0.58, 0.43),
-}
-
 
 def source_for(ingredient_id: str) -> Path | None:
     if ingredient_id == "potato":
@@ -146,34 +138,6 @@ def cutout(source: Path, output: Path, ingredient_id: str) -> None:
         quality=92,
         method=6,
     )
-    crop = SWATCH_REGIONS.get(ingredient_id, (0.25, 0.25, 0.5, 0.5))
-    crop_height, crop_width = rgba.shape[:2]
-    x = int(crop_width * crop[0])
-    y = int(crop_height * crop[1])
-    w = max(32, int(crop_width * crop[2]))
-    h = max(32, int(crop_height * crop[3]))
-    swatch = rgba[y : y + h, x : x + w]
-    opaque = swatch[swatch[:, :, 3] > 32]
-    average = (
-        opaque[:, :3].mean(axis=0).astype(np.uint8)
-        if len(opaque)
-        else np.array([210, 198, 175], dtype=np.uint8)
-    )
-    rgb_swatch = swatch[:, :, :3].copy()
-    rgb_swatch[swatch[:, :, 3] <= 32] = average
-    texture_output = TEXTURE_ROOT / f"{ingredient_id}.webp"
-    texture_output.parent.mkdir(parents=True, exist_ok=True)
-    Image.fromarray(rgb_swatch, "RGB").resize(
-        (256, 256),
-        Image.Resampling.LANCZOS,
-    ).save(
-        texture_output,
-        format="WEBP",
-        quality=88,
-        method=6,
-    )
-
-
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--all", action="store_true")
@@ -200,8 +164,7 @@ def main() -> None:
             print(f"skip {ingredient_id}: no photo")
             continue
         output = OUTPUT_ROOT / f"{ingredient_id}.webp"
-        texture_output = TEXTURE_ROOT / f"{ingredient_id}.webp"
-        if output.exists() and texture_output.exists():
+        if output.exists():
             print(f"skip {output.relative_to(ROOT)}")
             continue
         cutout(source, output, ingredient_id)

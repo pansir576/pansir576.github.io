@@ -170,13 +170,15 @@ test("recipe session restores after refresh", async ({ page }) => {
   await expect(page.getByText("番茄炒蛋").first()).toBeVisible();
 });
 
-test("recipe, 3D demo and classic kitchen routes remain available", async ({
+test("recipe, story kitchen and classic kitchen routes remain available", async ({
   page,
 }) => {
   await page.goto("/cook/");
   await expect(page.getByRole("heading", { name: /不背整段教程/ })).toBeVisible();
-  await page.getByRole("link", { name: /进入 3D 演示厨房/ }).click();
-  await expect(page.locator("[data-3d-start]")).toBeVisible();
+  await page.getByRole("link", { name: /进入烹语剧场/ }).click();
+  await expect(page).toHaveURL(/\/cook\/story\/(recipe\/\d+|tomato-egg|garlic-lettuce)\/$/);
+  await expect(page.locator("[data-generic-recipe-id], [data-tomato-egg-stage], [data-garlic-lettuce-stage]").first()).toBeVisible();
+  await expect(page.getByRole("link", { name: /3D/ })).toHaveCount(0);
   await page.goto("/cook/classic/");
   await expect(page.locator('section[data-guided-phase="partner"]')).toBeVisible();
 });

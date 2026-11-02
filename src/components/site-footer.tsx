@@ -19,9 +19,9 @@ export function SiteFooter() {
           <Link href="/principles/">原理库</Link>
           <Link href="/ingredients/">食材图鉴</Link>
           <Link href="/cook/">菜谱实训</Link>
-          <Link href="/cook/3d/">3D 演示厨房</Link>
+          <Link href="/cook/story/">烹语剧场</Link>
+          <Link href="/cook/story/tomato-egg/">番茄炒蛋</Link>
           <Link href="/kitchen/">自由实验</Link>
-          <Link href="/community/">厨友交流</Link>
         </div>
         <div className="footer-note">
           <span>内容边界</span>

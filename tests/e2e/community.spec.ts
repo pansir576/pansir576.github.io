@@ -35,9 +35,8 @@ test("unconfigured community works as a safe demo", async ({ page }) => {
   await expect(page.getByLabel("回复内容")).toBeDisabled();
 });
 
-test("community navigation and admin page render", async ({ page }) => {
-  await page.goto("/");
-  await page.getByRole("link", { name: "厨友交流", exact: true }).first().click();
+test("community and admin page render directly", async ({ page }) => {
+  await page.goto("/community/");
   await expect(page).toHaveURL(/community/);
   await page.goto("/community/admin/");
   if (supabaseConfigured) {

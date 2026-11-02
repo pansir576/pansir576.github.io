@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1344" height="768" viewBox="0 0 1344 768">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8ebce"/>
+      <stop offset="0.7" stop-color="#f2ddb6"/>
+      <stop offset="1" stop-color="#edcf9f"/>
+    </linearGradient>
+    <linearGradient id="cabinet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8e7c4"/>
+      <stop offset="1" stop-color="#e2c18e"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8dfae"/>
+      <stop offset="0.16" stop-color="#dfaf6d"/>
+      <stop offset="1" stop-color="#ba7d40"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f8ef"/>
+      <stop offset="0.35" stop-color="#b8c2be"/>
+      <stop offset="0.7" stop-color="#737e7a"/>
+      <stop offset="1" stop-color="#d6dad3"/>
+    </linearGradient>
+    <linearGradient id="stove" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#585d59"/>
+      <stop offset="1" stop-color="#262a28"/>
+    </linearGradient>
+    <linearGradient id="sunlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7cf" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#fff1ba" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#fff8d9" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="tiles" width="84" height="66" patternUnits="userSpaceOnUse">
+      <path d="M0 0H84V66H0Z" fill="#f7e9cf" stroke="#d9bf92" stroke-opacity=".36" stroke-width="1.2"/>
+      <path d="M0 12H84" stroke="#fff8e9" stroke-opacity=".58" stroke-width="2"/>
+    </pattern>
+    <pattern id="woodgrain" width="160" height="44" patternUnits="userSpaceOnUse">
+      <path d="M0 9C40 3 74 16 160 7M0 32C55 36 99 24 160 31" fill="none" stroke="#8f5428" stroke-opacity=".12" stroke-width="1.5"/>
+    </pattern>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="1344" height="768" fill="url(#wall)"/>
+  <rect width="1344" height="523" fill="url(#tiles)" opacity=".78"/>
+  <path d="M0 430H1344V523H0Z" fill="#e6c28c"/>
+  <path d="M0 432H1344" stroke="#fff4dc" stroke-width="5" opacity=".9"/>
+  <path d="M0 516H1344" stroke="#a96a33" stroke-width="9" opacity=".7"/>
+
+  <!-- Cabinet bank and countertop -->
+  <rect x="0" y="520" width="1344" height="248" fill="url(#cabinet)"/>
+  <path d="M0 527H1344V566H0Z" fill="url(#counter)"/>
+  <path d="M0 527H1344V566H0Z" fill="url(#woodgrain)"/>
+  <path d="M0 564H1344" stroke="#7c4b24" stroke-width="5" opacity=".55"/>
+  <g fill="none" stroke="#b98954" stroke-width="3" opacity=".7">
+    <path d="M39 607H302V750H39Z"/>
+    <path d="M323 607H619V750H323Z"/>
+    <path d="M642 607H951V750H642Z"/>
+    <path d="M974 607H1305V750H974Z"/>
+    <path d="M61 639H280M345 639H597M665 639H928M997 639H1282"/>
+  </g>
+  <g fill="#c79b62" opacity=".75">
+    <rect x="151" y="626" width="38" height="8" rx="4"/>
+    <rect x="450" y="626" width="38" height="8" rx="4"/>
+    <rect x="777" y="626" width="38" height="8" rx="4"/>
+    <rect x="1120" y="626" width="38" height="8" rx="4"/>
+  </g>
+
+  <!-- Left refrigerator and side cabinet -->
+  <g>
+    <path d="M0 153C38 144 77 151 107 167L108 555H0Z" fill="#f5e2bb" stroke="#ca9c63" stroke-width="4"/>
+    <path d="M9 181H101V349H9ZM9 365H101V542H9Z" fill="#f9efd7" stroke="#d1ad79" stroke-width="3"/>
+    <path d="M85 214C92 243 91 281 87 311M85 391C93 431 92 476 86 512" fill="none" stroke="#9fa69f" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="80" cy="456" r="5" fill="#a87339"/>
+  </g>
+
+  <!-- Sink and faucet -->
+  <g>
+    <ellipse cx="266" cy="542" rx="173" ry="37" fill="#705333" opacity=".22" filter="url(#softShadow)"/>
+    <path d="M108 497C108 474 420 470 431 500L409 552C387 574 145 576 126 552Z" fill="url(#steel)" stroke="#66706d" stroke-width="5"/>
+    <path d="M131 505C163 488 383 488 409 505L391 539C368 555 163 555 145 539Z" fill="#707875" stroke="#eef0e8" stroke-width="4"/>
+    <path d="M153 513C198 503 349 501 386 514L374 530C331 541 198 542 163 529Z" fill="#8b918c" opacity=".8"/>
+    <path d="M289 478V351C289 318 341 316 348 347V385" fill="none" stroke="#aeb8b2" stroke-width="18" stroke-linecap="round"/>
+    <path d="M289 478V351C289 326 333 324 341 346V385" fill="none" stroke="#eef1e9" stroke-width="7" stroke-linecap="round"/>
+    <path d="M263 468H312M275 463V490M299 463V490" stroke="#7c8782" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Shelf and jars -->
+  <g>
+    <rect x="391" y="101" width="404" height="23" rx="8" fill="#9f6331"/>
+    <rect x="391" y="113" width="404" height="12" rx="6" fill="#d29353"/>
+    <path d="M424 113L406 165M757 113L773 165" stroke="#7e4c28" stroke-width="12" stroke-linecap="round"/>
+    <g fill="#f3dfbd" stroke="#985f30" stroke-width="3">
+      <rect x="431" y="41" width="47" height="62" rx="8"/>
+      <rect x="494" y="53" width="55" height="50" rx="8"/>
+      <rect x="566" y="31" width="43" height="72" rx="8"/>
+      <rect x="628" y="48" width="59" height="55" rx="8"/>
+      <rect x="707" y="37" width="42" height="66" rx="8"/>
+    </g>
+    <g fill="#c78d46" opacity=".8">
+      <rect x="439" y="36" width="31" height="11" rx="5"/>
+      <rect x="502" y="48" width="39" height="11" rx="5"/>
+      <rect x="574" y="26" width="27" height="11" rx="5"/>
+      <rect x="636" y="43" width="43" height="11" rx="5"/>
+      <rect x="714" y="32" width="28" height="11" rx="5"/>
+    </g>
+  </g>
+
+  <!-- Hanging rail and utensils -->
+  <g>
+    <path d="M883 120H1189" stroke="#8e633c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M917 119V180M1003 119V204M1096 119V173M1160 119V213" stroke="#b48a60" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#e8e5d8" stroke="#686b66" stroke-width="4">
+      <path d="M893 175C879 194 879 224 901 224C920 224 925 193 908 175Z"/>
+      <path d="M978 195C958 221 966 257 1003 257C1036 257 1038 219 1019 195Z"/>
+      <path d="M1069 169H1111L1118 202H1063Z"/>
+      <path d="M1136 210H1183L1178 238H1141Z"/>
+    </g>
+  </g>
+
+  <!-- Induction stove -->
+  <g>
+    <rect x="676" y="479" width="407" height="78" rx="14" fill="url(#stove)" stroke="#1d201f" stroke-width="4"/>
+    <ellipse cx="798" cy="516" rx="78" ry="26" fill="#151817" stroke="#555a56" stroke-width="4"/>
+    <ellipse cx="967" cy="516" rx="78" ry="26" fill="#151817" stroke="#555a56" stroke-width="4"/>
+    <g fill="none" stroke="#7c817d" stroke-width="3" opacity=".58">
+      <circle cx="798" cy="516" r="43"/>
+      <circle cx="967" cy="516" r="43"/>
+      <path d="M798 490V542M770 516H826M967 490V542M939 516H995"/>
+    </g>
+    <circle cx="1047" cy="519" r="9" fill="#9ea49e" stroke="#343835" stroke-width="3"/>
+    <path d="M685 539H1074" stroke="#8a918b" stroke-width="2" opacity=".42"/>
+  </g>
+
+  <!-- Warm side light and depth shadow -->
+  <path d="M1080 0L1344 0V510L965 510Z" fill="url(#sunlight)" opacity=".72"/>
+  <ellipse cx="842" cy="555" rx="320" ry="61" fill="#5a371c" opacity=".18" filter="url(#softShadow)"/>
+  <path d="M0 708C279 683 1025 680 1344 710V768H0Z" fill="#8e5d33" opacity=".18"/>
+</svg>

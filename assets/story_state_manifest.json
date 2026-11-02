@@ -1,0 +1,4745 @@
+{
+  "size": [
+    512,
+    512
+  ],
+  "format": "PNG",
+  "background": "transparent",
+  "states": [
+    "normal",
+    "click",
+    "success",
+    "error"
+  ],
+  "recipes": [
+    {
+      "id": 1,
+      "name": "清炒土豆丝",
+      "category": "素菜",
+      "summary": "按标准步骤完成清炒土豆丝。",
+      "steps": [
+        {
+          "recipeId": 1,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "步骤 1",
+          "description": "土豆去皮切丝，清水浸泡淘洗去淀粉；青椒切丝，蒜切片",
+          "knowledge": "土豆含有大量淀粉，暴露在空气中容易氧化发黑，泡水可以去除多余淀粉防止粘连",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。土豆含有大量淀粉，暴露在空气中容易氧化发黑，泡水可以去除多余淀粉防止粘连",
+          "errorOperation": "重新执行本步：土豆去皮切丝，清水浸泡淘洗去淀粉；青椒切丝，蒜切片",
+          "errorPrinciple": "土豆含有大量淀粉，暴露在空气中容易氧化发黑，泡水可以去除多余淀粉防止粘连",
+          "object": {
+            "label": "土豆、青椒",
+            "action": "土豆去皮切丝",
+            "prompt": "点击清洗池中的土豆、青椒，土豆去皮切丝"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_1_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_1_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_1_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_1_step_1_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "potato",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "green-pepper",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 1,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "步骤 2",
+          "description": "热锅倒油，下入蒜片爆香",
+          "knowledge": "低温慢爆大蒜可以释放蒜香，避免直接炸糊发苦",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。低温慢爆大蒜可以释放蒜香，避免直接炸糊发苦",
+          "errorOperation": "重新执行本步：热锅倒油，下入蒜片爆香",
+          "errorPrinciple": "低温慢爆大蒜可以释放蒜香，避免直接炸糊发苦",
+          "object": {
+            "label": "大蒜",
+            "action": "热锅倒油",
+            "prompt": "点击锅中的大蒜，热锅倒油"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_1_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_1_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_1_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_1_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "green-pepper",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "potato",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 1,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "步骤 3",
+          "description": "下入沥干的土豆丝大火快速翻炒",
+          "knowledge": "大火快炒，缩短加热时间，维持土豆丝脆感；醋酸可以保护脆度",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。大火快炒，缩短加热时间，维持土豆丝脆感；醋酸可以保护脆度",
+          "errorOperation": "重新执行本步：下入沥干的土豆丝大火快速翻炒",
+          "errorPrinciple": "大火快炒，缩短加热时间，维持土豆丝脆感；醋酸可以保护脆度",
+          "object": {
+            "label": "土豆",
+            "action": "下入沥干的土豆丝大火快速翻炒",
+            "prompt": "点击锅中的土豆，下入沥干的土豆丝大火快速翻炒"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_1_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_1_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_1_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_1_step_3_error.png"
+          },
+          "question": {
+            "text": "放醋时机怎么做更稳妥？",
+            "options": [
+              {
+                "id": "早放醋-3-0",
+                "label": "早放醋"
+              },
+              {
+                "id": "晚放醋-3-0",
+                "label": "晚放醋"
+              }
+            ],
+            "correctOptionId": "晚放醋-3-0"
+          },
+          "renderObjects": [
+            {
+              "assetId": "potato",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "green-pepper",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 1,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "步骤 4",
+          "description": "加入青椒丝翻炒至断生，出锅",
+          "knowledge": "青椒易熟，最后放入保持清爽口感",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。青椒易熟，最后放入保持清爽口感",
+          "errorOperation": "重新执行本步：加入青椒丝翻炒至断生，出锅",
+          "errorPrinciple": "青椒易熟，最后放入保持清爽口感",
+          "object": {
+            "label": "清炒土豆丝",
+            "action": "加入青椒丝翻炒至断生",
+            "prompt": "点击盘中的清炒土豆丝，加入青椒丝翻炒至断生"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_1_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_1_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_1_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_1_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "green-pepper",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "potato",
+              "x": 0.6,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "番茄炒蛋",
+      "category": "素菜",
+      "summary": "按标准步骤完成番茄炒蛋。",
+      "steps": [
+        {
+          "recipeId": 2,
+          "stepId": 1,
+          "hotspot": "cutting_board",
+          "title": "步骤 1",
+          "description": "番茄切块，鸡蛋打散搅匀，备好葱花",
+          "knowledge": "鸡蛋充分打散，炒出来更蓬松",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。鸡蛋充分打散，炒出来更蓬松",
+          "errorOperation": "重新执行本步：番茄切块，鸡蛋打散搅匀，备好葱花",
+          "errorPrinciple": "鸡蛋充分打散，炒出来更蓬松",
+          "object": {
+            "label": "番茄、鸡蛋",
+            "action": "番茄切块",
+            "prompt": "点击砧板上的番茄、鸡蛋，番茄切块"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_2_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_2_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_2_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_2_step_1_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "cutting_board",
+              "x": 0.55,
+              "y": 0.777,
+              "scale": 0.2,
+              "visible": true
+            },
+            {
+              "assetId": "knife",
+              "x": 0.616,
+              "y": 0.729,
+              "scale": 0.074,
+              "visible": true
+            },
+            {
+              "assetId": "tomato",
+              "x": 0.495,
+              "y": 0.79,
+              "scale": 0.075,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.605,
+              "y": 0.785,
+              "scale": 0.075,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 2,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "步骤 2",
+          "description": "热锅倒油，倒入蛋液，定型划散盛出",
+          "knowledge": "鸡蛋蛋白质受热快速凝固，加热过久会变老发柴",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。鸡蛋蛋白质受热快速凝固，加热过久会变老发柴",
+          "errorOperation": "重新执行本步：热锅倒油，倒入蛋液，定型划散盛出",
+          "errorPrinciple": "鸡蛋蛋白质受热快速凝固，加热过久会变老发柴",
+          "object": {
+            "label": "番茄",
+            "action": "热锅倒油",
+            "prompt": "点击锅中的番茄，热锅倒油"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_2_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_2_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_2_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_2_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "egg",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "tomato",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 2,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "步骤 3",
+          "description": "同一口锅下入番茄，翻炒至出沙",
+          "knowledge": "番茄果胶受热破裂出沙；白糖中和有机酸，减轻酸味",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。番茄果胶受热破裂出沙；白糖中和有机酸，减轻酸味",
+          "errorOperation": "重新执行本步：同一口锅下入番茄，翻炒至出沙",
+          "errorPrinciple": "番茄果胶受热破裂出沙；白糖中和有机酸，减轻酸味",
+          "object": {
+            "label": "番茄",
+            "action": "同一口锅下入番茄",
+            "prompt": "点击锅中的番茄，同一口锅下入番茄"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_2_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_2_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_2_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_2_step_3_error.png"
+          },
+          "question": {
+            "text": "糖量怎么做更稳妥？",
+            "options": [
+              {
+                "id": "加糖多-3-0",
+                "label": "加糖多"
+              },
+              {
+                "id": "加糖少-3-0",
+                "label": "加糖少"
+              }
+            ],
+            "correctOptionId": "加糖少-3-0"
+          },
+          "renderObjects": [
+            {
+              "assetId": "tomato",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 2,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "步骤 4",
+          "description": "倒回鸡蛋，加盐混合翻炒，撒葱花出锅",
+          "knowledge": "混合翻匀即可，不需要长时间翻炒",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。混合翻匀即可，不需要长时间翻炒",
+          "errorOperation": "重新执行本步：倒回鸡蛋，加盐混合翻炒，撒葱花出锅",
+          "errorPrinciple": "混合翻匀即可，不需要长时间翻炒",
+          "object": {
+            "label": "番茄炒蛋",
+            "action": "倒回鸡蛋",
+            "prompt": "点击盘中的番茄炒蛋，倒回鸡蛋"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_2_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_2_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_2_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_2_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "tomato",
+              "x": 0.6,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "蒜蓉油麦菜",
+      "category": "素菜",
+      "summary": "按标准步骤完成蒜蓉油麦菜。",
+      "steps": [
+        {
+          "recipeId": 3,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "步骤 1",
+          "description": "油麦菜清洗切段，大蒜拍碎切末",
+          "knowledge": "绿叶菜尽量减少长时间浸泡，避免营养流失",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。绿叶菜尽量减少长时间浸泡，避免营养流失",
+          "errorOperation": "重新执行本步：油麦菜清洗切段，大蒜拍碎切末",
+          "errorPrinciple": "绿叶菜尽量减少长时间浸泡，避免营养流失",
+          "object": {
+            "label": "油麦菜、大蒜",
+            "action": "油麦菜清洗切段",
+            "prompt": "点击清洗池中的油麦菜、大蒜，油麦菜清洗切段"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_3_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_3_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_3_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_3_step_1_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "youmaicai",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 3,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "步骤 2",
+          "description": "热锅热油，蒜末爆香",
+          "knowledge": "蒜末激发香气作为底味",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。蒜末激发香气作为底味",
+          "errorOperation": "重新执行本步：热锅热油，蒜末爆香",
+          "errorPrinciple": "蒜末激发香气作为底味",
+          "object": {
+            "label": "大蒜",
+            "action": "热锅热油",
+            "prompt": "点击锅中的大蒜，热锅热油"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_3_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_3_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_3_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_3_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "youmaicai",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 3,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "步骤 3",
+          "description": "下入油麦菜大火快速翻拌",
+          "knowledge": "绿叶菜含水量高，长时间加热会破坏叶绿素、流失维生素",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。绿叶菜含水量高，长时间加热会破坏叶绿素、流失维生素",
+          "errorOperation": "重新执行本步：下入油麦菜大火快速翻拌",
+          "errorPrinciple": "绿叶菜含水量高，长时间加热会破坏叶绿素、流失维生素",
+          "object": {
+            "label": "油麦菜",
+            "action": "下入油麦菜大火快速翻拌",
+            "prompt": "点击锅中的油麦菜，下入油麦菜大火快速翻拌"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_3_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_3_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_3_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_3_step_3_error.png"
+          },
+          "question": {
+            "text": "盐量怎么做更稳妥？",
+            "options": [
+              {
+                "id": "盐多-3-0",
+                "label": "盐多"
+              },
+              {
+                "id": "盐适中-3-0",
+                "label": "盐适中"
+              }
+            ],
+            "correctOptionId": "盐多-3-0"
+          },
+          "renderObjects": [
+            {
+              "assetId": "youmaicai",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 3,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "步骤 4",
+          "description": "菜叶刚断生即可出锅",
+          "knowledge": "余温会继续焖熟菜叶",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。余温会继续焖熟菜叶",
+          "errorOperation": "重新执行本步：菜叶刚断生即可出锅",
+          "errorPrinciple": "余温会继续焖熟菜叶",
+          "object": {
+            "label": "蒜蓉油麦菜",
+            "action": "菜叶刚断生即可出锅",
+            "prompt": "点击盘中的蒜蓉油麦菜，菜叶刚断生即可出锅"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_3_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_3_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_3_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_3_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "youmaicai",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "酸辣土豆丝",
+      "category": "素菜",
+      "summary": "按标准步骤完成酸辣土豆丝。",
+      "steps": [
+        {
+          "recipeId": 4,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "步骤 1",
+          "description": "土豆切丝反复泡水去淀粉；蒜切片、干辣椒切段",
+          "knowledge": "充分洗去淀粉是脆口的关键",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。充分洗去淀粉是脆口的关键",
+          "errorOperation": "重新执行本步：土豆切丝反复泡水去淀粉；蒜切片、干辣椒切段",
+          "errorPrinciple": "充分洗去淀粉是脆口的关键",
+          "object": {
+            "label": "土豆、大蒜",
+            "action": "土豆切丝反复泡水去淀粉",
+            "prompt": "点击清洗池中的土豆、大蒜，土豆切丝反复泡水去淀粉"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_4_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_4_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_4_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_4_step_1_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "potato",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 4,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "步骤 2",
+          "description": "热锅倒油，下入干辣椒、蒜片爆出香味",
+          "knowledge": "辣椒低温慢慢释放香辣物质",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。辣椒低温慢慢释放香辣物质",
+          "errorOperation": "重新执行本步：热锅倒油，下入干辣椒、蒜片爆出香味",
+          "errorPrinciple": "辣椒低温慢慢释放香辣物质",
+          "object": {
+            "label": "大蒜、干辣椒",
+            "action": "热锅倒油",
+            "prompt": "点击锅中的大蒜、干辣椒，热锅倒油"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_4_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_4_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_4_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_4_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "potato",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 4,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "步骤 3",
+          "description": "下入沥干土豆丝大火翻炒，沿锅边淋白醋",
+          "knowledge": "锅边高温激发醋香，醋酸维持脆感",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。锅边高温激发醋香，醋酸维持脆感",
+          "errorOperation": "重新执行本步：下入沥干土豆丝大火翻炒，沿锅边淋白醋",
+          "errorPrinciple": "锅边高温激发醋香，醋酸维持脆感",
+          "object": {
+            "label": "土豆、白醋",
+            "action": "下入沥干土豆丝大火翻炒",
+            "prompt": "点击锅中的土豆、白醋，下入沥干土豆丝大火翻炒"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_4_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_4_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_4_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_4_step_3_error.png"
+          },
+          "question": {
+            "text": "酸味怎么做更稳妥？",
+            "options": [
+              {
+                "id": "醋多-3-0",
+                "label": "醋多"
+              },
+              {
+                "id": "醋少-3-0",
+                "label": "醋少"
+              }
+            ],
+            "correctOptionId": "醋多-3-0"
+          },
+          "renderObjects": [
+            {
+              "assetId": "potato",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 4,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "步骤 4",
+          "description": "加盐翻匀出锅",
+          "knowledge": "全程旺火短炒",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。全程旺火短炒",
+          "errorOperation": "重新执行本步：加盐翻匀出锅",
+          "errorPrinciple": "全程旺火短炒",
+          "object": {
+            "label": "酸辣土豆丝",
+            "action": "加盐翻匀出锅",
+            "prompt": "点击盘中的酸辣土豆丝，加盐翻匀出锅"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_4_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_4_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_4_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_4_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "potato",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "红烧茄子",
+      "category": "素菜",
+      "summary": "按标准步骤完成红烧茄子。",
+      "steps": [
+        {
+          "recipeId": 5,
+          "stepId": 1,
+          "hotspot": "cutting_board",
+          "title": "步骤 1",
+          "description": "茄子切条，大蒜切末",
+          "knowledge": "茄子是海绵状多孔结构，极易吸附油脂",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。茄子是海绵状多孔结构，极易吸附油脂",
+          "errorOperation": "重新执行本步：茄子切条，大蒜切末",
+          "errorPrinciple": "茄子是海绵状多孔结构，极易吸附油脂",
+          "object": {
+            "label": "茄子、大蒜",
+            "action": "茄子切条",
+            "prompt": "点击砧板上的茄子、大蒜，茄子切条"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_5_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_5_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_5_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_5_step_1_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "cutting_board",
+              "x": 0.55,
+              "y": 0.777,
+              "scale": 0.2,
+              "visible": true
+            },
+            {
+              "assetId": "knife",
+              "x": 0.616,
+              "y": 0.729,
+              "scale": 0.074,
+              "visible": true
+            },
+            {
+              "assetId": "eggplant",
+              "x": 0.495,
+              "y": 0.79,
+              "scale": 0.075,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 5,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "步骤 2",
+          "description": "热锅倒油，下入茄子翻炒",
+          "knowledge": "少油版本依靠焖煮软化，降低油脂摄入",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。少油版本依靠焖煮软化，降低油脂摄入",
+          "errorOperation": "重新执行本步：热锅倒油，下入茄子翻炒",
+          "errorPrinciple": "少油版本依靠焖煮软化，降低油脂摄入",
+          "object": {
+            "label": "茄子",
+            "action": "热锅倒油",
+            "prompt": "点击锅中的茄子，热锅倒油"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_5_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_5_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_5_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_5_step_2_error.png"
+          },
+          "question": {
+            "text": "用油方式怎么做更稳妥？",
+            "options": [
+              {
+                "id": "少油焖煮-2-0",
+                "label": "少油焖煮"
+              },
+              {
+                "id": "多油煸炒-2-0",
+                "label": "多油煸炒"
+              }
+            ],
+            "correctOptionId": "少油焖煮-2-0"
+          },
+          "renderObjects": [
+            {
+              "assetId": "eggplant",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 5,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "步骤 3",
+          "description": "加生抽、少量盐，小火加盖焖软",
+          "knowledge": "中小火焖煮让内部纤维软化",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。中小火焖煮让内部纤维软化",
+          "errorOperation": "重新执行本步：加生抽、少量盐，小火加盖焖软",
+          "errorPrinciple": "中小火焖煮让内部纤维软化",
+          "object": {
+            "label": "生抽、食盐",
+            "action": "加生抽、少量盐",
+            "prompt": "点击锅中的生抽、食盐，加生抽、少量盐"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_5_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_5_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_5_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_5_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "eggplant",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 5,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "步骤 4",
+          "description": "开盖大火收汁水出锅",
+          "knowledge": "收汁浓缩味道",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。收汁浓缩味道",
+          "errorOperation": "重新执行本步：开盖大火收汁水出锅",
+          "errorPrinciple": "收汁浓缩味道",
+          "object": {
+            "label": "红烧茄子",
+            "action": "开盖大火收汁水出锅",
+            "prompt": "点击盘中的红烧茄子，开盖大火收汁水出锅"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_5_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_5_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_5_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_5_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "eggplant",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "凉拌黄瓜",
+      "category": "素菜",
+      "summary": "按标准步骤完成凉拌黄瓜。",
+      "steps": [
+        {
+          "recipeId": 6,
+          "stepId": 1,
+          "hotspot": "cutting_board",
+          "title": "步骤 1",
+          "description": "黄瓜拍碎切段，大蒜捣成蒜泥",
+          "knowledge": "拍碎的黄瓜断面更多，更容易入味",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。拍碎的黄瓜断面更多，更容易入味",
+          "errorOperation": "重新执行本步：黄瓜拍碎切段，大蒜捣成蒜泥",
+          "errorPrinciple": "拍碎的黄瓜断面更多，更容易入味",
+          "object": {
+            "label": "黄瓜、大蒜",
+            "action": "黄瓜拍碎切段",
+            "prompt": "点击砧板上的黄瓜、大蒜，黄瓜拍碎切段"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_6_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_6_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_6_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_6_step_1_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "cutting_board",
+              "x": 0.55,
+              "y": 0.777,
+              "scale": 0.2,
+              "visible": true
+            },
+            {
+              "assetId": "knife",
+              "x": 0.616,
+              "y": 0.729,
+              "scale": 0.074,
+              "visible": true
+            },
+            {
+              "assetId": "cucumber",
+              "x": 0.495,
+              "y": 0.79,
+              "scale": 0.075,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 6,
+          "stepId": 2,
+          "hotspot": "seasoning",
+          "title": "步骤 2",
+          "description": "黄瓜撒盐静置杀出水分，倒掉析出的水",
+          "knowledge": "渗透原理，盐析出内部水分，口感更脆，味道更容易进去",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。渗透原理，盐析出内部水分，口感更脆，味道更容易进去",
+          "errorOperation": "重新执行本步：黄瓜撒盐静置杀出水分，倒掉析出的水",
+          "errorPrinciple": "渗透原理，盐析出内部水分，口感更脆，味道更容易进去",
+          "object": {
+            "label": "黄瓜、食盐",
+            "action": "黄瓜撒盐静置杀出水分",
+            "prompt": "点击调料架上的黄瓜、食盐，黄瓜撒盐静置杀出水分"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_6_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_6_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_6_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_6_step_2_error.png"
+          },
+          "question": {
+            "text": "酸味怎么做更稳妥？",
+            "options": [
+              {
+                "id": "醋多-2-0",
+                "label": "醋多"
+              },
+              {
+                "id": "醋少-2-0",
+                "label": "醋少"
+              }
+            ],
+            "correctOptionId": "醋多-2-0"
+          },
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "cucumber",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 6,
+          "stepId": 3,
+          "hotspot": "seasoning",
+          "title": "步骤 3",
+          "description": "加入蒜泥、生抽、醋拌匀，静置入味",
+          "knowledge": "凉拌菜适合静置几分钟风味融合",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。凉拌菜适合静置几分钟风味融合",
+          "errorOperation": "重新执行本步：加入蒜泥、生抽、醋拌匀，静置入味",
+          "errorPrinciple": "凉拌菜适合静置几分钟风味融合",
+          "object": {
+            "label": "大蒜、生抽",
+            "action": "加入蒜泥、生抽、醋拌匀",
+            "prompt": "点击调料架上的大蒜、生抽，加入蒜泥、生抽、醋拌匀"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_6_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_6_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_6_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_6_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "cucumber",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "清炒西兰花",
+      "category": "素菜",
+      "summary": "用短焯和快炒保留西兰花颜色与爽脆口感。",
+      "steps": [
+        {
+          "recipeId": 7,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "切小朵并清洗",
+          "description": "按标准操作完成“切小朵并清洗”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "切小朵并清洗会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。切小朵并清洗会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“切小朵并清洗”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "切小朵并清洗会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "西兰花",
+            "action": "切小朵并清洗",
+            "prompt": "点击清洗池中的西兰花，切小朵并清洗"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_7_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_7_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_7_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_7_step_1_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "greens",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "carrot",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 7,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "沸水短焯",
+          "description": "按标准操作完成“沸水短焯”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "沸水短焯会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。沸水短焯会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“沸水短焯”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "沸水短焯会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "西兰花",
+            "action": "沸水短焯",
+            "prompt": "点击锅中的西兰花，沸水短焯"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_7_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_7_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_7_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_7_step_2_error.png"
+          },
+          "question": {
+            "text": "加热时长怎么做更稳妥？",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长"
+              }
+            ],
+            "correctOptionId": "medium-2"
+          },
+          "renderObjects": [
+            {
+              "assetId": "carrot",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "greens",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 7,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "蒜末爆香后快炒",
+          "description": "按标准操作完成“蒜末爆香后快炒”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "蒜末爆香后快炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。蒜末爆香后快炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“蒜末爆香后快炒”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "蒜末爆香后快炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "大蒜",
+            "action": "蒜末爆香后快炒",
+            "prompt": "点击锅中的大蒜，蒜末爆香后快炒"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_7_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_7_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_7_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_7_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "greens",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "carrot",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 7,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "断生调味出锅",
+          "description": "按标准操作完成“断生调味出锅”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "断生调味出锅会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。断生调味出锅会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“断生调味出锅”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "断生调味出锅会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "清炒西兰花",
+            "action": "断生调味出锅",
+            "prompt": "点击盘中的清炒西兰花，断生调味出锅"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_7_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_7_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_7_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_7_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "carrot",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "greens",
+              "x": 0.6,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "干煸四季豆",
+      "category": "素菜",
+      "summary": "将四季豆煸炒至表皮起皱，加入大蒜和干辣椒炒香，最后调味并确认四季豆熟透。",
+      "steps": [
+        {
+          "recipeId": 8,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "摘洗并彻底控水",
+          "description": "将四季豆摘洗干净，去除老筋和杂质，然后彻底控干水分。",
+          "knowledge": "确保四季豆干燥，避免在烹饪过程中粘连或变黑。",
+          "actionLabel": "开始",
+          "correctText": "这一步完成了。确保四季豆干燥，避免在烹饪过程中粘连或变黑。",
+          "errorOperation": "重新执行本步：将四季豆摘洗干净，去除老筋和杂质，然后彻底控干水分。",
+          "errorPrinciple": "确保四季豆干燥，避免在烹饪过程中粘连或变黑。",
+          "object": {
+            "label": "四季豆",
+            "action": "摘洗并彻底控水",
+            "prompt": "点击清洗池中的四季豆，摘洗并彻底控水"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_8_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_8_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_8_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_8_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "greens",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 8,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "煸至表皮起皱",
+          "description": "将四季豆放入热油中煸炒，直至表皮起皱，内部变软。",
+          "knowledge": "适时翻动四季豆，使其均匀受热。",
+          "actionLabel": "继续",
+          "correctText": "这一步完成了。适时翻动四季豆，使其均匀受热。",
+          "errorOperation": "重新执行本步：将四季豆放入热油中煸炒，直至表皮起皱，内部变软。",
+          "errorPrinciple": "适时翻动四季豆，使其均匀受热。",
+          "object": {
+            "label": "四季豆",
+            "action": "煸至表皮起皱",
+            "prompt": "点击锅中的四季豆，煸至表皮起皱"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_8_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_8_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_8_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_8_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "greens",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 8,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "下蒜辣炒香",
+          "description": "加入切碎的大蒜和干辣椒，快速翻炒出香味。",
+          "knowledge": "大蒜和干辣椒的香气能提升菜品风味。",
+          "actionLabel": "继续",
+          "correctText": "这一步完成了。大蒜和干辣椒的香气能提升菜品风味。",
+          "errorOperation": "重新执行本步：加入切碎的大蒜和干辣椒，快速翻炒出香味。",
+          "errorPrinciple": "大蒜和干辣椒的香气能提升菜品风味。",
+          "object": {
+            "label": "大蒜、干辣椒",
+            "action": "下蒜辣炒香",
+            "prompt": "点击锅中的大蒜、干辣椒，下蒜辣炒香"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_8_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_8_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_8_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_8_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "greens",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 8,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "调味并确认熟透",
+          "description": "加入适量的生抽和食盐调味，确认四季豆熟透后出锅。",
+          "knowledge": "根据个人口味调整生抽和食盐的比例。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。根据个人口味调整生抽和食盐的比例。",
+          "errorOperation": "重新执行本步：加入适量的生抽和食盐调味，确认四季豆熟透后出锅。",
+          "errorPrinciple": "根据个人口味调整生抽和食盐的比例。",
+          "object": {
+            "label": "干煸四季豆",
+            "action": "调味并确认熟透",
+            "prompt": "点击盘中的干煸四季豆，调味并确认熟透"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_8_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_8_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_8_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_8_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "greens",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "青椒肉丝",
+      "category": "畜肉",
+      "summary": "制作青椒肉丝",
+      "steps": [
+        {
+          "recipeId": 9,
+          "stepId": 1,
+          "hotspot": "seasoning",
+          "title": "切丝并上浆",
+          "description": "将里脊肉切成细丝，加入适量淀粉和生抽腌制。",
+          "knowledge": "腌制可以使肉质更加嫩滑。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。腌制可以使肉质更加嫩滑。",
+          "errorOperation": "重新执行本步：将里脊肉切成细丝，加入适量淀粉和生抽腌制。",
+          "errorPrinciple": "腌制可以使肉质更加嫩滑。",
+          "object": {
+            "label": "里脊肉、生抽",
+            "action": "切丝并上浆",
+            "prompt": "点击调料架上的里脊肉、生抽，切丝并上浆"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_9_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_9_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_9_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_9_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "pork-loin",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "green-pepper",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 9,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "滑炒肉丝",
+          "description": "将腌制好的肉丝滑炒至变色。",
+          "knowledge": "滑炒可以保持肉丝的鲜嫩口感。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。滑炒可以保持肉丝的鲜嫩口感。",
+          "errorOperation": "重新执行本步：将腌制好的肉丝滑炒至变色。",
+          "errorPrinciple": "滑炒可以保持肉丝的鲜嫩口感。",
+          "object": {
+            "label": "里脊肉",
+            "action": "滑炒肉丝",
+            "prompt": "点击锅中的里脊肉，滑炒肉丝"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_9_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_9_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_9_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_9_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "green-pepper",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "pork-loin",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 9,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "爆香蒜末与青椒",
+          "description": "锅中加油，爆香切好的大蒜末，再加入青椒翻炒。",
+          "knowledge": "蒜末和青椒的香味能提升菜品风味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。蒜末和青椒的香味能提升菜品风味。",
+          "errorOperation": "重新执行本步：锅中加油，爆香切好的大蒜末，再加入青椒翻炒。",
+          "errorPrinciple": "蒜末和青椒的香味能提升菜品风味。",
+          "object": {
+            "label": "青椒、大蒜",
+            "action": "爆香蒜末与青椒",
+            "prompt": "点击锅中的青椒、大蒜，爆香蒜末与青椒"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_9_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_9_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_9_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_9_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "green-pepper",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "pork-loin",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 9,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "合炒调味出锅",
+          "description": "将炒好的肉丝和青椒合炒均匀，调入适量生抽调味后出锅。",
+          "knowledge": "生抽能提升菜品的咸味和色泽。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。生抽能提升菜品的咸味和色泽。",
+          "errorOperation": "重新执行本步：将炒好的肉丝和青椒合炒均匀，调入适量生抽调味后出锅。",
+          "errorPrinciple": "生抽能提升菜品的咸味和色泽。",
+          "object": {
+            "label": "青椒肉丝",
+            "action": "合炒调味出锅",
+            "prompt": "点击盘中的青椒肉丝，合炒调味出锅"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_9_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_9_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_9_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_9_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "green-pepper",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "pork-loin",
+              "x": 0.6,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "鱼香肉丝",
+      "category": "畜肉",
+      "summary": "制作鱼香肉丝",
+      "steps": [
+        {
+          "recipeId": 10,
+          "stepId": 1,
+          "hotspot": "seasoning",
+          "title": "切丝并把肉上浆",
+          "description": "将里脊肉切成细丝，加入适量淀粉和生抽腌制。",
+          "knowledge": "腌制肉丝可以使肉质更加嫩滑。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。腌制肉丝可以使肉质更加嫩滑。",
+          "errorOperation": "重新执行本步：将里脊肉切成细丝，加入适量淀粉和生抽腌制。",
+          "errorPrinciple": "腌制肉丝可以使肉质更加嫩滑。",
+          "object": {
+            "label": "里脊肉、生抽",
+            "action": "切丝并把肉上浆",
+            "prompt": "点击调料架上的里脊肉、生抽，切丝并把肉上浆"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_10_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_10_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_10_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_10_step_1_error.png"
+          },
+          "question": {
+            "text": "糖量怎么做更稳妥？",
+            "options": [
+              {
+                "id": "none-1",
+                "label": "不加"
+              },
+              {
+                "id": "low-1",
+                "label": "少许"
+              },
+              {
+                "id": "high-1",
+                "label": "偏多"
+              }
+            ],
+            "correctOptionId": "low-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "pork-loin",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "wood-ear",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 10,
+          "stepId": 2,
+          "hotspot": "seasoning",
+          "title": "调好酸甜汁",
+          "description": "准备醋、糖、生抽、盐等调料，调成鱼香汁。",
+          "knowledge": "鱼香汁是鱼香肉丝的灵魂。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。鱼香汁是鱼香肉丝的灵魂。",
+          "errorOperation": "重新执行本步：准备醋、糖、生抽、盐等调料，调成鱼香汁。",
+          "errorPrinciple": "鱼香汁是鱼香肉丝的灵魂。",
+          "object": {
+            "label": "生抽、醋",
+            "action": "调好酸甜汁",
+            "prompt": "点击调料架上的生抽、醋，调好酸甜汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_10_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_10_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_10_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_10_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "wood-ear",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "bamboo-shoots",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 10,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "滑炒肉丝与配料",
+          "description": "将腌制好的肉丝滑炒至变色，加入木耳、竹笋等配料翻炒均匀。",
+          "knowledge": "滑炒可以使肉丝保持鲜嫩。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。滑炒可以使肉丝保持鲜嫩。",
+          "errorOperation": "重新执行本步：将腌制好的肉丝滑炒至变色，加入木耳、竹笋等配料翻炒均匀。",
+          "errorPrinciple": "滑炒可以使肉丝保持鲜嫩。",
+          "object": {
+            "label": "木耳、竹笋",
+            "action": "滑炒肉丝与配料",
+            "prompt": "点击锅中的木耳、竹笋，滑炒肉丝与配料"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_10_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_10_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_10_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_10_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "wood-ear",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "bamboo-shoots",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 10,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "倒入碗汁快速收浓",
+          "description": "将调好的鱼香汁倒入锅中，快速翻炒使汁液均匀包裹在肉丝上。",
+          "knowledge": "快速翻炒可以保证肉丝的口感。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。快速翻炒可以保证肉丝的口感。",
+          "errorOperation": "重新执行本步：将调好的鱼香汁倒入锅中，快速翻炒使汁液均匀包裹在肉丝上。",
+          "errorPrinciple": "快速翻炒可以保证肉丝的口感。",
+          "object": {
+            "label": "里脊肉",
+            "action": "倒入碗汁快速收浓",
+            "prompt": "点击锅中的里脊肉，倒入碗汁快速收浓"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_10_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_10_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_10_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_10_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "pork-loin",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "wood-ear",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "土豆炖牛肉",
+      "category": "畜肉",
+      "summary": "将牛肉焯水后煸香，加入土豆和胡萝卜炖煮至牛肉软烂。",
+      "steps": [
+        {
+          "recipeId": 11,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "切块并把牛肉焯水",
+          "description": "将牛腩切成适口大小的块，用冷水下锅，加入少许料酒，大火煮沸后撇去浮沫，捞出沥干水分。",
+          "knowledge": "焯水可以去除血污和腥味，使牛肉更加鲜嫩。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。焯水可以去除血污和腥味，使牛肉更加鲜嫩。",
+          "errorOperation": "重新执行本步：将牛腩切成适口大小的块，用冷水下锅，加入少许料酒，大火煮沸后撇去浮沫，捞出沥干水分。",
+          "errorPrinciple": "焯水可以去除血污和腥味，使牛肉更加鲜嫩。",
+          "object": {
+            "label": "牛腩",
+            "action": "切块并把牛肉焯水",
+            "prompt": "点击清洗池中的牛腩，切块并把牛肉焯水"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_11_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_11_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_11_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_11_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "beef-brisket",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "potato",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 11,
+          "stepId": 2,
+          "hotspot": "sink",
+          "title": "煸香牛肉和酱香",
+          "description": "将焯水后的牛肉放入锅中，加入适量的生抽和老抽调色，翻炒至表面均匀上色。",
+          "knowledge": "生抽和老抽调色可以使牛肉色泽红亮，增加风味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。生抽和老抽调色可以使牛肉色泽红亮，增加风味。",
+          "errorOperation": "重新执行本步：将焯水后的牛肉放入锅中，加入适量的生抽和老抽调色，翻炒至表面均匀上色。",
+          "errorPrinciple": "生抽和老抽调色可以使牛肉色泽红亮，增加风味。",
+          "object": {
+            "label": "生抽、老抽",
+            "action": "煸香牛肉和酱香",
+            "prompt": "点击清洗池中的生抽、老抽，煸香牛肉和酱香"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_11_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_11_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_11_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_11_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "potato",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "carrot",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 11,
+          "stepId": 3,
+          "hotspot": "sink",
+          "title": "加水炖至牛肉变软",
+          "description": "将焯水后的牛肉放入炖锅，加入足够的水，大火烧开后转小火慢炖。",
+          "knowledge": "炖煮过程中，牛肉会逐渐变软，汤汁也会变得浓郁。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。炖煮过程中，牛肉会逐渐变软，汤汁也会变得浓郁。",
+          "errorOperation": "重新执行本步：将焯水后的牛肉放入炖锅，加入足够的水，大火烧开后转小火慢炖。",
+          "errorPrinciple": "炖煮过程中，牛肉会逐渐变软，汤汁也会变得浓郁。",
+          "object": {
+            "label": "牛腩",
+            "action": "加水炖至牛肉变软",
+            "prompt": "点击清洗池中的牛腩，加水炖至牛肉变软"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_11_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_11_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_11_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_11_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "carrot",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "beef-brisket",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 11,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "放土豆收汁",
+          "description": "炖至牛肉变软后，加入切好的土豆和胡萝卜，继续炖煮至土豆和胡萝卜熟透，汤汁浓稠。",
+          "knowledge": "土豆和胡萝卜的加入可以使菜肴更加丰富，同时增加口感。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。土豆和胡萝卜的加入可以使菜肴更加丰富，同时增加口感。",
+          "errorOperation": "重新执行本步：炖至牛肉变软后，加入切好的土豆和胡萝卜，继续炖煮至土豆和胡萝卜熟透，汤汁浓稠。",
+          "errorPrinciple": "土豆和胡萝卜的加入可以使菜肴更加丰富，同时增加口感。",
+          "object": {
+            "label": "土豆、胡萝卜",
+            "action": "放土豆收汁",
+            "prompt": "点击锅中的土豆、胡萝卜，放土豆收汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_11_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_11_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_11_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_11_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "potato",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "carrot",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "番茄牛腩",
+      "category": "畜肉",
+      "summary": "将牛腩切块，焯水去血沫。",
+      "steps": [
+        {
+          "recipeId": 12,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "牛肉切块焯水",
+          "description": "将牛腩切成适口大小的块，用沸水焯水，去除血沫和杂质。",
+          "knowledge": "焯水可以去除牛腩中的血沫和杂质，使口感更加鲜美。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。焯水可以去除牛腩中的血沫和杂质，使口感更加鲜美。",
+          "errorOperation": "重新执行本步：将牛腩切成适口大小的块，用沸水焯水，去除血沫和杂质。",
+          "errorPrinciple": "焯水可以去除牛腩中的血沫和杂质，使口感更加鲜美。",
+          "object": {
+            "label": "牛腩",
+            "action": "牛肉切块焯水",
+            "prompt": "点击清洗池中的牛腩，牛肉切块焯水"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_12_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_12_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_12_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_12_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "beef-brisket",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "tomato",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 12,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "炒出番茄汁",
+          "description": "将番茄切块，放入锅中炒出汁水。",
+          "knowledge": "炒出的番茄汁可以增加菜肴的风味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。炒出的番茄汁可以增加菜肴的风味。",
+          "errorOperation": "重新执行本步：将番茄切块，放入锅中炒出汁水。",
+          "errorPrinciple": "炒出的番茄汁可以增加菜肴的风味。",
+          "object": {
+            "label": "番茄",
+            "action": "炒出番茄汁",
+            "prompt": "点击锅中的番茄，炒出番茄汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_12_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_12_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_12_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_12_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "tomato",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "beef-brisket",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 12,
+          "stepId": 3,
+          "hotspot": "sink",
+          "title": "加入牛肉炖软",
+          "description": "将焯水后的牛腩块加入炒出汁水的番茄中，炖至牛肉软烂。",
+          "knowledge": "炖煮过程中，牛肉会逐渐变软，汤汁也会变得浓郁。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。炖煮过程中，牛肉会逐渐变软，汤汁也会变得浓郁。",
+          "errorOperation": "重新执行本步：将焯水后的牛腩块加入炒出汁水的番茄中，炖至牛肉软烂。",
+          "errorPrinciple": "炖煮过程中，牛肉会逐渐变软，汤汁也会变得浓郁。",
+          "object": {
+            "label": "牛腩、番茄",
+            "action": "加入牛肉炖软",
+            "prompt": "点击清洗池中的牛腩、番茄，加入牛肉炖软"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_12_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_12_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_12_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_12_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "beef-brisket",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "tomato",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 12,
+          "stepId": 4,
+          "hotspot": "seasoning",
+          "title": "调味并收浓",
+          "description": "根据个人口味加入生抽和食盐调味，最后收浓汤汁。",
+          "knowledge": "调味可以使菜肴味道更加丰富。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。调味可以使菜肴味道更加丰富。",
+          "errorOperation": "重新执行本步：根据个人口味加入生抽和食盐调味，最后收浓汤汁。",
+          "errorPrinciple": "调味可以使菜肴味道更加丰富。",
+          "object": {
+            "label": "生抽、食盐",
+            "action": "调味并收浓",
+            "prompt": "点击调料架上的生抽、食盐，调味并收浓"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_12_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_12_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_12_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_12_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "tomato",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "beef-brisket",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "红烧五花肉",
+      "category": "畜肉",
+      "summary": "将五花肉切块并焯水后擦干，煸出部分油脂，炒糖色并加水焖煮至肉质酥软，大火收汁。",
+      "steps": [
+        {
+          "recipeId": 13,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "切块并焯水",
+          "description": "将五花肉切成适口大小的块，放入沸水中焯水去除血沫和杂质，捞出沥干水分。",
+          "knowledge": "焯水可以去除五花肉的腥味和杂质，使肉质更加鲜嫩。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。焯水可以去除五花肉的腥味和杂质，使肉质更加鲜嫩。",
+          "errorOperation": "重新执行本步：将五花肉切成适口大小的块，放入沸水中焯水去除血沫和杂质，捞出沥干水分。",
+          "errorPrinciple": "焯水可以去除五花肉的腥味和杂质，使肉质更加鲜嫩。",
+          "object": {
+            "label": "五花肉",
+            "action": "切块并焯水",
+            "prompt": "点击清洗池中的五花肉，切块并焯水"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_13_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_13_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_13_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_13_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "pork",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 13,
+          "stepId": 2,
+          "hotspot": "sink",
+          "title": "煸出部分油脂",
+          "description": "将焯水后的五花肉用锅中余热煸炒，煸出多余的油脂，使肉质更加紧实。",
+          "knowledge": "煸炒可以去除肉中的腥味，使肉质更加香醇。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。煸炒可以去除肉中的腥味，使肉质更加香醇。",
+          "errorOperation": "重新执行本步：将焯水后的五花肉用锅中余热煸炒，煸出多余的油脂，使肉质更加紧实。",
+          "errorPrinciple": "煸炒可以去除肉中的腥味，使肉质更加香醇。",
+          "object": {
+            "label": "五花肉",
+            "action": "煸出部分油脂",
+            "prompt": "点击清洗池中的五花肉，煸出部分油脂"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_13_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_13_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_13_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_13_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "pork",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 13,
+          "stepId": 3,
+          "hotspot": "sink",
+          "title": "炒糖色并加水焖煮",
+          "description": "在锅中加入适量油，炒至糖融化成红色糖色，然后加入焯水后的五花肉翻炒均匀，再加入适量老抽调色，加水焖煮至肉质酥软。",
+          "knowledge": "炒糖色可以使五花肉色泽红亮，老抽调色可以使五花肉上色均匀。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。炒糖色可以使五花肉色泽红亮，老抽调色可以使五花肉上色均匀。",
+          "errorOperation": "重新执行本步：在锅中加入适量油，炒至糖融化成红色糖色，然后加入焯水后的五花肉翻炒均匀，再加入适量老抽调色，加水焖煮至肉质酥软。",
+          "errorPrinciple": "炒糖色可以使五花肉色泽红亮，老抽调色可以使五花肉上色均匀。",
+          "object": {
+            "label": "五花肉、糖",
+            "action": "炒糖色并加水焖煮",
+            "prompt": "点击清洗池中的五花肉、糖，炒糖色并加水焖煮"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_13_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_13_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_13_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_13_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "pork",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 13,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "大火收汁",
+          "description": "大火收汁，使汤汁浓稠，五花肉表面呈现出诱人的光泽。",
+          "knowledge": "大火收汁可以使汤汁更加浓郁，使五花肉更加入味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。大火收汁可以使汤汁更加浓郁，使五花肉更加入味。",
+          "errorOperation": "重新执行本步：大火收汁，使汤汁浓稠，五花肉表面呈现出诱人的光泽。",
+          "errorPrinciple": "大火收汁可以使汤汁更加浓郁，使五花肉更加入味。",
+          "object": {
+            "label": "五花肉",
+            "action": "大火收汁",
+            "prompt": "点击锅中的五花肉，大火收汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_13_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_13_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_13_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_13_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "pork",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "回锅肉",
+      "category": "畜肉",
+      "summary": "五花肉先煮到安全熟度，再切片回锅快速煸香。",
+      "steps": [
+        {
+          "recipeId": 14,
+          "stepId": 1,
+          "hotspot": "stove",
+          "title": "五花肉煮至熟透后切片",
+          "description": "按标准操作完成“五花肉煮至熟透后切片”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "五花肉煮至熟透后切片会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。五花肉煮至熟透后切片会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“五花肉煮至熟透后切片”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "五花肉煮至熟透后切片会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "五花肉",
+            "action": "五花肉煮至熟透后切片",
+            "prompt": "点击锅中的五花肉，五花肉煮至熟透后切片"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_14_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_14_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_14_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_14_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "pork",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "napa-cabbage",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 14,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "煸炒肉片出油",
+          "description": "按标准操作完成“煸炒肉片出油”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "煸炒肉片出油会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。煸炒肉片出油会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“煸炒肉片出油”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "煸炒肉片出油会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "五花肉",
+            "action": "煸炒肉片出油",
+            "prompt": "点击锅中的五花肉，煸炒肉片出油"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_14_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_14_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_14_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_14_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "napa-cabbage",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "pork",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 14,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "下豆瓣酱炒香",
+          "description": "按标准操作完成“下豆瓣酱炒香”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "下豆瓣酱炒香会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。下豆瓣酱炒香会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“下豆瓣酱炒香”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "下豆瓣酱炒香会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "豆瓣酱",
+            "action": "下豆瓣酱炒香",
+            "prompt": "点击锅中的豆瓣酱，下豆瓣酱炒香"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_14_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_14_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_14_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_14_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "pork",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "napa-cabbage",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 14,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "放白菜快速合炒",
+          "description": "按标准操作完成“放白菜快速合炒”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "放白菜快速合炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。放白菜快速合炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“放白菜快速合炒”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "放白菜快速合炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "白菜",
+            "action": "放白菜快速合炒",
+            "prompt": "点击锅中的白菜，放白菜快速合炒"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_14_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_14_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_14_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_14_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "napa-cabbage",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "pork",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "宫保鸡丁",
+      "category": "禽肉",
+      "summary": "制作宫保鸡丁的步骤",
+      "steps": [
+        {
+          "recipeId": 15,
+          "stepId": 1,
+          "hotspot": "seasoning",
+          "title": "鸡肉切丁腌制上浆",
+          "description": "将鸡腿肉切成小丁，加入适量盐、胡椒粉、生抽和淀粉腌制30分钟。",
+          "knowledge": "腌制可以使鸡肉更加嫩滑，上浆则增加口感。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。腌制可以使鸡肉更加嫩滑，上浆则增加口感。",
+          "errorOperation": "重新执行本步：将鸡腿肉切成小丁，加入适量盐、胡椒粉、生抽和淀粉腌制30分钟。",
+          "errorPrinciple": "腌制可以使鸡肉更加嫩滑，上浆则增加口感。",
+          "object": {
+            "label": "鸡腿肉、生抽",
+            "action": "鸡肉切丁腌制上浆",
+            "prompt": "点击调料架上的鸡腿肉、生抽，鸡肉切丁腌制上浆"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_15_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_15_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_15_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_15_step_1_error.png"
+          },
+          "question": {
+            "text": "糖量怎么做更稳妥？",
+            "options": [
+              {
+                "id": "none-1",
+                "label": "不加"
+              },
+              {
+                "id": "low-1",
+                "label": "少许"
+              },
+              {
+                "id": "high-1",
+                "label": "偏多"
+              }
+            ],
+            "correctOptionId": "low-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "chicken-thigh",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "cucumber",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 15,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "调好酸甜碗汁",
+          "description": "准备生抽、醋、糖和水，按照比例调成酸甜口味。",
+          "knowledge": "酸甜口味可以根据个人喜好调整。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。酸甜口味可以根据个人喜好调整。",
+          "errorOperation": "重新执行本步：准备生抽、醋、糖和水，按照比例调成酸甜口味。",
+          "errorPrinciple": "酸甜口味可以根据个人喜好调整。",
+          "object": {
+            "label": "生抽、醋",
+            "action": "调好酸甜碗汁",
+            "prompt": "点击锅中的生抽、醋，调好酸甜碗汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_15_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_15_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_15_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_15_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "cucumber",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "chicken-thigh",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 15,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "滑炒鸡丁并爆香辣椒",
+          "description": "热锅凉油，先滑炒鸡丁至变色，再加入干辣椒爆香。",
+          "knowledge": "炒制过程中保持火候适中，避免过度烹煮。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。炒制过程中保持火候适中，避免过度烹煮。",
+          "errorOperation": "重新执行本步：热锅凉油，先滑炒鸡丁至变色，再加入干辣椒爆香。",
+          "errorPrinciple": "炒制过程中保持火候适中，避免过度烹煮。",
+          "object": {
+            "label": "干辣椒",
+            "action": "滑炒鸡丁并爆香辣椒",
+            "prompt": "点击锅中的干辣椒，滑炒鸡丁并爆香辣椒"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_15_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_15_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_15_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_15_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "chicken-thigh",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "cucumber",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 15,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "下黄瓜和碗汁快速翻匀",
+          "description": "将黄瓜切成条，加入调好的酸甜碗汁快速翻炒均匀。",
+          "knowledge": "快速翻炒可以保持食材的新鲜度和口感。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。快速翻炒可以保持食材的新鲜度和口感。",
+          "errorOperation": "重新执行本步：将黄瓜切成条，加入调好的酸甜碗汁快速翻炒均匀。",
+          "errorPrinciple": "快速翻炒可以保持食材的新鲜度和口感。",
+          "object": {
+            "label": "黄瓜",
+            "action": "下黄瓜和碗汁快速翻匀",
+            "prompt": "点击锅中的黄瓜，下黄瓜和碗汁快速翻匀"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_15_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_15_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_15_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_15_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "cucumber",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "chicken-thigh",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "香菇滑鸡",
+      "category": "禽肉",
+      "summary": "鸡肉先受热至安全熟度，香菇吸收鸡肉和酱汁的鲜味。",
+      "steps": [
+        {
+          "recipeId": 16,
+          "stepId": 1,
+          "hotspot": "seasoning",
+          "title": "鸡肉腌制上浆，香菇切片",
+          "description": "按标准操作完成“鸡肉腌制上浆，香菇切片”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "鸡肉腌制上浆，香菇切片会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。鸡肉腌制上浆，香菇切片会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“鸡肉腌制上浆，香菇切片”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "鸡肉腌制上浆，香菇切片会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "香菇",
+            "action": "鸡肉腌制上浆，香菇切片",
+            "prompt": "点击调料架上的香菇，鸡肉腌制上浆，香菇切片"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_16_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_16_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_16_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_16_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "shiitake",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "chicken-thigh",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 16,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "先炒鸡肉至变色",
+          "description": "按标准操作完成“先炒鸡肉至变色”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "先炒鸡肉至变色会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。先炒鸡肉至变色会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“先炒鸡肉至变色”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "先炒鸡肉至变色会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "鸡腿肉",
+            "action": "先炒鸡肉至变色",
+            "prompt": "点击锅中的鸡腿肉，先炒鸡肉至变色"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_16_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_16_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_16_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_16_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "shiitake",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "chicken-thigh",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 16,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "下香菇炒出香气",
+          "description": "按标准操作完成“下香菇炒出香气”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "下香菇炒出香气会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。下香菇炒出香气会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“下香菇炒出香气”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "下香菇炒出香气会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "香菇",
+            "action": "下香菇炒出香气",
+            "prompt": "点击锅中的香菇，下香菇炒出香气"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_16_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_16_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_16_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_16_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "shiitake",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "chicken-thigh",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 16,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "调味收汁",
+          "description": "按标准操作完成“调味收汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "调味收汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。调味收汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“调味收汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "调味收汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "鸡腿肉",
+            "action": "调味收汁",
+            "prompt": "点击锅中的鸡腿肉，调味收汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_16_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_16_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_16_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_16_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "shiitake",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "chicken-thigh",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "清蒸鲈鱼",
+      "category": "水产",
+      "summary": "清蒸鲈鱼的制作步骤",
+      "steps": [
+        {
+          "recipeId": 17,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "鱼身处理干净并改刀",
+          "description": "将鲈鱼清洗干净，去除内脏和鳞片，两侧切花刀。",
+          "knowledge": "确保鱼体无血污，便于入味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。确保鱼体无血污，便于入味。",
+          "errorOperation": "重新执行本步：将鲈鱼清洗干净，去除内脏和鳞片，两侧切花刀。",
+          "errorPrinciple": "确保鱼体无血污，便于入味。",
+          "object": {
+            "label": "鲈鱼",
+            "action": "鱼身处理干净并改刀",
+            "prompt": "点击清洗池中的鲈鱼，鱼身处理干净并改刀"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_17_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_17_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_17_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_17_step_1_error.png"
+          },
+          "question": {
+            "text": "加热时长怎么做更稳妥？",
+            "options": [
+              {
+                "id": "short-1",
+                "label": "偏短"
+              },
+              {
+                "id": "medium-1",
+                "label": "适中"
+              },
+              {
+                "id": "long-1",
+                "label": "偏长"
+              }
+            ],
+            "correctOptionId": "medium-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "fish",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 17,
+          "stepId": 2,
+          "hotspot": "seasoning",
+          "title": "短时盐酒腌制",
+          "description": "在鱼身上均匀涂抹料酒和食盐，腌制约15分钟。",
+          "knowledge": "使鱼肉更加紧实，口感更好。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。使鱼肉更加紧实，口感更好。",
+          "errorOperation": "重新执行本步：在鱼身上均匀涂抹料酒和食盐，腌制约15分钟。",
+          "errorPrinciple": "使鱼肉更加紧实，口感更好。",
+          "object": {
+            "label": "料酒、食盐",
+            "action": "短时盐酒腌制",
+            "prompt": "点击调料架上的料酒、食盐，短时盐酒腌制"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_17_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_17_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_17_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_17_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "fish",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 17,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "水开后上锅蒸熟",
+          "description": "将腌制好的鱼放入蒸锅，大火蒸8-10分钟。",
+          "knowledge": "掌握好火候，保证鱼肉嫩滑。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。掌握好火候，保证鱼肉嫩滑。",
+          "errorOperation": "重新执行本步：将腌制好的鱼放入蒸锅，大火蒸8-10分钟。",
+          "errorPrinciple": "掌握好火候，保证鱼肉嫩滑。",
+          "object": {
+            "label": "鲈鱼",
+            "action": "水开后上锅蒸熟",
+            "prompt": "点击锅中的鲈鱼，水开后上锅蒸熟"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_17_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_17_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_17_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_17_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "fish",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 17,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "倒掉蒸汁并补豉油",
+          "description": "将蒸出的汁液倒掉，然后淋上适量生抽调味。",
+          "knowledge": "调整口味，增添鲜味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。调整口味，增添鲜味。",
+          "errorOperation": "重新执行本步：将蒸出的汁液倒掉，然后淋上适量生抽调味。",
+          "errorPrinciple": "调整口味，增添鲜味。",
+          "object": {
+            "label": "生抽",
+            "action": "倒掉蒸汁并补豉油",
+            "prompt": "点击锅中的生抽，倒掉蒸汁并补豉油"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_17_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_17_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_17_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_17_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "fish",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "白灼虾",
+      "category": "水产",
+      "summary": "虾肉蛋白受热很快凝固，变色卷曲后马上捞出。",
+      "steps": [
+        {
+          "recipeId": 18,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "虾清洗并去虾线",
+          "description": "按标准操作完成“虾清洗并去虾线”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "虾清洗并去虾线会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。虾清洗并去虾线会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“虾清洗并去虾线”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "虾清洗并去虾线会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "虾",
+            "action": "虾清洗并去虾线",
+            "prompt": "点击清洗池中的虾，虾清洗并去虾线"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_18_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_18_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_18_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_18_step_1_error.png"
+          },
+          "question": {
+            "text": "加热时长怎么做更稳妥？",
+            "options": [
+              {
+                "id": "short-1",
+                "label": "偏短"
+              },
+              {
+                "id": "medium-1",
+                "label": "适中"
+              },
+              {
+                "id": "long-1",
+                "label": "偏长"
+              }
+            ],
+            "correctOptionId": "medium-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "shrimp",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 18,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "水烧开后下虾",
+          "description": "按标准操作完成“水烧开后下虾”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "水烧开后下虾会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。水烧开后下虾会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“水烧开后下虾”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "水烧开后下虾会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "虾",
+            "action": "水烧开后下虾",
+            "prompt": "点击锅中的虾，水烧开后下虾"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_18_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_18_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_18_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_18_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "shrimp",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 18,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "短时煮至变色卷曲",
+          "description": "按标准操作完成“短时煮至变色卷曲”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "短时煮至变色卷曲会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。短时煮至变色卷曲会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“短时煮至变色卷曲”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "短时煮至变色卷曲会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "虾",
+            "action": "短时煮至变色卷曲",
+            "prompt": "点击锅中的虾，短时煮至变色卷曲"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_18_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_18_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_18_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_18_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "shrimp",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 18,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "捞出蘸汁",
+          "description": "按标准操作完成“捞出蘸汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "捞出蘸汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。捞出蘸汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“捞出蘸汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "捞出蘸汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "白灼虾",
+            "action": "捞出蘸汁",
+            "prompt": "点击盘中的白灼虾，捞出蘸汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_18_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_18_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_18_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_18_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "shrimp",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "蒜蓉粉丝虾",
+      "category": "水产",
+      "summary": "粉丝吸汁，蒜蓉一次炒香一次后放，保留香气和辛辣层次。",
+      "steps": [
+        {
+          "recipeId": 19,
+          "stepId": 1,
+          "hotspot": "cutting_board",
+          "title": "粉丝泡软，虾开背",
+          "description": "按标准操作完成“粉丝泡软，虾开背”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "粉丝泡软，虾开背会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。粉丝泡软，虾开背会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“粉丝泡软，虾开背”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "粉丝泡软，虾开背会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "虾、粉丝",
+            "action": "粉丝泡软，虾开背",
+            "prompt": "点击砧板上的虾、粉丝，粉丝泡软，虾开背"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_19_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_19_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_19_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_19_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "cutting_board",
+              "x": 0.55,
+              "y": 0.777,
+              "scale": 0.2,
+              "visible": true
+            },
+            {
+              "assetId": "knife",
+              "x": 0.616,
+              "y": 0.729,
+              "scale": 0.074,
+              "visible": true
+            },
+            {
+              "assetId": "shrimp",
+              "x": 0.495,
+              "y": 0.79,
+              "scale": 0.075,
+              "visible": true
+            },
+            {
+              "assetId": "vermicelli",
+              "x": 0.605,
+              "y": 0.785,
+              "scale": 0.075,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 19,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "炒香一半蒜末",
+          "description": "按标准操作完成“炒香一半蒜末”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "炒香一半蒜末会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。炒香一半蒜末会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“炒香一半蒜末”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "炒香一半蒜末会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "大蒜",
+            "action": "炒香一半蒜末",
+            "prompt": "点击锅中的大蒜，炒香一半蒜末"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_19_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_19_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_19_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_19_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "vermicelli",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "shrimp",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 19,
+          "stepId": 3,
+          "hotspot": "seasoning",
+          "title": "调蒜蓉酱汁",
+          "description": "按标准操作完成“调蒜蓉酱汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "调蒜蓉酱汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。调蒜蓉酱汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“调蒜蓉酱汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "调蒜蓉酱汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "大蒜",
+            "action": "调蒜蓉酱汁",
+            "prompt": "点击调料架上的大蒜，调蒜蓉酱汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_19_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_19_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_19_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_19_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "shrimp",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "vermicelli",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 19,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "蒸至虾熟后补葱蒜",
+          "description": "按标准操作完成“蒸至虾熟后补葱蒜”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "蒸至虾熟后补葱蒜会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。蒸至虾熟后补葱蒜会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“蒸至虾熟后补葱蒜”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "蒸至虾熟后补葱蒜会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "虾、大蒜",
+            "action": "蒸至虾熟后补葱蒜",
+            "prompt": "点击锅中的虾、大蒜，蒸至虾熟后补葱蒜"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_19_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_19_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_19_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_19_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "shrimp",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "vermicelli",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "家常豆腐",
+      "category": "豆制品",
+      "summary": "豆腐先煎定型，后期收汁让表面挂味而不易碎。",
+      "steps": [
+        {
+          "recipeId": 20,
+          "stepId": 1,
+          "hotspot": "cutting_board",
+          "title": "豆腐切块并擦干",
+          "description": "按标准操作完成“豆腐切块并擦干”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "豆腐切块并擦干会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。豆腐切块并擦干会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“豆腐切块并擦干”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "豆腐切块并擦干会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "老豆腐",
+            "action": "豆腐切块并擦干",
+            "prompt": "点击砧板上的老豆腐，豆腐切块并擦干"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_20_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_20_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_20_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_20_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "cutting_board",
+              "x": 0.55,
+              "y": 0.777,
+              "scale": 0.2,
+              "visible": true
+            },
+            {
+              "assetId": "knife",
+              "x": 0.616,
+              "y": 0.729,
+              "scale": 0.074,
+              "visible": true
+            },
+            {
+              "assetId": "firm-tofu",
+              "x": 0.495,
+              "y": 0.79,
+              "scale": 0.075,
+              "visible": true
+            },
+            {
+              "assetId": "green-pepper",
+              "x": 0.605,
+              "y": 0.785,
+              "scale": 0.075,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 20,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "煎至两面定型",
+          "description": "按标准操作完成“煎至两面定型”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "煎至两面定型会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。煎至两面定型会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“煎至两面定型”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "煎至两面定型会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "老豆腐",
+            "action": "煎至两面定型",
+            "prompt": "点击锅中的老豆腐，煎至两面定型"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_20_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_20_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_20_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_20_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "green-pepper",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "wood-ear",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 20,
+          "stepId": 3,
+          "hotspot": "seasoning",
+          "title": "下配料和酱汁",
+          "description": "按标准操作完成“下配料和酱汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "下配料和酱汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。下配料和酱汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“下配料和酱汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "下配料和酱汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "老豆腐",
+            "action": "下配料和酱汁",
+            "prompt": "点击调料架上的老豆腐，下配料和酱汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_20_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_20_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_20_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_20_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "wood-ear",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "firm-tofu",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 20,
+          "stepId": 4,
+          "hotspot": "stove",
+          "title": "勾薄芡收汁",
+          "description": "按标准操作完成“勾薄芡收汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "勾薄芡收汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。勾薄芡收汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“勾薄芡收汁”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "勾薄芡收汁会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "老豆腐",
+            "action": "勾薄芡收汁",
+            "prompt": "点击锅中的老豆腐，勾薄芡收汁"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_20_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_20_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_20_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_20_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "firm-tofu",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "green-pepper",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "麻婆豆腐",
+      "category": "豆制品",
+      "summary": "制作麻婆豆腐",
+      "steps": [
+        {
+          "recipeId": 21,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "准备材料",
+          "description": "将豆腐切成块，用沸水焯水去腥。",
+          "knowledge": "豆腐含有较多的蛋白质和脂肪，焯水可以去除部分杂质和异味。",
+          "actionLabel": "开始",
+          "correctText": "这一步完成了。豆腐含有较多的蛋白质和脂肪，焯水可以去除部分杂质和异味。",
+          "errorOperation": "重新执行本步：将豆腐切成块，用沸水焯水去腥。",
+          "errorPrinciple": "豆腐含有较多的蛋白质和脂肪，焯水可以去除部分杂质和异味。",
+          "object": {
+            "label": "豆腐",
+            "action": "准备材料",
+            "prompt": "点击清洗池中的豆腐，准备材料"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_21_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_21_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_21_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_21_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "tofu",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "beef-brisket",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 21,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "炒香豆瓣酱和牛肉末",
+          "description": "热锅凉油，加入豆瓣酱和牛肉末炒至出香味。",
+          "knowledge": "豆瓣酱和牛肉末是麻婆豆腐的灵魂，它们需要在高温下快速翻炒。",
+          "actionLabel": "继续",
+          "correctText": "这一步完成了。豆瓣酱和牛肉末是麻婆豆腐的灵魂，它们需要在高温下快速翻炒。",
+          "errorOperation": "重新执行本步：热锅凉油，加入豆瓣酱和牛肉末炒至出香味。",
+          "errorPrinciple": "豆瓣酱和牛肉末是麻婆豆腐的灵魂，它们需要在高温下快速翻炒。",
+          "object": {
+            "label": "牛肉末、豆瓣酱",
+            "action": "炒香豆瓣酱和牛肉末",
+            "prompt": "点击锅中的牛肉末、豆瓣酱，炒香豆瓣酱和牛肉末"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_21_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_21_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_21_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_21_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "beef-brisket",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "tofu",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 21,
+          "stepId": 3,
+          "hotspot": "seasoning",
+          "title": "加水放豆腐轻推",
+          "description": "倒入适量清水，轻轻推匀，使豆腐均匀受热。",
+          "knowledge": "水的量要适中，过多或过少都会影响豆腐的口感。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。水的量要适中，过多或过少都会影响豆腐的口感。",
+          "errorOperation": "重新执行本步：倒入适量清水，轻轻推匀，使豆腐均匀受热。",
+          "errorPrinciple": "水的量要适中，过多或过少都会影响豆腐的口感。",
+          "object": {
+            "label": "豆腐",
+            "action": "加水放豆腐轻推",
+            "prompt": "点击调料架上的豆腐，加水放豆腐轻推"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_21_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_21_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_21_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_21_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "tofu",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "beef-brisket",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 21,
+          "stepId": 4,
+          "hotspot": "seasoning",
+          "title": "分次勾芡并补花椒香",
+          "description": "根据需要调整汤汁浓稠度，最后撒上花椒粉增加香气。",
+          "knowledge": "勾芡可以使汤汁更加顺滑，花椒粉能提升麻味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。勾芡可以使汤汁更加顺滑，花椒粉能提升麻味。",
+          "errorOperation": "重新执行本步：根据需要调整汤汁浓稠度，最后撒上花椒粉增加香气。",
+          "errorPrinciple": "勾芡可以使汤汁更加顺滑，花椒粉能提升麻味。",
+          "object": {
+            "label": "花椒",
+            "action": "分次勾芡并补花椒香",
+            "prompt": "点击调料架上的花椒，分次勾芡并补花椒香"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_21_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_21_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_21_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_21_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "beef-brisket",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "tofu",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "韭菜炒鸡蛋",
+      "category": "禽肉",
+      "summary": "鸡蛋刚凝固就盛出，韭菜最后快炒以保持香气和脆嫩。",
+      "steps": [
+        {
+          "recipeId": 22,
+          "stepId": 1,
+          "hotspot": "cutting_board",
+          "title": "韭菜切段，鸡蛋打散",
+          "description": "按标准操作完成“韭菜切段，鸡蛋打散”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "韭菜切段，鸡蛋打散会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。韭菜切段，鸡蛋打散会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“韭菜切段，鸡蛋打散”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "韭菜切段，鸡蛋打散会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "韭菜、鸡蛋",
+            "action": "韭菜切段，鸡蛋打散",
+            "prompt": "点击砧板上的韭菜、鸡蛋，韭菜切段，鸡蛋打散"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_22_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_22_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_22_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_22_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "cutting_board",
+              "x": 0.55,
+              "y": 0.777,
+              "scale": 0.2,
+              "visible": true
+            },
+            {
+              "assetId": "knife",
+              "x": 0.616,
+              "y": 0.729,
+              "scale": 0.074,
+              "visible": true
+            },
+            {
+              "assetId": "chives",
+              "x": 0.495,
+              "y": 0.79,
+              "scale": 0.075,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.605,
+              "y": 0.785,
+              "scale": 0.075,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 22,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "先炒蛋至刚凝固",
+          "description": "按标准操作完成“先炒蛋至刚凝固”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "先炒蛋至刚凝固会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。先炒蛋至刚凝固会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“先炒蛋至刚凝固”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "先炒蛋至刚凝固会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "韭菜",
+            "action": "先炒蛋至刚凝固",
+            "prompt": "点击锅中的韭菜，先炒蛋至刚凝固"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_22_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_22_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_22_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_22_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "egg",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "chives",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 22,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "下韭菜大火快炒",
+          "description": "按标准操作完成“下韭菜大火快炒”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "下韭菜大火快炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。下韭菜大火快炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“下韭菜大火快炒”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "下韭菜大火快炒会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "韭菜",
+            "action": "下韭菜大火快炒",
+            "prompt": "点击锅中的韭菜，下韭菜大火快炒"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_22_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_22_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_22_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_22_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "chives",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 22,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "合炒调味立即出锅",
+          "description": "按标准操作完成“合炒调味立即出锅”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "合炒调味立即出锅会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。合炒调味立即出锅会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“合炒调味立即出锅”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "合炒调味立即出锅会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "韭菜炒鸡蛋",
+            "action": "合炒调味立即出锅",
+            "prompt": "点击盘中的韭菜炒鸡蛋，合炒调味立即出锅"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_22_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_22_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_22_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_22_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "chives",
+              "x": 0.6,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "菠菜豆腐汤",
+      "category": "汤羹",
+      "summary": "叶菜最后放，短时加热即可，避免汤色发暗和菜叶软烂。",
+      "steps": [
+        {
+          "recipeId": 23,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "菠菜洗净，豆腐切块",
+          "description": "按标准操作完成“菠菜洗净，豆腐切块”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "菠菜洗净，豆腐切块会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。菠菜洗净，豆腐切块会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“菠菜洗净，豆腐切块”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "菠菜洗净，豆腐切块会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "菠菜、豆腐",
+            "action": "菠菜洗净，豆腐切块",
+            "prompt": "点击清洗池中的菠菜、豆腐，菠菜洗净，豆腐切块"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_23_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_23_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_23_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_23_step_1_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "spinach",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "tofu",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 23,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "水开下豆腐煮热",
+          "description": "按标准操作完成“水开下豆腐煮热”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "水开下豆腐煮热会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。水开下豆腐煮热会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“水开下豆腐煮热”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "水开下豆腐煮热会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "豆腐",
+            "action": "水开下豆腐煮热",
+            "prompt": "点击锅中的豆腐，水开下豆腐煮热"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_23_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_23_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_23_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_23_step_2_error.png"
+          },
+          "question": {
+            "text": "加热时长怎么做更稳妥？",
+            "options": [
+              {
+                "id": "short-2",
+                "label": "偏短"
+              },
+              {
+                "id": "medium-2",
+                "label": "适中"
+              },
+              {
+                "id": "long-2",
+                "label": "偏长"
+              }
+            ],
+            "correctOptionId": "medium-2"
+          },
+          "renderObjects": [
+            {
+              "assetId": "tofu",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "spinach",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 23,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "放菠菜短时煮熟",
+          "description": "按标准操作完成“放菠菜短时煮熟”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "放菠菜短时煮熟会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。放菠菜短时煮熟会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“放菠菜短时煮熟”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "放菠菜短时煮熟会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "菠菜",
+            "action": "放菠菜短时煮熟",
+            "prompt": "点击锅中的菠菜，放菠菜短时煮熟"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_23_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_23_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_23_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_23_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "spinach",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "tofu",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 23,
+          "stepId": 4,
+          "hotspot": "seasoning",
+          "title": "少量盐调味",
+          "description": "按标准操作完成“少量盐调味”，观察颜色、气味和质地变化后再进入下一步。",
+          "knowledge": "少量盐调味会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。少量盐调味会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "errorOperation": "重新执行本步：按标准操作完成“少量盐调味”，观察颜色、气味和质地变化后再进入下一步。",
+          "errorPrinciple": "少量盐调味会改变食材的受热、水分或风味状态；根据当前锅温和表面变化判断操作时机。",
+          "object": {
+            "label": "食盐",
+            "action": "少量盐调味",
+            "prompt": "点击调料架上的食盐，少量盐调味"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_23_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_23_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_23_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_23_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "tofu",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "spinach",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "冬瓜排骨汤",
+      "category": "汤羹",
+      "summary": "制作冬瓜排骨汤",
+      "steps": [
+        {
+          "recipeId": 24,
+          "stepId": 1,
+          "hotspot": "sink",
+          "title": "准备材料",
+          "description": "将排骨洗净并用冷水焯水去血沫，冬瓜去皮切块。",
+          "knowledge": "焯水可以去除排骨表面的血沫和杂质。",
+          "actionLabel": "开始",
+          "correctText": "这一步完成了。焯水可以去除排骨表面的血沫和杂质。",
+          "errorOperation": "重新执行本步：将排骨洗净并用冷水焯水去血沫，冬瓜去皮切块。",
+          "errorPrinciple": "焯水可以去除排骨表面的血沫和杂质。",
+          "object": {
+            "label": "冬瓜、排骨",
+            "action": "准备材料",
+            "prompt": "点击清洗池中的冬瓜、排骨，准备材料"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_24_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_24_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_24_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_24_step_1_error.png"
+          },
+          "question": {
+            "text": "加热时长怎么做更稳妥？",
+            "options": [
+              {
+                "id": "short-1",
+                "label": "偏短"
+              },
+              {
+                "id": "medium-1",
+                "label": "适中"
+              },
+              {
+                "id": "long-1",
+                "label": "偏长"
+              }
+            ],
+            "correctOptionId": "medium-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "winter-melon",
+              "x": 0.315,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            },
+            {
+              "assetId": "pork-ribs",
+              "x": 0.425,
+              "y": 0.65,
+              "scale": 0.08,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 24,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "炖煮排骨",
+          "description": "将焯好的排骨加入适量的水，大火烧开后转小火慢炖至排骨熟软。",
+          "knowledge": "炖煮过程中加入适量的水，保持汤汁的浓度。",
+          "actionLabel": "进行",
+          "correctText": "这一步完成了。炖煮过程中加入适量的水，保持汤汁的浓度。",
+          "errorOperation": "重新执行本步：将焯好的排骨加入适量的水，大火烧开后转小火慢炖至排骨熟软。",
+          "errorPrinciple": "炖煮过程中加入适量的水，保持汤汁的浓度。",
+          "object": {
+            "label": "排骨",
+            "action": "炖煮排骨",
+            "prompt": "点击锅中的排骨，炖煮排骨"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_24_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_24_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_24_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_24_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "pork-ribs",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "winter-melon",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 24,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "加入冬瓜",
+          "description": "将冬瓜块加入锅中，继续炖煮至冬瓜透明。",
+          "knowledge": "冬瓜在汤中煮至透明，口感更佳。",
+          "actionLabel": "进行",
+          "correctText": "这一步完成了。冬瓜在汤中煮至透明，口感更佳。",
+          "errorOperation": "重新执行本步：将冬瓜块加入锅中，继续炖煮至冬瓜透明。",
+          "errorPrinciple": "冬瓜在汤中煮至透明，口感更佳。",
+          "object": {
+            "label": "冬瓜",
+            "action": "加入冬瓜",
+            "prompt": "点击锅中的冬瓜，加入冬瓜"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_24_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_24_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_24_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_24_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "winter-melon",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "pork-ribs",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 24,
+          "stepId": 4,
+          "hotspot": "seasoning",
+          "title": "调味",
+          "description": "根据个人口味，少量加入食盐调味。",
+          "knowledge": "食盐可以提鲜，增加汤的风味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。食盐可以提鲜，增加汤的风味。",
+          "errorOperation": "重新执行本步：根据个人口味，少量加入食盐调味。",
+          "errorPrinciple": "食盐可以提鲜，增加汤的风味。",
+          "object": {
+            "label": "食盐",
+            "action": "调味",
+            "prompt": "点击调料架上的食盐，调味"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_24_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_24_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_24_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_24_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "bowl",
+              "x": 0.895,
+              "y": 0.334,
+              "scale": 0.135,
+              "visible": true
+            },
+            {
+              "assetId": "whisk",
+              "x": 0.962,
+              "y": 0.275,
+              "scale": 0.064,
+              "visible": true
+            },
+            {
+              "assetId": "pork-ribs",
+              "x": 0.85,
+              "y": 0.3,
+              "scale": 0.065,
+              "visible": true
+            },
+            {
+              "assetId": "winter-melon",
+              "x": 0.95,
+              "y": 0.305,
+              "scale": 0.065,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "蛋炒饭",
+      "category": "主食",
+      "summary": "制作蛋炒饭",
+      "steps": [
+        {
+          "recipeId": 25,
+          "stepId": 1,
+          "hotspot": "cutting_board",
+          "title": "准备食材",
+          "description": "将米饭打散，鸡蛋搅匀。",
+          "knowledge": "确保所有食材新鲜，避免因食材变质影响口感。",
+          "actionLabel": "开始",
+          "correctText": "这一步完成了。确保所有食材新鲜，避免因食材变质影响口感。",
+          "errorOperation": "重新执行本步：将米饭打散，鸡蛋搅匀。",
+          "errorPrinciple": "确保所有食材新鲜，避免因食材变质影响口感。",
+          "object": {
+            "label": "米饭、鸡蛋",
+            "action": "准备食材",
+            "prompt": "点击砧板上的米饭、鸡蛋，准备食材"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_25_step_1_normal.png",
+            "click": "assets/food_state/state_food_recipe_25_step_1_click.png",
+            "success": "assets/food_state/state_food_recipe_25_step_1_success.png",
+            "error": "assets/food_state/state_food_recipe_25_step_1_error.png"
+          },
+          "question": {
+            "text": "火力怎么做更稳妥？",
+            "options": [
+              {
+                "id": "low-1",
+                "label": "小火"
+              },
+              {
+                "id": "medium-1",
+                "label": "中火"
+              },
+              {
+                "id": "high-1",
+                "label": "大火"
+              }
+            ],
+            "correctOptionId": "high-1"
+          },
+          "renderObjects": [
+            {
+              "assetId": "cutting_board",
+              "x": 0.55,
+              "y": 0.777,
+              "scale": 0.2,
+              "visible": true
+            },
+            {
+              "assetId": "knife",
+              "x": 0.616,
+              "y": 0.729,
+              "scale": 0.074,
+              "visible": true
+            },
+            {
+              "assetId": "glass-noodles",
+              "x": 0.495,
+              "y": 0.79,
+              "scale": 0.075,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.605,
+              "y": 0.785,
+              "scale": 0.075,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 25,
+          "stepId": 2,
+          "hotspot": "stove",
+          "title": "炒蛋",
+          "description": "热锅炒蛋并划散。",
+          "knowledge": "鸡蛋炒至金黄，保持蛋白嫩滑。",
+          "actionLabel": "继续",
+          "correctText": "这一步完成了。鸡蛋炒至金黄，保持蛋白嫩滑。",
+          "errorOperation": "重新执行本步：热锅炒蛋并划散。",
+          "errorPrinciple": "鸡蛋炒至金黄，保持蛋白嫩滑。",
+          "object": {
+            "label": "米饭",
+            "action": "炒蛋",
+            "prompt": "点击锅中的米饭，炒蛋"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_25_step_2_normal.png",
+            "click": "assets/food_state/state_food_recipe_25_step_2_click.png",
+            "success": "assets/food_state/state_food_recipe_25_step_2_success.png",
+            "error": "assets/food_state/state_food_recipe_25_step_2_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "egg",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "glass-noodles",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 25,
+          "stepId": 3,
+          "hotspot": "stove",
+          "title": "炒饭",
+          "description": "下米饭大火翻炒。",
+          "knowledge": "米饭与鸡蛋充分混合，增加口感。",
+          "actionLabel": "继续",
+          "correctText": "这一步完成了。米饭与鸡蛋充分混合，增加口感。",
+          "errorOperation": "重新执行本步：下米饭大火翻炒。",
+          "errorPrinciple": "米饭与鸡蛋充分混合，增加口感。",
+          "object": {
+            "label": "米饭",
+            "action": "炒饭",
+            "prompt": "点击锅中的米饭，炒饭"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_25_step_3_normal.png",
+            "click": "assets/food_state/state_food_recipe_25_step_3_click.png",
+            "success": "assets/food_state/state_food_recipe_25_step_3_success.png",
+            "error": "assets/food_state/state_food_recipe_25_step_3_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "glass-noodles",
+              "x": 0.755,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.825,
+              "y": 0.62,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        },
+        {
+          "recipeId": 25,
+          "stepId": 4,
+          "hotspot": "plate",
+          "title": "调味",
+          "description": "少量调味后出锅。",
+          "knowledge": "加入适量生抽和食盐，提升风味。",
+          "actionLabel": "完成本步",
+          "correctText": "这一步完成了。加入适量生抽和食盐，提升风味。",
+          "errorOperation": "重新执行本步：少量调味后出锅。",
+          "errorPrinciple": "加入适量生抽和食盐，提升风味。",
+          "object": {
+            "label": "蛋炒饭",
+            "action": "调味",
+            "prompt": "点击盘中的蛋炒饭，调味"
+          },
+          "states": {
+            "normal": "assets/food_state/state_food_recipe_25_step_4_normal.png",
+            "click": "assets/food_state/state_food_recipe_25_step_4_click.png",
+            "success": "assets/food_state/state_food_recipe_25_step_4_success.png",
+            "error": "assets/food_state/state_food_recipe_25_step_4_error.png"
+          },
+          "question": null,
+          "renderObjects": [
+            {
+              "assetId": "plate",
+              "x": 0.56,
+              "y": 0.777,
+              "scale": 0.205,
+              "visible": true
+            },
+            {
+              "assetId": "egg",
+              "x": 0.52,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            },
+            {
+              "assetId": "glass-noodles",
+              "x": 0.6,
+              "y": 0.79,
+              "scale": 0.06,
+              "visible": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -62,16 +62,16 @@ export default function HomePage() {
               油、盐、酱、醋、糖和火候，不是背下来的配方。把食材放上实验台，看清每一步怎样改变水分、结构与味道。
             </p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/cook/">
+              <Link className="button button-primary" href="/cook/story/">
                 <ChefHat size={19} />
-                开始菜谱实训
+                进入烹语剧场
                 <ArrowRight size={18} />
               </Link>
               <Link className="button button-ghost" href="/principles/">
                 先看原理
               </Link>
-              <Link className="button button-ghost" href="/kitchen/">
-                进入自由实验
+              <Link className="button button-ghost" href="/cook/">
+                标准菜谱实训
               </Link>
             </div>
             <div className="hero-proof">
@@ -318,13 +318,13 @@ export default function HomePage() {
             <h2>下一次站在灶台前，你会知道该观察什么。</h2>
           </div>
           <div className="closing-actions">
-            <Link className="button button-primary" href="/cook/">
+            <Link className="button button-primary" href="/cook/story/">
               <ThermometerSun size={19} />
-              开始菜谱实训
+              进入烹语剧场
             </Link>
-            <Link className="button button-ghost" href="/community/">
+            <Link className="button button-ghost" href="/cook/story/tomato-egg/">
               <MessagesSquare size={18} />
-              厨友交流
+              试玩番茄炒蛋
             </Link>
           </div>
         </div>

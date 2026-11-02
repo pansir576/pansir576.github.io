@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="paper" cx="38%" cy="26%" r="72%">
+      <stop offset="0" stop-color="#fffef4"/>
+      <stop offset=".62" stop-color="#f4ead1"/>
+      <stop offset="1" stop-color="#ddc9a3"/>
+    </radialGradient>
+    <linearGradient id="clove" x1=".2" y1=".08" x2=".8" y2=".92">
+      <stop offset="0" stop-color="#fffdf1"/>
+      <stop offset=".72" stop-color="#eadab5"/>
+      <stop offset="1" stop-color="#c8ac79"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="13" flood-color="#684a24" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" stroke="#85653c" stroke-width="7" stroke-linejoin="round">
+    <path d="M225 105c-35 47-73 69-98 118-34 68-7 164 68 196 69 29 151-8 172-82 17-59-15-112-58-158-30-31-48-52-53-92-3-25-19-36-31-16Z" fill="url(#paper)"/>
+    <path d="M172 176c-31 42-48 88-29 130 18 41 60 61 106 52 42-8 74-39 75-80 1-38-25-71-59-103-26-25-48-42-57-70-24 17-27 48-36 71Z" fill="url(#clove)"/>
+    <path d="M195 190c-21 14-36 42-36 70 0 34 24 61 57 64" fill="none" stroke="#b89b69" stroke-width="5" stroke-linecap="round"/>
+    <path d="M256 141c-4 37 9 67 38 98 31 33 52 62 52 96" fill="none" stroke="#b89b69" stroke-width="5" stroke-linecap="round"/>
+    <path d="M285 117c-12 41 2 69 35 97 39 33 65 70 64 111" fill="none" stroke="#b89b69" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,1027 @@
+.page {
+  min-height: calc(100svh - 72px);
+  color: #27382e;
+  background: #efe8db;
+}
+
+.storyPage {
+  min-height: 0;
+}
+
+.loadingPage {
+  display: grid;
+  min-height: calc(100svh - 72px);
+  place-items: center;
+  color: #5d6c60;
+  background: #efe8db;
+  font-size: 13px;
+}
+
+.recipePicker {
+  width: min(1280px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 52px 0 72px;
+}
+
+.pickerHeading {
+  display: grid;
+  max-width: 760px;
+  margin-bottom: 30px;
+  gap: 8px;
+}
+
+.pickerHeading > span {
+  color: #a2643d;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.pickerHeading h1 {
+  margin: 0;
+  color: #253e30;
+  font-family: var(--serif);
+  font-size: clamp(34px, 5vw, 62px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.pickerHeading p {
+  max-width: 680px;
+  margin: 0;
+  color: #677269;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.recipeGrid button {
+  display: grid;
+  position: relative;
+  min-height: 152px;
+  padding: 14px 44px 14px 14px;
+  border: 1px solid rgba(52, 73, 58, 0.14);
+  border-radius: 17px;
+  color: #33463a;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(218, 170, 94, 0.16), transparent 42%),
+    #fffdf7;
+  box-shadow: 0 8px 24px rgba(48, 58, 43, 0.05);
+  text-align: left;
+  cursor: pointer;
+  gap: 7px;
+  grid-template-columns: 112px minmax(0, 1fr);
+  column-gap: 14px;
+  align-items: center;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.recipeGrid button > [data-story-dish-card] {
+  width: 112px;
+  align-self: center;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.recipeGrid button:hover,
+.recipeGrid button:focus-visible {
+  border-color: rgba(61, 106, 71, 0.44);
+  box-shadow: 0 14px 32px rgba(48, 58, 43, 0.1);
+  outline: none;
+  transform: translateY(-3px);
+}
+
+.recipeGrid button > span {
+  grid-column: 2;
+  color: #a56b39;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.recipeGrid strong {
+  grid-column: 2;
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.recipeGrid small {
+  grid-column: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  color: #788079;
+  font-size: 10px;
+  line-height: 1.7;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.recipeGrid svg {
+  position: absolute;
+  right: 17px;
+  bottom: 18px;
+  color: #5c7a62;
+}
+
+.finishedDishScene {
+  position: absolute;
+  inset: 6% 5% 7%;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 251, 233, 0.34);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 50% 43%, rgba(255, 246, 205, 0.2), transparent 38%),
+    rgba(34, 41, 32, 0.2);
+  box-shadow: inset 0 0 90px rgba(31, 37, 28, 0.18);
+  backdrop-filter: blur(3px);
+  pointer-events: none;
+  animation: finishedDishIn 680ms ease-out both;
+}
+
+.finishedDishPlate {
+  width: min(52%, 510px);
+  filter: drop-shadow(0 24px 20px rgba(31, 25, 17, 0.26));
+  transform: translateY(-2%);
+}
+
+.finishedDishCaption {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  display: grid;
+  min-width: 190px;
+  padding: 9px 18px;
+  border: 1px solid rgba(255, 249, 226, 0.42);
+  border-radius: 999px;
+  color: #fffdf5;
+  background: rgba(44, 69, 49, 0.88);
+  box-shadow: 0 10px 24px rgba(31, 39, 30, 0.2);
+  text-align: center;
+  transform: translateX(-50%);
+  backdrop-filter: blur(9px);
+}
+
+.finishedDishCaption span {
+  color: #f2cf82;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+}
+
+.finishedDishCaption strong {
+  margin-top: 1px;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.resultMetrics {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  gap: 5px;
+}
+
+.resultMetrics span {
+  padding: 4px 7px;
+  border-radius: 99px;
+  color: #4b6251;
+  background: rgba(68, 103, 75, 0.09);
+  font-size: 8px;
+}
+
+.tutorial {
+  display: grid;
+  width: min(1440px, 100%);
+  height: auto;
+  min-height: 0;
+  margin: 0 auto;
+  grid-template-columns: minmax(0, 62fr) minmax(340px, 38fr);
+  grid-template-rows: auto 112px;
+  overflow: hidden;
+  background: #f8f3e9;
+  box-shadow: 0 20px 80px rgba(36, 45, 37, 0.12);
+}
+
+.kitchen,
+.dialoguePanel {
+  min-width: 0;
+  min-height: 0;
+}
+
+.kitchen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1344 / 768;
+  overflow: hidden;
+  background: #e7d6be;
+}
+
+.kitchenBackground {
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  background: url("/2d/bg/kitchen_bg.png") center / 100% 100% no-repeat;
+}
+
+.hotspot {
+  position: absolute;
+  z-index: 30;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hotspot:focus-visible {
+  outline: 2px dashed rgba(91, 65, 31, 0.85);
+  outline-offset: -3px;
+}
+
+.hotspot:disabled {
+  cursor: default;
+}
+
+.renderObjectLayer {
+  position: absolute;
+  z-index: 20;
+  inset: 0;
+  pointer-events: none;
+}
+
+.renderObjectFrame {
+  position: absolute;
+  z-index: 20;
+  display: block;
+  aspect-ratio: 1;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition:
+    top 260ms ease,
+    left 260ms ease,
+    width 260ms ease,
+    opacity 260ms ease;
+}
+
+.renderObjectFrame[data-story-render-transition="entering"] {
+  animation: renderObjectEnter 260ms ease both;
+}
+
+.renderObjectFrame[data-story-render-transition="leaving"] {
+  animation: renderObjectLeave 260ms ease both;
+}
+
+.renderObjectImage {
+  position: absolute;
+  z-index: 20;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 9px 10px rgba(56, 38, 24, 0.18));
+  pointer-events: none;
+  transition:
+    filter 160ms ease,
+    transform 160ms ease;
+  transform-origin: center;
+  user-select: none;
+}
+
+.renderObjectImage[data-story-object-state="click"] {
+  filter:
+    brightness(1.08)
+    drop-shadow(0 0 3px rgba(255, 245, 190, 0.95))
+    drop-shadow(0 0 12px rgba(238, 187, 66, 0.9))
+    drop-shadow(0 10px 12px rgba(72, 48, 25, 0.2));
+  transform: scale(1.08);
+}
+
+.renderObjectImage[data-story-object-state="success"] {
+  animation: renderObjectSuccess 560ms ease both;
+}
+
+.renderObjectImage[data-story-object-state="error"] {
+  animation: renderObjectError 520ms ease both;
+}
+
+.renderObjectHitArea {
+  position: absolute;
+  z-index: 30;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  border-radius: 20%;
+  background: transparent;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.renderObjectHitArea:focus-visible {
+  outline: 2px solid #6a4a24;
+  outline-offset: 5px;
+}
+
+.renderObjectHitArea:disabled {
+  cursor: default;
+}
+
+.objectPrompt {
+  display: grid;
+  position: absolute;
+  z-index: 40;
+  width: max-content;
+  max-width: min(220px, 78vw);
+  padding: 7px 9px;
+  border: 1px solid rgba(66, 55, 37, 0.14);
+  border-radius: 9px;
+  color: #3d3528;
+  background: rgba(255, 252, 240, 0.94);
+  box-shadow: 0 8px 20px rgba(50, 37, 20, 0.16);
+  font-size: 9px;
+  line-height: 1.45;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+}
+
+.objectPrompt strong,
+.objectPrompt span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.objectPrompt strong {
+  color: #744e26;
+  font-size: 9px;
+}
+
+.objectPrompt span {
+  color: #5c675e;
+  font-size: 8px;
+}
+
+.objectPrompt[data-placement="above"] {
+  transform: translate(-50%, calc(-100% - 10px));
+}
+
+.objectPrompt[data-placement="below"] {
+  transform: translate(-50%, 10px);
+}
+
+.objectPrompt[data-placement="below-end"] {
+  transform: translate(-90%, 10px);
+}
+
+.kitchenError {
+  position: absolute;
+  z-index: 35;
+  right: 20px;
+  bottom: 20px;
+  display: grid;
+  max-width: 330px;
+  padding: 13px 15px;
+  border: 1px solid rgba(173, 62, 43, 0.22);
+  border-radius: 13px;
+  color: #7e3529;
+  background: rgba(255, 243, 235, 0.94);
+  box-shadow: 0 14px 34px rgba(74, 34, 24, 0.16);
+  gap: 4px;
+  backdrop-filter: blur(12px);
+}
+
+.kitchenError strong {
+  font-size: 11px;
+}
+
+.kitchenError span {
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.dialoguePanel {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 72% 25%, rgba(226, 186, 125, 0.2), transparent 19rem),
+    linear-gradient(150deg, #f9f2e5, #eee4d4);
+}
+
+.characterScene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.characterAura {
+  position: absolute;
+  inset: 8% 4% 3%;
+  border-radius: 50%;
+  opacity: 0;
+  background: radial-gradient(circle, rgba(130, 26, 40, 0.34), transparent 70%);
+  filter: blur(24px);
+  transition: opacity 220ms ease;
+}
+
+.characterAuraTransform {
+  opacity: 0.58;
+}
+
+.characterAuraDragon {
+  opacity: 0.88;
+}
+
+.character {
+  position: absolute;
+  z-index: 2;
+  right: 3%;
+  bottom: 5%;
+  width: 92%;
+  height: 97%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(0 18px 18px rgba(46, 31, 19, 0.2));
+  animation: characterCrossfade 220ms ease both;
+}
+
+.characterDragon {
+  right: 2%;
+  width: 98%;
+  height: 88%;
+  bottom: 10%;
+  background-position: center center;
+}
+
+.dialogueBubble {
+  position: absolute;
+  z-index: 5;
+  right: 5%;
+  bottom: 4%;
+  left: 5%;
+  max-height: 48%;
+  overflow-y: auto;
+  padding: 16px 17px;
+  border: 1px solid rgba(55, 71, 57, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 253, 247, 0.94);
+  box-shadow: 0 18px 42px rgba(51, 40, 28, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.dialogueBubble::after {
+  position: absolute;
+  top: -9px;
+  right: 25%;
+  width: 18px;
+  height: 18px;
+  border-top: 1px solid rgba(55, 71, 57, 0.14);
+  border-left: 1px solid rgba(55, 71, 57, 0.14);
+  background: rgba(255, 253, 247, 0.94);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.dialogueCorrect {
+  border-color: rgba(69, 125, 80, 0.24);
+  background: rgba(245, 252, 243, 0.96);
+}
+
+.dialogueDragon {
+  color: #f9eae1;
+  border-color: rgba(198, 67, 44, 0.3);
+  background: rgba(35, 20, 22, 0.94);
+}
+
+.namePlate {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.namePlate strong {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.namePlate span {
+  padding: 4px 8px;
+  border-radius: 99px;
+  color: #775a35;
+  background: rgba(200, 155, 83, 0.13);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.dialogueDragon .namePlate span {
+  color: #eeaa9d;
+  background: rgba(192, 62, 42, 0.18);
+}
+
+.dialogueText {
+  position: relative;
+  z-index: 1;
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+.question {
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px solid rgba(65, 77, 66, 0.11);
+}
+
+.question > p {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.questionOptions {
+  display: grid;
+  gap: 6px;
+}
+
+.questionOptions button {
+  display: flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 9px;
+  border: 1px solid rgba(49, 75, 56, 0.13);
+  border-radius: 10px;
+  color: #3e5043;
+  background: #fffdf7;
+  font-size: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.questionOptions button:hover,
+.questionOptions button:focus-visible {
+  border-color: #658269;
+  outline: none;
+}
+
+.questionOptions button > span {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #55745c;
+  font-family: ui-monospace, monospace;
+  font-size: 9px;
+}
+
+.errorExplanation {
+  display: grid;
+  position: relative;
+  z-index: 1;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.errorExplanation > span {
+  display: grid;
+  padding: 8px 9px;
+  border: 1px solid rgba(229, 135, 116, 0.18);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 9px;
+  line-height: 1.6;
+  gap: 2px;
+}
+
+.errorExplanation strong {
+  color: #f0ae9e;
+  font-size: 8px;
+}
+
+.errorExplanation button,
+.result button {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  justify-self: start;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 9px;
+  color: #fffaf3;
+  background: #a24031;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.result > span {
+  color: #b47538;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.result h2 {
+  margin: 4px 0 6px;
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.result p {
+  margin: 0 0 12px;
+  color: #667067;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.result button {
+  color: #fffdf7;
+  background: #2d5d40;
+}
+
+.progressBar {
+  display: grid;
+  position: relative;
+  z-index: 20;
+  padding: 16px 22px;
+  border-top: 1px solid rgba(46, 66, 50, 0.12);
+  background: #fffdf7;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(230px, 0.85fr) minmax(260px, 1.5fr) auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.progressCopy {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.progressCopy span {
+  color: #b4653d;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.progressCopy strong {
+  overflow: hidden;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.progressCopy small {
+  color: #7d857e;
+  font-size: 9px;
+}
+
+.progressTrack {
+  display: flex;
+  position: relative;
+  height: 16px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #ede8dc;
+}
+
+.progressTrack i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d5a158, #456f50);
+  transition: width 300ms ease;
+}
+
+.progressTrack span {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  padding-right: 8px;
+  color: #fff;
+  font-family: ui-monospace, monospace;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.progressActions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.iconButton {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  place-items: center;
+  border: 1px solid rgba(49, 75, 56, 0.15);
+  border-radius: 10px;
+  color: #55705c;
+  background: #faf7ee;
+  cursor: pointer;
+}
+
+.iconButton:hover,
+.iconButton:focus-visible {
+  border-color: #658269;
+  outline: none;
+}
+
+.iconButton[aria-pressed="true"] {
+  color: #fffaf2;
+  background: #55745c;
+}
+
+.continueButton {
+  display: inline-flex;
+  min-width: 114px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 11px;
+  color: #fffdf2;
+  background: linear-gradient(135deg, #284e35, #4d7d56);
+  box-shadow: 0 10px 24px rgba(35, 77, 48, 0.18);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.continueButton:disabled {
+  color: #9d9d93;
+  background: #e9e5db;
+  box-shadow: none;
+  cursor: default;
+}
+
+@keyframes renderObjectEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes renderObjectLeave {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes renderObjectSuccess {
+  0%,
+  100% {
+    filter: drop-shadow(0 9px 10px rgba(56, 38, 24, 0.18));
+    transform: translateY(0) scale(1);
+  }
+  32% {
+    filter:
+      brightness(1.35)
+      drop-shadow(0 0 5px rgba(255, 255, 255, 0.98))
+      drop-shadow(0 0 18px rgba(255, 244, 190, 0.9));
+    transform: translateY(-12%) scale(1.12);
+  }
+  62% {
+    filter:
+      brightness(1.12)
+      drop-shadow(0 0 3px rgba(255, 255, 255, 0.9));
+    transform: translateY(2%) scale(0.98);
+  }
+}
+
+@keyframes renderObjectError {
+  0%,
+  100% {
+    filter: drop-shadow(0 9px 10px rgba(56, 38, 24, 0.18));
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50% {
+    filter:
+      saturate(1.5)
+      drop-shadow(0 0 4px rgba(255, 70, 52, 0.95))
+      drop-shadow(0 0 14px rgba(217, 42, 28, 0.8));
+    transform: translateX(-6%);
+  }
+  20%,
+  40%,
+  60% {
+    filter:
+      saturate(1.5)
+      drop-shadow(0 0 4px rgba(255, 70, 52, 0.95))
+      drop-shadow(0 0 14px rgba(217, 42, 28, 0.8));
+    transform: translateX(6%);
+  }
+  72% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes characterCrossfade {
+  from {
+    opacity: 0.35;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes finishedDishIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  .recipeGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tutorial {
+    height: auto;
+    min-height: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(480px, auto) auto;
+  }
+
+  .kitchen {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .dialoguePanel {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 480px;
+  }
+
+  .character {
+    right: 8%;
+    width: 58%;
+    height: 98%;
+  }
+
+  .characterDragon {
+    right: 8%;
+    width: 72%;
+    height: 88%;
+  }
+
+  .dialogueBubble {
+    right: 4%;
+    bottom: 4%;
+    left: 34%;
+    max-height: 58%;
+  }
+
+  .objectPrompt {
+    max-width: min(190px, 60vw);
+  }
+
+  .progressBar {
+    position: sticky;
+    bottom: 0;
+    padding: 12px 14px;
+    grid-template-columns: 1fr auto;
+    gap: 10px 14px;
+  }
+
+  .progressTrack {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .progressCopy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .progressActions {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .tutorial {
+    grid-template-rows: auto minmax(520px, auto) auto;
+  }
+
+  .character {
+    right: 2%;
+    width: 68%;
+  }
+
+  .characterDragon {
+    right: 2%;
+    width: 84%;
+  }
+
+  .dialogueBubble {
+    right: 3%;
+    bottom: 3%;
+    left: 3%;
+    max-height: 55%;
+  }
+
+  .dialogueBubble::after {
+    right: 31%;
+  }
+
+  .dialogueText {
+    font-size: 11px;
+  }
+
+  .objectPrompt {
+    max-width: min(168px, 62vw);
+    padding: 6px 8px;
+  }
+
+  .objectPrompt strong {
+    font-size: 8px;
+  }
+
+  .objectPrompt span {
+    font-size: 7px;
+  }
+
+  .progressCopy strong {
+    max-width: 220px;
+  }
+
+  .continueButton {
+    min-width: 98px;
+    padding: 0 12px;
+  }
+
+  .recipePicker {
+    width: min(100% - 24px, 720px);
+    padding-top: 32px;
+  }
+
+  .recipeGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .character {
+    animation: none;
+  }
+
+  .hotspot,
+  .renderObjectFrame,
+  .renderObjectImage,
+  .renderObjectHitArea,
+  .characterAura,
+  .progressTrack i,
+  .finishedDishScene {
+    transition: none;
+    animation: none;
+  }
+}

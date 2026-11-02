@@ -1,0 +1,576 @@
+{
+  "size": [
+    512,
+    512
+  ],
+  "format": "PNG",
+  "background": "transparent",
+  "states": [
+    "normal",
+    "click",
+    "success",
+    "error"
+  ],
+  "ingredients": [
+    {
+      "id": "greens",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_greens_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_greens_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_greens_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_greens_error.png"
+      }
+    },
+    {
+      "id": "potato",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_potato_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_potato_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_potato_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_potato_error.png"
+      }
+    },
+    {
+      "id": "egg",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_egg_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_egg_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_egg_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_egg_error.png"
+      }
+    },
+    {
+      "id": "tomato",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_tomato_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_tomato_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_tomato_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_tomato_error.png"
+      }
+    },
+    {
+      "id": "tofu",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_tofu_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_tofu_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_tofu_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_tofu_error.png"
+      }
+    },
+    {
+      "id": "beef",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_beef_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_beef_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_beef_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_beef_error.png"
+      }
+    },
+    {
+      "id": "pork",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_pork_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_pork_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_pork_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_pork_error.png"
+      }
+    },
+    {
+      "id": "fish",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_fish_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_fish_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_fish_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_fish_error.png"
+      }
+    },
+    {
+      "id": "pork-loin",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_pork-loin_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_pork-loin_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_pork-loin_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_pork-loin_error.png"
+      }
+    },
+    {
+      "id": "pork-ribs",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_pork-ribs_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_pork-ribs_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_pork-ribs_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_pork-ribs_error.png"
+      }
+    },
+    {
+      "id": "beef-brisket",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_beef-brisket_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_beef-brisket_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_beef-brisket_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_beef-brisket_error.png"
+      }
+    },
+    {
+      "id": "beef-shank",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_beef-shank_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_beef-shank_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_beef-shank_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_beef-shank_error.png"
+      }
+    },
+    {
+      "id": "lamb-leg",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_lamb-leg_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_lamb-leg_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_lamb-leg_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_lamb-leg_error.png"
+      }
+    },
+    {
+      "id": "lamb-chop",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_lamb-chop_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_lamb-chop_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_lamb-chop_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_lamb-chop_error.png"
+      }
+    },
+    {
+      "id": "chicken-breast",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_chicken-breast_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_chicken-breast_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_chicken-breast_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_chicken-breast_error.png"
+      }
+    },
+    {
+      "id": "chicken-thigh",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_chicken-thigh_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_chicken-thigh_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_chicken-thigh_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_chicken-thigh_error.png"
+      }
+    },
+    {
+      "id": "whole-chicken",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_whole-chicken_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_whole-chicken_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_whole-chicken_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_whole-chicken_error.png"
+      }
+    },
+    {
+      "id": "duck-leg",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_duck-leg_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_duck-leg_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_duck-leg_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_duck-leg_error.png"
+      }
+    },
+    {
+      "id": "old-duck",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_old-duck_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_old-duck_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_old-duck_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_old-duck_error.png"
+      }
+    },
+    {
+      "id": "grass-carp",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_grass-carp_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_grass-carp_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_grass-carp_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_grass-carp_error.png"
+      }
+    },
+    {
+      "id": "crucian-carp",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_crucian-carp_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_crucian-carp_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_crucian-carp_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_crucian-carp_error.png"
+      }
+    },
+    {
+      "id": "shrimp",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_shrimp_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_shrimp_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_shrimp_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_shrimp_error.png"
+      }
+    },
+    {
+      "id": "clam",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_clam_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_clam_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_clam_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_clam_error.png"
+      }
+    },
+    {
+      "id": "squid",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_squid_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_squid_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_squid_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_squid_error.png"
+      }
+    },
+    {
+      "id": "napa-cabbage",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_napa-cabbage_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_napa-cabbage_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_napa-cabbage_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_napa-cabbage_error.png"
+      }
+    },
+    {
+      "id": "spinach",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_spinach_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_spinach_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_spinach_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_spinach_error.png"
+      }
+    },
+    {
+      "id": "youmaicai",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_youmaicai_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_youmaicai_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_youmaicai_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_youmaicai_error.png"
+      }
+    },
+    {
+      "id": "lettuce",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_lettuce_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_lettuce_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_lettuce_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_lettuce_error.png"
+      }
+    },
+    {
+      "id": "chives",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_chives_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_chives_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_chives_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_chives_error.png"
+      }
+    },
+    {
+      "id": "cilantro",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_cilantro_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_cilantro_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_cilantro_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_cilantro_error.png"
+      }
+    },
+    {
+      "id": "celery",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_celery_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_celery_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_celery_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_celery_error.png"
+      }
+    },
+    {
+      "id": "water-spinach",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_water-spinach_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_water-spinach_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_water-spinach_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_water-spinach_error.png"
+      }
+    },
+    {
+      "id": "cucumber",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_cucumber_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_cucumber_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_cucumber_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_cucumber_error.png"
+      }
+    },
+    {
+      "id": "winter-melon",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_winter-melon_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_winter-melon_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_winter-melon_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_winter-melon_error.png"
+      }
+    },
+    {
+      "id": "pumpkin",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_pumpkin_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_pumpkin_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_pumpkin_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_pumpkin_error.png"
+      }
+    },
+    {
+      "id": "luffa",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_luffa_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_luffa_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_luffa_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_luffa_error.png"
+      }
+    },
+    {
+      "id": "eggplant",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_eggplant_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_eggplant_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_eggplant_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_eggplant_error.png"
+      }
+    },
+    {
+      "id": "green-pepper",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_green-pepper_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_green-pepper_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_green-pepper_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_green-pepper_error.png"
+      }
+    },
+    {
+      "id": "bell-pepper",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_bell-pepper_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_bell-pepper_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_bell-pepper_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_bell-pepper_error.png"
+      }
+    },
+    {
+      "id": "carrot",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_carrot_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_carrot_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_carrot_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_carrot_error.png"
+      }
+    },
+    {
+      "id": "daikon",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_daikon_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_daikon_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_daikon_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_daikon_error.png"
+      }
+    },
+    {
+      "id": "lotus-root",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_lotus-root_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_lotus-root_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_lotus-root_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_lotus-root_error.png"
+      }
+    },
+    {
+      "id": "yam",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_yam_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_yam_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_yam_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_yam_error.png"
+      }
+    },
+    {
+      "id": "taro",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_taro_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_taro_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_taro_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_taro_error.png"
+      }
+    },
+    {
+      "id": "celtuce",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_celtuce_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_celtuce_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_celtuce_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_celtuce_error.png"
+      }
+    },
+    {
+      "id": "shiitake",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_shiitake_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_shiitake_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_shiitake_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_shiitake_error.png"
+      }
+    },
+    {
+      "id": "enoki",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_enoki_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_enoki_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_enoki_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_enoki_error.png"
+      }
+    },
+    {
+      "id": "king-oyster",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_king-oyster_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_king-oyster_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_king-oyster_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_king-oyster_error.png"
+      }
+    },
+    {
+      "id": "wood-ear",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_wood-ear_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_wood-ear_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_wood-ear_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_wood-ear_error.png"
+      }
+    },
+    {
+      "id": "firm-tofu",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_firm-tofu_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_firm-tofu_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_firm-tofu_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_firm-tofu_error.png"
+      }
+    },
+    {
+      "id": "dried-tofu",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_dried-tofu_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_dried-tofu_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_dried-tofu_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_dried-tofu_error.png"
+      }
+    },
+    {
+      "id": "yuba",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_yuba_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_yuba_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_yuba_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_yuba_error.png"
+      }
+    },
+    {
+      "id": "glass-noodles",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_glass-noodles_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_glass-noodles_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_glass-noodles_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_glass-noodles_error.png"
+      }
+    },
+    {
+      "id": "vermicelli",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_vermicelli_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_vermicelli_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_vermicelli_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_vermicelli_error.png"
+      }
+    },
+    {
+      "id": "bamboo-shoots",
+      "states": {
+        "normal": "assets/story-kitchen/ingredients/ingredient_bamboo-shoots_normal.png",
+        "click": "assets/story-kitchen/ingredients/ingredient_bamboo-shoots_click.png",
+        "success": "assets/story-kitchen/ingredients/ingredient_bamboo-shoots_success.png",
+        "error": "assets/story-kitchen/ingredients/ingredient_bamboo-shoots_error.png"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": "knife",
+      "states": {
+        "normal": "assets/story-kitchen/tools/tool_knife_normal.png",
+        "click": "assets/story-kitchen/tools/tool_knife_click.png",
+        "success": "assets/story-kitchen/tools/tool_knife_success.png",
+        "error": "assets/story-kitchen/tools/tool_knife_error.png"
+      }
+    },
+    {
+      "id": "cutting_board",
+      "states": {
+        "normal": "assets/story-kitchen/tools/tool_cutting_board_normal.png",
+        "click": "assets/story-kitchen/tools/tool_cutting_board_click.png",
+        "success": "assets/story-kitchen/tools/tool_cutting_board_success.png",
+        "error": "assets/story-kitchen/tools/tool_cutting_board_error.png"
+      }
+    },
+    {
+      "id": "bowl",
+      "states": {
+        "normal": "assets/story-kitchen/tools/tool_bowl_normal.png",
+        "click": "assets/story-kitchen/tools/tool_bowl_click.png",
+        "success": "assets/story-kitchen/tools/tool_bowl_success.png",
+        "error": "assets/story-kitchen/tools/tool_bowl_error.png"
+      }
+    },
+    {
+      "id": "whisk",
+      "states": {
+        "normal": "assets/story-kitchen/tools/tool_whisk_normal.png",
+        "click": "assets/story-kitchen/tools/tool_whisk_click.png",
+        "success": "assets/story-kitchen/tools/tool_whisk_success.png",
+        "error": "assets/story-kitchen/tools/tool_whisk_error.png"
+      }
+    },
+    {
+      "id": "wok",
+      "states": {
+        "normal": "assets/story-kitchen/tools/tool_wok_normal.png",
+        "click": "assets/story-kitchen/tools/tool_wok_click.png",
+        "success": "assets/story-kitchen/tools/tool_wok_success.png",
+        "error": "assets/story-kitchen/tools/tool_wok_error.png"
+      }
+    },
+    {
+      "id": "spatula",
+      "states": {
+        "normal": "assets/story-kitchen/tools/tool_spatula_normal.png",
+        "click": "assets/story-kitchen/tools/tool_spatula_click.png",
+        "success": "assets/story-kitchen/tools/tool_spatula_success.png",
+        "error": "assets/story-kitchen/tools/tool_spatula_error.png"
+      }
+    },
+    {
+      "id": "plate",
+      "states": {
+        "normal": "assets/story-kitchen/tools/tool_plate_normal.png",
+        "click": "assets/story-kitchen/tools/tool_plate_click.png",
+        "success": "assets/story-kitchen/tools/tool_plate_success.png",
+        "error": "assets/story-kitchen/tools/tool_plate_error.png"
+      }
+    }
+  ]
+}

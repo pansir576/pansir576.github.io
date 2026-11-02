@@ -313,9 +313,12 @@ export function RecipeKitchen() {
               {voiceEnabled ? <Volume2 size={16} /> : <VolumeX size={16} />}
               {voiceEnabled ? "语音讲解已开启" : "开启语音讲解"}
             </button>
-            <Link href="/cook/3d/" className={styles.demoLink}>
+            <Link
+              href={`/cook/story/?recipe=${recipe?.id ?? 1}`}
+              className={styles.demoLink}
+            >
               <CookingPot size={16} />
-              进入 3D 演示厨房
+              进入烹语剧场
             </Link>
             <Link href="/cook/classic/" className={styles.classicLink}>
               2.5D 经典厨房

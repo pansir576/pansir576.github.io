@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3e413e"/>
+      <stop offset=".28" stop-color="#202321"/>
+      <stop offset=".72" stop-color="#111312"/>
+      <stop offset="1" stop-color="#070808"/>
+    </linearGradient>
+    <radialGradient id="cavity" cx=".48" cy=".38" r=".68">
+      <stop offset="0" stop-color="#565952"/>
+      <stop offset=".42" stop-color="#2c302d"/>
+      <stop offset=".84" stop-color="#111412"/>
+      <stop offset="1" stop-color="#070909"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ca39e"/>
+      <stop offset=".18" stop-color="#3c413d"/>
+      <stop offset=".66" stop-color="#171a18"/>
+      <stop offset="1" stop-color="#070908"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c4884d"/>
+      <stop offset=".5" stop-color="#875128"/>
+      <stop offset="1" stop-color="#482716"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-50%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="small" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="455" cy="505" rx="330" ry="58" fill="#2c1f15" opacity=".35" filter="url(#shadow)"/>
+
+  <path d="M653 273C733 253 798 242 852 237C881 234 892 242 889 255C885 270 861 281 821 290C767 302 700 313 650 315Z"
+        fill="url(#handle)" stroke="#4c2a18" stroke-width="5"/>
+  <path d="M670 272C739 255 797 247 846 243" fill="none" stroke="#f0b875" stroke-width="3" opacity=".48"/>
+  <ellipse cx="841" cy="254" rx="6" ry="7" fill="#322116"/>
+
+  <path d="M108 273C126 414 244 505 439 521C628 505 749 411 773 273Z"
+        fill="url(#body)" stroke="#171918" stroke-width="7"/>
+  <path d="M140 304C176 414 279 477 440 491C594 477 699 413 738 304"
+        fill="none" stroke="#727872" stroke-width="4" opacity=".21"/>
+  <path d="M158 335C199 420 291 469 438 478" fill="none" stroke="#d0d3cb" stroke-width="5" opacity=".12" filter="url(#small)"/>
+
+  <ellipse cx="440" cy="274" rx="337" ry="144" fill="url(#rim)" stroke="#0b0d0c" stroke-width="8"/>
+  <ellipse cx="440" cy="274" rx="310" ry="122" fill="url(#cavity)" stroke="#707670" stroke-width="4"/>
+  <ellipse cx="440" cy="274" rx="297" ry="113" fill="none" stroke="#d2d5cd" stroke-width="2" opacity=".13"/>
+  <path d="M188 234C229 178 327 153 438 153C541 153 627 175 677 219"
+        fill="none" stroke="#c7ccc4" stroke-width="4" opacity=".26" stroke-linecap="round"/>
+  <path d="M206 308C254 370 345 399 440 399C538 399 630 369 677 306"
+        fill="none" stroke="#050706" stroke-width="9" opacity=".48"/>
+  <ellipse cx="440" cy="279" rx="270" ry="91" fill="#0a0c0b" opacity=".26"/>
+</svg>

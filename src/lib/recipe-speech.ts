@@ -17,18 +17,48 @@ export function saveRecipeVoiceEnabled(enabled: boolean) {
 }
 
 export function stopRecipeSpeech() {
-  if ("speechSynthesis" in window) {
+  if (
+    typeof window !== "undefined" &&
+    "speechSynthesis" in window &&
+    typeof window.speechSynthesis.cancel === "function"
+  ) {
     window.speechSynthesis.cancel();
   }
 }
 
-export function speakRecipeText(text: string) {
-  if (!text.trim() || !("speechSynthesis" in window)) return false;
-  window.speechSynthesis.cancel();
+interface RecipeSpeechOptions {
+  rate?: number;
+  pitch?: number;
+}
+
+export function speakRecipeText(
+  text: string,
+  options: RecipeSpeechOptions = {},
+) {
+  if (
+    !text.trim() ||
+    typeof window === "undefined" ||
+    !("speechSynthesis" in window) ||
+    typeof window.speechSynthesis.speak !== "function" ||
+    typeof SpeechSynthesisUtterance === "undefined"
+  ) {
+    return false;
+  }
+  if (typeof window.speechSynthesis.cancel === "function") {
+    window.speechSynthesis.cancel();
+  }
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "zh-CN";
-  utterance.rate = 0.95;
-  utterance.pitch = 1;
+  utterance.rate = options.rate ?? 0.95;
+  utterance.pitch = options.pitch ?? 1;
+  const voices =
+    typeof window.speechSynthesis.getVoices === "function"
+      ? window.speechSynthesis.getVoices()
+      : [];
+  const preferredVoice = voices.find((voice) =>
+    /Xiaoxiao|Xiaoyi|Huihui|Ting-Ting|Meijia/i.test(voice.name),
+  );
+  if (preferredVoice) utterance.voice = preferredVoice;
   window.speechSynthesis.speak(utterance);
   return true;
 }

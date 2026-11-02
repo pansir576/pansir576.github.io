@@ -1,0 +1,59 @@
+{
+  "canvas": [
+    768,
+    1152
+  ],
+  "format": "PNG",
+  "background": "transparent",
+  "normal": [
+    "normal_xiami_01.png",
+    "normal_xiami_02.png",
+    "normal_xiami_03.png",
+    "normal_xiami_04.png"
+  ],
+  "correct": "correct_xiami.png",
+  "transition": [
+    {
+      "atSeconds": 0,
+      "file": "pre_error_xiami.png"
+    },
+    {
+      "atSeconds": 0.3,
+      "file": "transform_01.png"
+    },
+    {
+      "atSeconds": 0.6,
+      "file": "transform_02.png"
+    },
+    {
+      "atSeconds": 1,
+      "file": "transform_03.png"
+    },
+    {
+      "atSeconds": 1.1,
+      "file": "yemengjiade.png"
+    }
+  ],
+  "differences": [
+    {
+      "from": "pre_error_xiami.png",
+      "to": "transform_01.png",
+      "normalizedPixelDifference": 0.0264
+    },
+    {
+      "from": "transform_01.png",
+      "to": "transform_02.png",
+      "normalizedPixelDifference": 0.1205
+    },
+    {
+      "from": "transform_02.png",
+      "to": "transform_03.png",
+      "normalizedPixelDifference": 0.1609
+    },
+    {
+      "from": "transform_03.png",
+      "to": "yemengjiade.png",
+      "normalizedPixelDifference": 0.1373
+    }
+  ]
+}

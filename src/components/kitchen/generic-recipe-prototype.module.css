@@ -1,0 +1,347 @@
+.targetHalo {
+  position: absolute;
+  z-index: 2;
+  aspect-ratio: 1;
+  border: 2px solid rgba(245, 190, 83, 0.58);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 245, 194, 0.2),
+    transparent 68%
+  );
+  box-shadow:
+    0 0 0 7px rgba(255, 207, 103, 0.08),
+    inset 0 0 28px rgba(255, 214, 116, 0.16);
+  animation: genericTargetPulse 1.9s ease-in-out infinite;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.sceneObject {
+  position: absolute;
+  z-index: 4;
+  min-width: 54px;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 160ms ease,
+    filter 160ms ease;
+}
+
+.sceneObject img {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 8px rgba(46, 31, 17, 0.2));
+}
+
+.sceneObject:hover,
+.sceneObject:focus-visible {
+  outline: none;
+  filter: brightness(1.05);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.primaryObject {
+  z-index: 6;
+  border-radius: 24%;
+  box-shadow:
+    0 0 0 4px rgba(255, 247, 216, 0.68),
+    0 0 0 10px rgba(245, 191, 76, 0.18),
+    0 0 26px rgba(246, 189, 61, 0.42);
+  animation: genericObjectGlow 1.7s ease-in-out infinite;
+}
+
+.objectPrompt {
+  position: absolute;
+  z-index: 8;
+  display: grid;
+  min-width: 128px;
+  padding: 7px 11px;
+  border: 1px solid rgba(139, 89, 34, 0.25);
+  border-radius: 12px;
+  color: #4d4030;
+  background: rgba(255, 251, 239, 0.94);
+  box-shadow: 0 8px 18px rgba(72, 48, 23, 0.15);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.objectPrompt::after {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  border-right: 1px solid rgba(139, 89, 34, 0.2);
+  border-bottom: 1px solid rgba(139, 89, 34, 0.2);
+  content: "";
+  background: rgba(255, 251, 239, 0.94);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.objectPrompt strong {
+  color: #9f642d;
+  font-family: var(--serif);
+  font-size: 11px;
+}
+
+.objectPrompt span {
+  margin-top: 1px;
+  font-size: 8px;
+}
+
+.stepSuccess {
+  position: absolute;
+  right: 4%;
+  bottom: 6%;
+  left: 4%;
+  z-index: 9;
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 250, 221, 0.5);
+  border-radius: 999px;
+  color: #fffdf5;
+  background: rgba(54, 103, 64, 0.91);
+  box-shadow: 0 8px 20px rgba(37, 62, 41, 0.22);
+  font-size: 10px;
+  font-weight: 750;
+  text-align: center;
+  backdrop-filter: blur(7px);
+  animation: genericSuccessIn 320ms ease-out both;
+}
+
+.inventoryCard {
+  min-width: 78px;
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease;
+}
+
+.inventoryCard:hover {
+  border-color: rgba(193, 137, 50, 0.42);
+  transform: translateY(-2px);
+}
+
+.instruction {
+  margin: 0 0 12px;
+  color: #59695d;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.knowledge {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-bottom: 14px;
+  padding: 9px 10px;
+  border: 1px solid rgba(181, 133, 55, 0.2);
+  border-radius: 12px;
+  color: #6d6049;
+  background: rgba(252, 242, 213, 0.72);
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+.knowledge svg {
+  margin-top: 1px;
+  flex: none;
+  color: #b57a31;
+}
+
+.choiceGroup {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.choiceGroup > span {
+  color: #7b6650;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.choiceGroup > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.choiceGroup button {
+  padding: 5px 9px;
+  border: 1px solid rgba(87, 105, 80, 0.16);
+  border-radius: 999px;
+  color: #546157;
+  background: #fffdf7;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.choiceGroup .choiceSelected {
+  color: #fffdf5;
+  border-color: #4f7958;
+  background: #5b8762;
+}
+
+.resultGlow {
+  position: absolute;
+  inset: 4% 15%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 42% 44%, rgba(255, 228, 138, 0.28), transparent 42%),
+    radial-gradient(circle at 56% 52%, rgba(130, 176, 111, 0.22), transparent 52%);
+  filter: blur(18px);
+}
+
+.resultDish {
+  position: absolute;
+  inset: 7%;
+  display: grid;
+  place-items: center;
+}
+
+.resultPlateBadge {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  margin: 9px 0 12px;
+  padding: 8px 10px;
+  border: 1px solid rgba(77, 101, 67, 0.18);
+  border-radius: 13px;
+  background: linear-gradient(135deg, #fffdf6, #edf1e4);
+}
+
+.resultPlateBadge > span:last-child {
+  display: grid;
+  gap: 2px;
+}
+
+.resultPlateBadge small {
+  color: #9a6d31;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+}
+
+.resultPlateBadge strong {
+  overflow: hidden;
+  color: #425343;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.metrics {
+  display: grid;
+  gap: 8px;
+  margin: 10px 0 14px;
+}
+
+.metrics > span {
+  display: grid;
+  grid-template-columns: 45px 1fr 28px;
+  align-items: center;
+  gap: 8px;
+  color: #536052;
+  font-size: 10px;
+}
+
+.metrics i {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e8e2d5;
+}
+
+.metrics em {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #5d865c, #d4a64d);
+}
+
+.metrics strong {
+  color: #8b692b;
+  text-align: right;
+}
+
+@keyframes genericTargetPulse {
+  0%,
+  100% {
+    opacity: 0.52;
+    transform: translate(-50%, -50%) scale(0.96);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.03);
+  }
+}
+
+@keyframes genericObjectGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 4px rgba(255, 247, 216, 0.58),
+      0 0 0 8px rgba(245, 191, 76, 0.12),
+      0 0 20px rgba(246, 189, 61, 0.34);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 4px rgba(255, 250, 224, 0.82),
+      0 0 0 12px rgba(245, 191, 76, 0.22),
+      0 0 32px rgba(246, 189, 61, 0.5);
+  }
+}
+
+@keyframes genericSuccessIn {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+  .sceneObject {
+    min-width: 44px;
+  }
+
+  .objectPrompt {
+    min-width: 104px;
+    padding: 5px 8px;
+  }
+
+  .objectPrompt strong {
+    font-size: 9px;
+  }
+
+  .objectPrompt span {
+    font-size: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .targetHalo,
+  .primaryObject,
+  .stepSuccess {
+    animation: none;
+  }
+}

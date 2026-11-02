@@ -11,10 +11,9 @@
 ```text
 supabase/migrations/202610240001_community.sql
 supabase/migrations/202610250001_guided_ai_usage.sql
-supabase/migrations/202610260001_three_d_progress.sql
 ```
 
-第一个 migration 创建社区数据表、RLS、限频 RPC、举报处理、Storage bucket、Realtime publication 和每小时大厅清理任务；第二个创建一人称厨房 AI 问答的匿名身份限频表与 RPC；第三个创建 3D 实训成长统计、训练记录和原子写入 RPC。
+第一个 migration 创建社区数据表、RLS、限频 RPC、举报处理、Storage bucket、Realtime publication 和每小时大厅清理任务；第二个创建一人称厨房 AI 问答的匿名身份限频表与 RPC。
 
 > 如果托管项目的 SQL Editor 不允许 `pg_cron`，删除 migration 末尾的 `cron.schedule`，改用 Supabase Cron 每小时执行：
 >
@@ -102,16 +101,7 @@ GUIDE_AI_TIMEOUT_MS=15000
 
 未设置 secrets、请求超时、断网或触发限频时，前端自动切换为本地知识库回答并明确标记来源，不会伪造在线 AI 消息。匿名用户每 10 分钟最多发起 20 次在线请求。
 
-## 6. 3D 训练云存档
-
-匿名用户完成 3D 实训后，会通过 `record_simulating_cook_training` 原子写入：
-
-- `simulating_cook_progress`：完成次数、四档评价次数、训练时长和最近料理。
-- `simulating_cook_runs`：单次食材、料理名、评分、熟度和操作摘要。
-
-数据通过 `auth.uid()` 与当前匿名身份绑定，RLS 只允许用户读取自己的记录。网络不可用时结果先进入浏览器待同步队列，下一次进入 3D 厨房时自动补传。当前匿名身份不提供跨设备找回。
-
-## 7. 安全与内容规则
+## 6. 安全与内容规则
 
 - 发帖每 60 秒 1 次。
 - 回复每 20 秒 1 次。

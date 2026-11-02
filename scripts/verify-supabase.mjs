@@ -63,11 +63,7 @@ const result = await request(`${base}/database/query`, {
          where u.email = '${adminEmail}'
            and p.is_admin = true) as admin_profiles,
         to_regclass('public.guided_ai_usage') is not null as guided_ai_table,
-        to_regprocedure('public.claim_guided_ai_request()') is not null as guided_rate_limit_rpc,
-        to_regclass('public.simulating_cook_progress') is not null as three_d_progress_table,
-        to_regclass('public.simulating_cook_runs') is not null as three_d_runs_table,
-        to_regprocedure('public.record_simulating_cook_training(jsonb)') is not null as three_d_record_rpc,
-        to_regprocedure('public.get_simulating_cook_progress()') is not null as three_d_progress_rpc
+        to_regprocedure('public.claim_guided_ai_request()') is not null as guided_rate_limit_rpc
     `,
     read_only: true,
   }),
@@ -82,10 +78,6 @@ console.log(
       adminProfiles: Number(result?.[0]?.admin_profiles ?? 0),
       guidedAiTable: result?.[0]?.guided_ai_table === true,
       guidedRateLimitRpc: result?.[0]?.guided_rate_limit_rpc === true,
-      threeDProgressTable: result?.[0]?.three_d_progress_table === true,
-      threeDRunsTable: result?.[0]?.three_d_runs_table === true,
-      threeDRecordRpc: result?.[0]?.three_d_record_rpc === true,
-      threeDProgressRpc: result?.[0]?.three_d_progress_rpc === true,
       guidedFunctionDeployed: functions.some(
         (item) => item.slug === "cooking-guide" && item.status === "ACTIVE",
       ),

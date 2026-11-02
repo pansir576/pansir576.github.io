@@ -11,9 +11,7 @@ const navigation = [
   { href: "/principles/", label: "原理库" },
   { href: "/ingredients/", label: "食材图鉴" },
   { href: "/kitchen/", label: "自由实验" },
-  { href: "/cook/3d/", label: "3D 演示" },
-  { href: "/community/", label: "厨友交流" },
-  { href: "/compare/", label: "实验对比" },
+  { href: "/cook/story/", label: "烹语剧场" },
 ];
 
 export function SiteHeader() {
@@ -54,8 +52,8 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <Link className="header-cta" href="/cook/">
-          开始实训
+        <Link className="header-cta" href="/cook/story/">
+          进入剧场
         </Link>
 
         <button

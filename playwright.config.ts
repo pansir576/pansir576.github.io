@@ -17,7 +17,15 @@ export default defineConfig({
     baseURL: "http://localhost:3000",
     trace: "on-first-retry",
     launchOptions: existsSync(edgeExecutable)
-      ? { executablePath: edgeExecutable }
+      ? {
+          executablePath: edgeExecutable,
+          args: [
+            "--disable-gpu",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--no-zygote",
+          ],
+        }
       : undefined,
   },
   webServer: {

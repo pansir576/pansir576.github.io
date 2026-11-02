@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "character": "夏弥",
+  "tone": "慵懒、委屈、略带促狭",
+  "basePath": "/audio/xiami/shared/v1/",
+  "format": {
+    "codec": "mp3",
+    "sampleRate": 44100,
+    "channels": 1,
+    "targetLufs": -16,
+    "maxTruePeakDbtp": -1.8
+  },
+  "voice": {
+    "engine": "qwen3-tts",
+    "name": "Serena",
+    "seed": 42,
+    "style": "语速舒缓，省略号处停顿更久，句尾自然下沉"
+  },
+  "lines": [
+    {
+      "id": "low-score-dejected",
+      "kind": "outcome",
+      "text": "赏……个脸呗……把菜做好。",
+      "file": "low-score-dejected.mp3",
+      "durationMs": 5520
+    }
+  ]
+}
