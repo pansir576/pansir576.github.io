@@ -2,6 +2,8 @@
 
 面向中式家常菜的互动模拟厨房。用户选择 AI 指导伙伴后，在一人称奶油风厨房中完成食材选择、预处理、下锅、火候调味、装盘检查和原理复盘；另有完整的自由实验与 A/B 双分支对照。
 
+> **在线体验：** [项目首页](https://pansir576.github.io/) · [智能菜谱实训](https://pansir576.github.io/cook/) · [3D 演示厨房](https://pansir576.github.io/cook/3d/) · [经典一人称厨房](https://pansir576.github.io/cook/classic/)
+
 ## 核心功能
 
 - 55 种食材按畜肉、禽肉、水产、叶菜、瓜茄、根茎、菌菇豆制品和主食辅料分类。
